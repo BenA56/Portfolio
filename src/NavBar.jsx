@@ -1,5 +1,5 @@
-import React, {useState} from "react"
-import { Outlet, Link } from "react-router-dom";
+import React from "react"
+import { Link } from "react-router-dom";
 import "./NavBar.css"
 
 const tabs = [
@@ -31,7 +31,7 @@ function NavBar(props) {
         <div style={{display: "flex", flexDirection: "row", gap: "20px", alignItems: "center", height: "190px"}}>
             {tabs.map(tabName => {
                 return (
-                    <Tab name={tabName} selected={selectedTab == tabName} />
+                    <Tab name={tabName} selected={selectedTab === tabName} />
                 )
             })}
         </div>

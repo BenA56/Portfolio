@@ -55,7 +55,7 @@ function ShotDoctorCardRedesign(props) {
                         return (
                             <div className="subSection">
                                 <div className="subHeader"> {comp} </div>
-                                <img src={"/comparison" + (index + 1) + ".png"} /> 
+                                <img src={"/comparison" + (index + 1) + ".png"} alt="comparison" /> 
                             </div>
                         )
                     })}

@@ -1,7 +1,7 @@
 import "./CaseStudy.css"
 import CompanyTag from "./Tags/CompanyTag"
 import TypeTag from "./Tags/TypeTag"
-import { Outlet, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function CaseStudy(props) {
     const {name, logo, desc, type, company} = props

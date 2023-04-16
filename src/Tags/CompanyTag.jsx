@@ -6,7 +6,7 @@ function CompanyTag(props) {
     return (
         <div>
             <React.Fragment>
-                {company == "Yerbba" ?
+                {company === "Yerbba" ?
                     <div style={{display: "flex", padding: "10px 15px", backgroundColor: "#C2004D", color: "white", borderRadius: "50px"}}>
                         Yerbba
                     </div>

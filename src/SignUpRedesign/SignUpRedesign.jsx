@@ -87,7 +87,7 @@ function SignUpRedesign(props) {
                         {content.userFlow.map((step, index) => {
                             return (
                                 <div style={{display: "flex", flexDirection: "column", gap: "20px", width: "390px"}}>
-                                    <img src={"/frame" + index + ".png"} width="390px" height="844px"/>
+                                    <img src={"/frame" + index + ".png"} alt="frame" width="390px" height="844px"/>
                                     <div className="subHeader"> {step[0]} </div>
                                     <div className="bigContent"> {step[1]} </div>
                                 </div>
