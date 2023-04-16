@@ -2,6 +2,7 @@ import NavBar from "../NavBar"
 import MyRole from "../MyRole"
 import CaseStudy from "../CaseStudy"
 import CaseStudyHeader from "../CaseStudyHeader"
+import Warning from "../Warning"
 
 const content = {
     background: "Before I joined the company they had released a first version of the report. The purpose of the first version was to prove that it could be done so not much attention was paid to the actual user experience.",
@@ -35,6 +36,7 @@ function ReportRedesign(props) {
                     type="NDA"
                     company="Yerbba"
                 />
+                <Warning title="Sneak Peek - NDA" icon="/eyes_black.png" desc1="Since this redesign is not yet released, I cannot legally include pictures or specifics. However, since this has been my life for the past several months, I wanted to shed some light on the problems I’ve been solving."/>
                 <div className="section">
                     <div className="header2"> Background </div>
                     <div className="bigContent"> {content.background} </div>
@@ -57,9 +59,12 @@ function ReportRedesign(props) {
                 </div>
                 <div className="section">
                     <div className="header2"> 9 Problems I've solved so far </div>
-                    {content.problemsSolved.map(problem => {
+                    {content.problemsSolved.map((problem, index) => {
                         return (
-                            <div className="bigContent"> {problem} </div>
+                            <div style={{display: "flex", flexDirection: "row", alignItems: "flex-start", gap: "10px"}}>
+                                <div className="subHeader"> {index + 1 + "."} </div>
+                                <div className="bigContent"> {problem} </div>
+                            </div>
                         )
                     })}
                 </div>
