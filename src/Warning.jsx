@@ -4,7 +4,7 @@ function Warning(props) {
     return (
         <div style={{display: "flex", flexDirection: "column", border: "solid 1px black", padding: "20px", borderRadius: "20px", gap: "20px", maxWidth: "567px"}}>
             <div style={{display: "flex", flexDirection: "row", gap: "10px", alignItems: "center"}}>
-                <img src={icon} width="24px" height="24px" />
+                <img src={icon} alt="icon" width="24px" height="24px" />
                 <div className="subHeader"> {title} </div>
             </div>
             <div className="bigContent"> {desc1} </div>
