@@ -11,34 +11,50 @@ import {
 import ShotDoctorCardRedesign from './ShotDoctorCardRedesign/ShotDoctorCardRedesign';
 import AIManualReviewTool from './AIManualReviewTool/AIManualReviewTool';
 import SignUpRedesign from './SignUpRedesign/SignUpRedesign';
+import ScrollToTop from './ScrollToTop';
 
 const router = createBrowserRouter([
   {
     path: "/Summary",
-    element: <App/>,
+    element: <React.Fragment>
+      <ScrollToTop/>
+      <App/>
+    </React.Fragment>,
   },
   {
     path: "/ReportRedesign",
-    element: <ReportRedesign />,
+    element: <React.Fragment>
+      <ScrollToTop/>
+      <ReportRedesign/>
+    </React.Fragment>,
   },
   {
     path: "/ShotDoctorCardRedesign",
-    element: <ShotDoctorCardRedesign />,
+    element: <React.Fragment>
+      <ScrollToTop/>
+      <ShotDoctorCardRedesign />
+    </React.Fragment>,
   },
   {
     path: "/AIManualReviewTool",
-    element: <AIManualReviewTool />,
+    element: <React.Fragment>
+      <ScrollToTop/>
+      <AIManualReviewTool />
+    </React.Fragment>,
   },
   {
     path: "/SignUpRedesign",
-    element: <SignUpRedesign />,
+    element: <React.Fragment>
+      <ScrollToTop/>
+      <SignUpRedesign />
+    </React.Fragment>,
   }
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+      <RouterProvider router={router} />
   </React.StrictMode>
 );
 
