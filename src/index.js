@@ -2,12 +2,43 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import ReportRedesign from "./Report Redesign/ReportRedesign"
 import reportWebVitals from './reportWebVitals';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+import ShotDoctorCardRedesign from './ShotDoctorCardRedesign/ShotDoctorCardRedesign';
+import AIManualReviewTool from './AIManualReviewTool/AIManualReviewTool';
+import SignUpRedesign from './SignUpRedesign/SignUpRedesign';
+
+const router = createBrowserRouter([
+  {
+    path: "/Summary",
+    element: <App/>,
+  },
+  {
+    path: "/ReportRedesign",
+    element: <ReportRedesign />,
+  },
+  {
+    path: "/ShotDoctorCardRedesign",
+    element: <ShotDoctorCardRedesign />,
+  },
+  {
+    path: "/AIManualReviewTool",
+    element: <AIManualReviewTool />,
+  },
+  {
+    path: "/SignUpRedesign",
+    element: <SignUpRedesign />,
+  }
+]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 
