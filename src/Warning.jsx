@@ -1,5 +1,5 @@
 function Warning(props) {
-    const {title, icon, desc1, desc2} = props
+    const {title, icon, desc1, desc2, desc3} = props
 
     return (
         <div style={{display: "flex", flexDirection: "column", border: "solid 1px black", padding: "20px", borderRadius: "20px", gap: "20px", maxWidth: "567px"}}>
@@ -10,6 +10,9 @@ function Warning(props) {
             <div className="bigContent"> {desc1} </div>
             {desc2 ? 
                 <div className="bigContent"> {desc2} </div>
+            : null}
+            {desc3 ? 
+                <div className="bigContent"> {desc3} </div>
             : null}
         </div>
     )

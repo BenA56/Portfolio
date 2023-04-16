@@ -7,7 +7,10 @@ function Company(props) {
             <div style={{width: "150px", display: "flex", flexDirection: "row", padding: "20px", gap: "10px"}}>
                 <div style={{fontSize: "24px"}}> {name} </div>
                 {current ?
-                    <div style={{backgroundColor: "black", color: "white", fontSize: "16px", padding: "5px"}}> Current </div>
+                    <div style={{display: "flex", flexDirection: "row", alignItems: "center", gap: "5px"}}>
+                        <div style={{height: "12px", width: "12px", borderRadius: "40px", backgroundColor: "#C92364"}}></div>
+                        <div style={{color: "#C92364"}}> Current </div>
+                    </div>
                 : null}
             </div>
             <img src="/next.png" alt="forward_arrow" width="24px" height="24px" />
