@@ -2,7 +2,7 @@ import React from "react"
 
 function CompanyTag(props) {
     const {company} = props
-    console.log(company)
+    
     return (
         <div>
             <React.Fragment>
