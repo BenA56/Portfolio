@@ -26,19 +26,29 @@ const content = {
 
 function ReportRedesign(props) {
     return (
-        <div className="App">
+        <div>
             <NavBar selectedTab="Report Redesign"/>
+
+            {/* Header */}
+            <div style={{display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between", padding: "80px 200px", backgroundColor: "#282738", color: "white", marginBottom: "85px"}}>
+                <div style={{display: "flex", flexDirection: "column", gap: "24px", maxWidth: "435px"}}>
+                    <div className="header"> The Yerbba Report </div>
+                    <div className="bigContent"> Creating a personalized breast cancer report to help patients take ownership of their treatment journey </div>
+                </div>
+                <div style={{width: "200px", height: "200px", backgroundColor: "#808080"}}> image </div>
+            </div>
+
+            <div className="App">
             <div className="caseStudyContent">
-                <CaseStudyHeader
+                {/* <CaseStudyHeader
                     logo="/report.png"
-                    name="Report Redesign"
-                    desc="Re-imagining a breast cancer report for better discoverability of key information"
-                    type="NDA"
+                    name="The Yerbba Report"
+                    desc="Creating a personalized breast cancer report to help patients take ownership of their treatment journey"
                     company="Yerbba"
-                />
-                <Warning title="Sneak Peek - NDA" icon="/eyes_black.png" desc1="Since this redesign is not yet released, I cannot legally include pictures or specifics. However, since this has been my life for the past several months, I wanted to shed some light on the problems I’ve been solving."/>
+                /> */}
+
                 <div className="section">
-                    <div className="header2"> Background </div>
+                    <div className="header2"> The Opportunity </div>
                     <div className="bigContent"> {content.background} </div>
                 </div>
                 <MyRole ux={true} frontEnd={true}/>
@@ -76,6 +86,7 @@ function ReportRedesign(props) {
                         <CaseStudy name="Shot Doctor Card Redesign" desc="Displaying statistical comparisons in a way that helps coaches take action" logo="/analytics.png" type="full" company="ShotQuality"/>
                     </div>
                 </div>
+            </div>
             </div>
         </div>
     )

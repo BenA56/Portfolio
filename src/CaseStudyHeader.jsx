@@ -11,7 +11,6 @@ function CaseStudyHeader(props) {
             <div className="header"> {name} </div>
             <div style={{fontSize: "32px", lineHeight: "44px"}}> {desc} </div>
             <div style={{display: "flex", flexDirection: "row", alignItems: "center", gap: "20px"}}>
-                <TypeTag type={type}/>
                 <CompanyTag company={company}/>
             </div>
         </div>
