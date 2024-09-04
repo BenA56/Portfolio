@@ -4,18 +4,16 @@ import TypeTag from "./Tags/TypeTag"
 import { Link } from "react-router-dom";
 
 function CaseStudy(props) {
-    const {name, logo, desc, type, company} = props
+    const {name, logo, desc, role, company, backgroundColor, textColor, accentColor} = props
 
     return (
-        <Link className="card" to={`/` + name.split(" ").join("")}>
-            <img src={logo} alt="name" width="100px" height="100px"/>
+        <Link className="card" to={`/` + name.split(" ").join("")} style={{backgroundColor: backgroundColor}}>
+            <img src={logo} alt="name" width="auto" height="140px" style={{borderRadius: "8px", border: `4px solid ${accentColor}`}}/>
             <div className="detailsWrapper">
                 <div className="title"> {name} </div>
                 <div className="desc"> {desc} </div>
-                <div style={{display: "flex", flexDirection: "row", alignItems: "center", gap: "20px"}}>
-                    <TypeTag type={type} white={true}/>
-                    <CompanyTag company={company} />
-                </div>
+                <div className="desc" style={{color: accentColor}}><b> {role} </b></div>
+                <CompanyTag company={company} />
             </div>
         </Link>
     )
