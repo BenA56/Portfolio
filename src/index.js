@@ -22,14 +22,14 @@ const router = createBrowserRouter([
     </React.Fragment>,
   },
   {
-    path: "/ReportRedesign",
+    path: "/BreastCancerReport",
     element: <React.Fragment>
       <ScrollToTop/>
       <ReportRedesign/>
     </React.Fragment>,
   },
   {
-    path: "/ShotDoctorCardRedesign",
+    path: "/ShotDoctorCards",
     element: <React.Fragment>
       <ScrollToTop/>
       <ShotDoctorCardRedesign />
@@ -43,7 +43,7 @@ const router = createBrowserRouter([
     </React.Fragment>,
   },
   {
-    path: "/SignUpRedesign",
+    path: "/EHRSignup",
     element: <React.Fragment>
       <ScrollToTop/>
       <SignUpRedesign />

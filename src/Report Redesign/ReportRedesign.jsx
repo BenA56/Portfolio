@@ -1,8 +1,8 @@
 import NavBar from "../NavBar"
 import MyRole from "../MyRole"
-import CaseStudy from "../CaseStudy"
 import CaseStudyHeader from "../CaseStudyHeader"
 import Warning from "../Warning"
+import CaseStudies from "../CaseStudies"
 
 const content = {
     background: "Before I joined the company they had released a first version of the report. The purpose of the first version was to prove that it could be done so not much attention was paid to the actual user experience.",
@@ -27,7 +27,7 @@ const content = {
 function ReportRedesign(props) {
     return (
         <div>
-            <NavBar selectedTab="Report Redesign"/>
+            <NavBar selectedTab="Breast Cancer Report"/>
 
             {/* Header */}
             <div style={{display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between", padding: "80px 200px", backgroundColor: "#282738", color: "white", marginBottom: "85px"}}>
@@ -81,9 +81,12 @@ function ReportRedesign(props) {
                 <div style={{display: "flex", flexDirection: "column", gap: "40px"}}>
                     <div className="header2"> Other Case Studies </div>
                     <div className="caseStudies">
-                        <CaseStudy name="Sign Up Redesign" desc="Increasing the likelihood that a user will connect to their electronic health records" logo="/signup.png" type="full" company="Yerbba"/>
-                        <CaseStudy name="AI Manual Review Tool" desc="Allowing for reviewing and editing of AI-generated breast cancer reports" logo="/artificial-intelligence.png" type="full" company="Yerbba"/>
-                        <CaseStudy name="Shot Doctor Card Redesign" desc="Displaying statistical comparisons in a way that helps coaches take action" logo="/analytics.png" type="full" company="ShotQuality"/>
+                        <CaseStudies show={{
+                            report: false,
+                            signup: true,
+                            review: true,
+                            cards: true
+                        }} />
                     </div>
                 </div>
             </div>

@@ -1,7 +1,8 @@
 import NavBar from "../NavBar"
 import MyRole from "../MyRole"
 import CaseStudyHeader from "../CaseStudyHeader"
-import CaseStudy from "../CaseStudy"
+import CaseStudies from "../CaseStudies"
+
 
 const content = {
     background: "In order to generate a personalized breast cancer report for our users, they must grant us access to their electronic health records during the sign up process.",
@@ -34,7 +35,7 @@ const content = {
 function SignUpRedesign(props) {
     return (
         <div className="App">
-            <NavBar selectedTab="Sign Up Redesign"/>
+            <NavBar selectedTab="EHR Signup"/>
             <div className="caseStudyContent">
                 <CaseStudyHeader
                     logo="/signup.png"
@@ -98,9 +99,12 @@ function SignUpRedesign(props) {
                 <div style={{display: "flex", flexDirection: "column", gap: "40px"}}>
                     <div className="header2"> Other Case Studies </div>
                     <div className="caseStudies">
-                        <CaseStudy name="Report Redesign" desc="Re-imagining a breast cancer report for better discoverability of key information" logo="/report.png" type="NDA" company="Yerbba"/>
-                        <CaseStudy name="AI Manual Review Tool" desc="Allowing for reviewing and editing of AI-generated breast cancer reports" logo="/artificial-intelligence.png" type="full" company="Yerbba"/>
-                        <CaseStudy name="Shot Doctor Card Redesign" desc="Displaying statistical comparisons in a way that helps coaches take action" logo="/analytics.png" type="full" company="ShotQuality"/>
+                        <CaseStudies show={{
+                            report: true,
+                            signup: false,
+                            review: true,
+                            cards: true
+                        }} />
                     </div>
                 </div>
             </div>

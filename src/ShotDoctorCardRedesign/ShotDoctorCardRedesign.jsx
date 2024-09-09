@@ -2,7 +2,8 @@ import NavBar from "../NavBar"
 import MyRole from "../MyRole"
 import CaseStudyHeader from "../CaseStudyHeader"
 import Warning from "../Warning"
-import CaseStudy from "../CaseStudy"
+import CaseStudies from "../CaseStudies"
+
 
 const content = {
     background: "Shot Doctor cards are statistical comparisons between players that are meant to help coaches get actionable insights.",
@@ -25,7 +26,7 @@ const content = {
 function ShotDoctorCardRedesign(props) {
     return (
         <div className="App">
-            <NavBar selectedTab="Shot Doctor Card Redesign"/>
+            <NavBar selectedTab="Shot Doctor Cards"/>
             <div className="caseStudyContent">
                 <CaseStudyHeader
                     logo="/analytics.png"
@@ -75,9 +76,12 @@ function ShotDoctorCardRedesign(props) {
                 <div style={{display: "flex", flexDirection: "column", gap: "40px"}}>
                     <div className="header2"> Other Case Studies </div>
                     <div className="caseStudies">
-                        <CaseStudy name="Report Redesign" desc="Re-imagining a breast cancer report for better discoverability of key information" logo="/report.png" type="NDA" company="Yerbba"/>
-                        <CaseStudy name="Sign Up Redesign" desc="Increasing the likelihood that a user will connect to their electronic health records" logo="/signup.png" type="full" company="Yerbba"/>
-                        <CaseStudy name="AI Manual Review Tool" desc="Allowing for reviewing and editing of AI-generated breast cancer reports" logo="/artificial-intelligence.png" type="full" company="Yerbba"/>
+                        <CaseStudies show={{
+                            report: false,
+                            signup: true,
+                            review: true,
+                            cards: true
+                        }} />
                     </div>
                 </div>
             </div>
