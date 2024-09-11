@@ -2,6 +2,7 @@ import NavBar from "../NavBar"
 import MyRole from "../MyRole"
 import CaseStudyHeader from "../CaseStudyHeader"
 import CaseStudies from "../CaseStudies"
+import Banner from "../Banner"
 
 
 const content = {
@@ -36,14 +37,18 @@ function SignUpRedesign(props) {
     return (
         <div className="App">
             <NavBar selectedTab="EHR Signup"/>
+
+            <Banner
+                title="EHR Signup"
+                desc="Creating a signup process that guides patients through giving access to their electronic health records"
+                role="Product Designer & F-E Developer"
+                img="/Yerbba-Signup.png"
+                backgroundColor="#1C1C2A"
+                accentColor="#A2A5D6"
+                textColor="white"
+            />
+
             <div className="caseStudyContent">
-                <CaseStudyHeader
-                    logo="/signup.png"
-                    name="Sign Up Redesign"
-                    desc="Increasing the likelihood that a user will connect to their electronic health records"
-                    type="full"
-                    company="Yerbba"
-                />
                 <div className="section">
                     <div className="header2"> Background </div>
                     <div className="bigContent"> {content.background} </div>

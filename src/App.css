@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  margin-left: 190px;
   font-family: Arial, Helvetica, sans-serif;
   margin-bottom: 190px;
 }
@@ -11,12 +10,15 @@
   display: flex;
   gap: 40px;
   flex-direction: column;
+  margin-left: 190px;
 }
 
 .caseStudyContent {
   display: flex;
   gap: 80px;
   flex-direction: column;
+  width: 100%;
+  align-items: center;
 }
 
 .header {
@@ -37,16 +39,38 @@
   font-weight: bold;
 }
 
+.label {
+  font-size: 14px;
+  font-weight: medium;
+  color: "#808080"
+}
+
 .bigContent {
-  font-size: 24px;
-  line-height: 34px;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.bigQuote {
+  font-size: 32px;
+  font-style: italic;
 }
 
 .section {
   display: flex;
   flex-direction: column;
-  max-width: 570px;
+  max-width: 640px;
   gap: 40px;
+}
+
+.deepDive {
+  display: flex;
+  flex-direction: column;
+  max-width: 640px;
+  gap: 40px;
+  background-color: #282738;
+  padding: 48px;
+  border-radius: 20px;
+  color: white;
 }
 
 .section .cases {

@@ -3,6 +3,7 @@ import MyRole from "../MyRole"
 import CaseStudyHeader from "../CaseStudyHeader"
 import Warning from "../Warning"
 import CaseStudies from "../CaseStudies"
+import Banner from "../Banner"
 
 
 const content = {
@@ -27,14 +28,18 @@ function ShotDoctorCardRedesign(props) {
     return (
         <div className="App">
             <NavBar selectedTab="Shot Doctor Cards"/>
+
+            <Banner
+                title="Shot Doctor Cards"
+                desc="Displaying statistical inefficiencies to help college coaches make more effective adjustments"
+                role="Product Designer"
+                img="/comparison1.png"
+                backgroundColor="#923E01"
+                accentColor="#FFCDA8"
+                textColor="white"
+            />
+
             <div className="caseStudyContent">
-                <CaseStudyHeader
-                    logo="/analytics.png"
-                    name="Shot Doctor Card Redesign"
-                    desc="Displaying statistical comparisons in a way that helps coaches take action"
-                    type="full"
-                    company="ShotQuality"
-                />
                 <Warning
                     icon="/caution.png"
                     title="Caution"
