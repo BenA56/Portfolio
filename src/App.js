@@ -14,7 +14,7 @@ function App() {
     <div className="App">
       <NavBar selectedTab="Summary"/>
       <div className='page'>
-        <div style={{display: "flex", alignItems: "center", justifyContent: "center", borderRadius: "20px", height: "190px", width: "190px", overflow: "hidden"}}>
+        <div style={{display: "flex", alignItems: "center", justifyContent: "center", borderRadius: "20px", height: "190px", width: "190px", overflow: "hidden", marginTop: "48px"}}>
           <img src="/portfolio.jpeg" alt="portfolio" height="300px"/>
         </div>
         <div className='header'> Hi, I'm Ben Arteaga.  </div>
