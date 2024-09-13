@@ -58,6 +58,7 @@
 .section {
   display: flex;
   flex-direction: column;
+  align-items: center;
   max-width: 640px;
   gap: 40px;
 }
@@ -89,4 +90,9 @@
   justify-content: flex-start;
   flex-wrap: wrap;
   gap: 40px;
+}
+
+.screenshot {
+  outline: 2px solid #d5d5d5;
+  border-radius: 16px;
 }

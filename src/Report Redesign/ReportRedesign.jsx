@@ -6,25 +6,6 @@ import CaseStudies from "../CaseStudies"
 import { reportContent } from "./reportContent"
 import Banner from "../Banner.jsx"
 
-const content = {
-    background: "Before I joined the company they had released a first version of the report. The purpose of the first version was to prove that it could be done so not much attention was paid to the actual user experience.",
-    problemsWithOriginal: [
-        "Important content, for example specific treatment options, is hidden beneath layers of navigation. As a result, users rarely cash in on the true value of their report.",
-        "Many users have described the report as “cold” and “medical”. The new version of the report should be warm and caring.",
-        "The only navigation structure used for the report is breadcrumbs. Getting to other pages always requires multiple clicks."
-    ],
-    problemsSolved: [
-        "Designed a new vertical navigation that can be accessed from anywhere within the report for easy switches between pages",
-        "Designed a summary page that brings valuable root-level content, such as specific chemotherapy regimens, to the forefront for better discoverability",
-        "Designed a component flexible enough to display details and important comparisons between all types of chemotherapy regimens",
-        "Designed a component to display various breast cancer traits",
-        "Designed a feature for users to be able to write their own questions at any time as they’re reading through their report.",
-        "Designed a feature for users to be able to either submit their questions to a Yerbba expert for a personalized answer or save their questions to be better prepared for their appointments",
-        "Implemented a design system so that the same type of objects in the report have a consistent design with enough flexibility to account for all situations and states",
-        "Applied a new color scheme to the design system with colors that communicate warmness and care",
-        "Designed the report with a responsive, mobile-first approach since over 50% of our users access their report on their mobile device"
-    ]
-}
 
 function ReportRedesign(props) {
     return (
@@ -50,25 +31,37 @@ function ReportRedesign(props) {
                     <div className="bigContent" style={{fontStyle: "italic"}}> {reportContent.opportunity[0]} </div>
                     <div className="bigContent"> {reportContent.opportunity[1]} </div>
                     <div className="bigContent"> {reportContent.opportunity[2]} </div>
-                    <div className="bigContent"> {reportContent.opportunity[3]} </div>
-                    <div className="bigContent"> {reportContent.opportunity[4]} </div>
-                    <div className="bigContent"> {reportContent.opportunity[5]} </div>
-                    <div className="bigContent"> {reportContent.opportunity[6]} </div>
-                    <div className="bigContent"> {reportContent.opportunity[7]} </div>
-                    <div className="bigContent"> {reportContent.opportunity[8]} </div>
-                    <div className="bigContent"> {reportContent.opportunity[9]} </div>
+
+                    {/* Problem #1 */}
+                    <div>
+                        <div className="bigContent"> {reportContent.opportunity[3]} </div>
+                        <ul style={{marginTop: "8px"}}>
+                            <li className="bigContent"> {reportContent.opportunity[4]} </li>
+                            <li className="bigContent"> {reportContent.opportunity[5]} </li>
+                            <li className="bigContent"> {reportContent.opportunity[6]} </li>
+                        </ul>
+                    </div>
+
+                    {/* Problem #2 */}
+                    <div>
+                        <div className="bigContent"> {reportContent.opportunity[7]} </div>
+                        <ul style={{marginTop: "8px"}}>
+                            <li className="bigContent"> {reportContent.opportunity[8]} </li>
+                            <li className="bigContent"> {reportContent.opportunity[9]} </li>
+                        </ul>
+                    </div>
                 </div>
 
                 {/* Context */}
                 <div className="section">
                     <div className="header2"> The Context </div>
-                    <div className="bigContent"> The Company: Yerbba, a 5-person startup </div>
-                    <div className="bigContent"> My Role: Product Designer and F-E Developer </div>
-                    <div className="bigContent"> The Project Team: CEO/Founder + ME + Rotating Intern </div>
-                    <div className="bigContent"> Duration: 6 months design + 8 months development = 14 months </div>
+                    <div className="bigContent"> <b>The Company</b> - Yerbba, a 5-person startup </div>
+                    <div className="bigContent"> <b>My Role</b> - Product Designer and F-E Developer </div>
+                    <div className="bigContent"> <b>The Project Team</b> - CEO/Founder and ME</div>
+                    <div className="bigContent"> <b>Duration</b> - 6 months design + 8 months development = 14 months </div>
                     <img src="/report/Old-Yerbba.png" alt="old" width="100%" height="auto" />
                     <div className="content" style={{color: "#808080"}}> Summary page of the old Yerbba Report </div>
-                    <div className="bigContent"> {reportContent.context} </div>
+                    <div className="bigContent"> {reportContent.context}<b>{reportContent.goal}</b> </div>
                 </div>
 
                 {/* Preliminary Research */}
@@ -77,14 +70,10 @@ function ReportRedesign(props) {
                     <div className="bigContent"> {reportContent.research[0]} </div>
                     <div className="bigContent"> {reportContent.research[1]} </div>
                     <img src="/report/Research-Screenshots.png" alt="research" width="1000px" height="auto" />
-                    <div className="label"> Conclusion #1 </div>
-                    <div className="bigContent"> {reportContent.conclusions[0]} </div>
-                    <div className="label"> Conclusion #2 </div>
-                    <div className="bigContent"> {reportContent.conclusions[1]} </div>
-                    <div className="label"> Conclusion #3 </div>
-                    <div className="bigContent"> {reportContent.conclusions[2]} </div>
-                    <div className="label"> Conclusion #4 </div>
-                    <div className="bigContent"> {reportContent.conclusions[3]} </div>
+                    <div className="bigContent"> <b>Conclusion #1</b> - {reportContent.conclusions[0]} </div>
+                    <div className="bigContent"> <b>Conclusion #2</b> - {reportContent.conclusions[1]} </div>
+                    <div className="bigContent"> <b>Conclusion #3</b> - {reportContent.conclusions[2]} </div>
+                    <div className="bigContent"> <b>Conclusion #4</b> - {reportContent.conclusions[3]} </div>
                 </div>
 
                 {/* Design Iteration */}
@@ -113,12 +102,16 @@ function ReportRedesign(props) {
                 <div className="deepDive">
                     <div className="header2"> Treatment Categories Visualization </div>
                     <div className="bigContent"> {reportContent.visualization[0]} </div>
-                    <div className="bigContent"> {reportContent.visualization[1]} </div>
-                    <div className="bigContent"> {reportContent.visualization[2]} </div>
-                    <div className="bigContent"> {reportContent.visualization[3]} </div>
-                    <div className="bigContent"> {reportContent.visualization[4]} </div>
-                    <div className="bigContent"> {reportContent.visualization[5]} </div>
-                    <div className="bigContent"> {reportContent.visualization[6]} </div>
+                    <div>
+                        <div className="bigContent"> 1. {reportContent.visualization[1]} </div>
+                        <ul style={{marginTop: "8px"}}>
+                            <li className="bigContent"> "{reportContent.visualization[2]}" </li>
+                            <li className="bigContent"> "{reportContent.visualization[3]}" </li>
+                            <li className="bigContent"> "{reportContent.visualization[4]}" </li>
+                            <li className="bigContent"> "{reportContent.visualization[5]}" </li>
+                        </ul>
+                    </div>
+                    <div className="bigContent"> 2. {reportContent.visualization[6]} </div>
                     <div className="bigContent"> {reportContent.visualization[7]} </div>
                     <div className="bigContent"> {reportContent.visualization[8]} </div>
                     <div className="bigContent"> {reportContent.visualization[9]} </div>
@@ -134,7 +127,7 @@ function ReportRedesign(props) {
                 <div className="section">
                     <div className="header2"> Prototype and Usability Testing </div>
                     <div className="bigContent"> {reportContent.testing[0]} </div>
-                    <div className="bigQuote"> {reportContent.testing[1]} </div>
+                    <div className="bigQuote"> "{reportContent.testing[1]}" </div>
                     <img src="/report/research-screenshots-2.png" alt="report" width="1000px" height="auto" />
                     <div className="bigContent"> {reportContent.testing[2]} </div>
                 </div>

@@ -1,18 +1,19 @@
 export const reportContent = {
     subHeader: "Creating a personalized breast cancer report to help patients take ownership of their treatment journey",
     opportunity: [
-        "There are about 242,100 people diagnosed with Breast Cancer in America every year.",
-        "The treatment of breast cancer is laden with difficult decisions that should be made based on the patient’s personal values. In order to do what’s best for themselves, patients need to be educated about their unique breast cancer.",
-        "In the current market, there is no good solution for a breast cancer patient to be educated about their disease.",
+        "There are 242,100 people diagnosed with Breast Cancer in America every year.",
+        "The treatment of breast cancer is laden with difficult decisions that should be made based on the patient’s personal values. Which means patients need to be educated about their unique breast cancer in order to make the best decisions for themselves.",
+        "Currently, no solution for patient-education exists that is personalized, accessible, and understandable.",
         "The problem with relying purely on doctors is that:",
         "doctors don’t have the time to walk every patient through every option.",
-        "many doctors have their own personal opinions on what is best for the patient,    which don’t always align with the patient’s own values. ",
-        "when the patient goes home to process all of this complex information, the         doctor is no longer there to walk them through it",
+        "many doctors have “a certain way of doing things” from years of practice that might not align with the patient’s values. ",
+        "when the patient goes home to process all of this complex information, they can’t take the doctor with them",
         "As a result, many patients turn to Google in search of answers. This is like trying to find a needle in a haystack:",
         "Since the information is not tailored to their unique cancer, they have to deduce what applies to them and what doesn’t.",
         "This is a difficult task when there are dozens of factors that make their tumor unique and determine what treatment options are available to them."
     ],
-    context: "The Yerbba Report provides breast cancer patients with personalized information including treatment options, cancer traits, and action items. When Yerbba brought me on board, the Yerbba Report was up and running. But most of the focus had been on making the back-end functional. Not much thought had been given to the user experience.  My job was simple - research, design, and build a completely new Yerbba Report that breast cancer patients would actually want to buy and use.",
+    context: "The Yerbba Report provides breast cancer patients with personalized information including treatment options, cancer traits, and action items. When Yerbba brought me on board, the Yerbba Report was up and running. But most of the focus had been on making the back-end functional. Not much thought had been given to the user experience.  My job was simple - ",
+    goal: "research, design, and build a completely new Yerbba Report that breast cancer patients would actually want to buy and use",
     research: [
         "The first step was to assess the old Yerbba Report experience, while learning as much as I could about breast cancer. To assess the old Yerbba Report, I ran two rounds of usability testing. In addition to the usual tasks designed to evaluate usability, I included questions designed to get people talking about their breast cancer experience in general. This helped me to empathize with breast cancer patients and better understand their needs. In order to learn about breast cancer itself, I watched videos, read books such as _______, and did stakeholder interviews with our in-house doctor.",
         "For each round of testing, I took notes using a virtual white board on every interview. Then I went through the sticky notes, searching for patterns and creating groups until tangible themes revealed themselves."
