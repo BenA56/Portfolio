@@ -45,6 +45,14 @@
   color: "#808080"
 }
 
+.caption {
+  font-size: 20px;
+  color: #808080;
+  font-style: italic;
+  line-height: 28px;
+  text-align: center;
+}
+
 .bigContent {
   font-size: 20px;
   line-height: 30px;
@@ -82,6 +90,12 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+.bullet {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .caseStudies {

@@ -41,14 +41,29 @@ function AIManualReviewTool(props) {
                         <li className="bigContent"> {manReviewContent.reqs[6]} </li>
                     </ol>
                     <div className="bigContent"> {manReviewContent.reqs[7]} </div>
-                    <ol style={{marginTop: "0px", display: "flex", flexDirection: "column", gap: "16px"}}>
-                        <li className="bigContent"> {manReviewContent.reqs[8]} </li>
-                        <img src="/manReview/Array-Of-Objects.png" alt="array" width="80%" height="auto" className="screenshot"/>
-                        <li className="bigContent"> {manReviewContent.reqs[9]} </li>
+                    <ol style={{marginTop: "0px", display: "flex", flexDirection: "column", gap: "24px"}}>
+                        <li>
+                            <div className="bullet">
+                                <div className="bigContent"> {manReviewContent.reqs[8]} </div>
+                                <img src="/manReview/Array-Of-Objects.png" alt="array" width="80%" height="auto" className="screenshot"/>
+                                <div className="caption"> {manReviewContent.reqs[9]} </div>
+                            </div>
+                        </li>
                         <li className="bigContent"> {manReviewContent.reqs[10]} </li>
-                        <img src="/manReview/Medical-Records.png" alt="array" width="80%" height="auto" className="screenshot"/>
-                        <li className="bigContent"> {manReviewContent.reqs[11]} </li>
-                        <img src="/Manual-Review.png" alt="array" width="80%" height="auto" className="screenshot"/>
+                        <li>
+                            <div className="bullet">
+                                <div className="bigContent"> {manReviewContent.reqs[11]} </div>
+                                <img src="/manReview/Medical-Records.png" alt="array" width="80%" height="auto" className="screenshot"/>
+                                <div className="caption"> {manReviewContent.reqs[12]} </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div className="bullet">
+                                <div className="bigContent"> {manReviewContent.reqs[13]} </div>
+                                <img src="/Manual-Review.png" alt="array" width="80%" height="auto" className="screenshot"/>
+                                <div className="caption"> {manReviewContent.reqs[14]} </div>
+                            </div>
+                        </li>
                     </ol>
                 </div>
 
@@ -65,6 +80,7 @@ function AIManualReviewTool(props) {
                     </ol>
                     <div className="bigContent"> {manReviewContent.process[6]} </div>
                     <img src="/manReview/Beltran-Proof.jpg" alt="proof" height="300px" width="auto" className="screenshot"/>
+                    <div className="caption"> {manReviewContent.process[7]} </div>
                 </div>
 
                 {/* Key Improvements */}
@@ -84,10 +100,12 @@ function AIManualReviewTool(props) {
                         <div style={{position: "relative"}}>
                             <img src="/manReview/remove.png" alt="remove" width="48px" height="auto" style={{position: "absolute", right: "-24px", top: "-24px"}} />
                             <img src="/manReview/Reports-Page.png" alt="reports" width="400px" height="auto" className="screenshot"/>
+                            <div className="caption" style={{marginTop: "16px"}}> {manReviewContent.userView[7]} </div>
                         </div>
                         <div style={{position: "relative"}}>
                             <img src="/manReview/check.png" alt="check" width="48px" height="auto" style={{position: "absolute", right: "-24px", top: "-24px"}} />
                             <img src="/manReview/Prod-Users-Page.png" alt="users" width="400px" height="auto" className="screenshot"/>
+                            <div className="caption" style={{marginTop: "16px"}}> {manReviewContent.userView[8]} </div>
                         </div>
                     </div>
 
@@ -99,19 +117,22 @@ function AIManualReviewTool(props) {
                         <li className="bigContent"> <b>{manReviewContent.versionControl[4]}</b> - {manReviewContent.versionControl[5]}</li>
                     </ul>
                     <img src="/Manual-Review.png" alt="array" width="80%" height="auto" className="screenshot"/>
+                    <div className="caption"> {manReviewContent.versionControl[6]} </div>
 
-                    {/* Version Control */}
+                    {/* Change Log */}
                     <div className="subHeader"> {manReviewContent.changeLog[0]} </div>
                     <div className="bigContent"> {manReviewContent.changeLog[1]} </div>
                     <div className="bigContent"> {manReviewContent.changeLog[2]} </div>
                     <div className="bigContent"> {manReviewContent.changeLog[3]} </div>
                     <img src="/manReview/Change-Log.png" alt="array" width="80%" height="auto" className="screenshot"/>
-                    <div className="bigContent"> {manReviewContent.changeLog[4]} </div>
+                    <div className="caption"> {manReviewContent.changeLog[4]} </div>
+                    <div className="bigContent"> {manReviewContent.changeLog[5]} </div>
                     <ul style={{marginTop: "0px", display: "flex", flexDirection: "column", gap: "16px"}}>
-                        <li className="bigContent"> <b>{manReviewContent.changeLog[5]}</b> - {manReviewContent.changeLog[6]}</li>
-                        <li className="bigContent"> <b>{manReviewContent.changeLog[7]}</b> - {manReviewContent.changeLog[8]}</li>
+                        <li className="bigContent"> <b>{manReviewContent.changeLog[6]}</b> - {manReviewContent.changeLog[7]}</li>
+                        <li className="bigContent"> <b>{manReviewContent.changeLog[8]}</b> - {manReviewContent.changeLog[9]}</li>
                     </ul>
                     <img src="/manReview/Diff-Checker.png" alt="array" width="80%" height="auto" className="screenshot"/>
+                    <div className="caption"> {manReviewContent.changeLog[10]} </div>
 
                 </div>
 

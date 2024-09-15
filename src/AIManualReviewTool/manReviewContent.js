@@ -13,9 +13,12 @@ export const manReviewContent = {
         "Push the report to our production environment, alert the user that their report is ready",
         "What does the reviewer need to make sure a variable is accurate?",
         "See the AI result, which could be as simple as a single string, or as complex as an array of objects",
+        "The display for a variable called “allMeds” which contains an array of objects",
         "See the code that the AI used to generate that variable",
         "Sometimes, it is helpful to see the raw medical records that the AI was pulling information from",
-        "If the report has been re-generated due to a change in the user’s medical records, it is important to see what a given variable was after review in the previous version of the report (didn’t realize this until later iterations, more on this later)."
+        "I built a Finder-like tool to search for information in a user’s raw medical records",
+        "If the report has been re-generated due to a change in the user’s medical records, it is important to see what a given variable was after review in the previous version of the report (didn’t realize this until later iterations, more on this later).",
+        "The value for a variable in the previous version is displayed on the left while the value for this new version is displayed on the right",
     ],
     process: [
         "The process for this project was a never-ending journey full of twists and turns. I worked on this tool off and on for almost the entire 2.5 years that I worked for Yerbba. After the initial build, it looked a little something like this:",
@@ -24,7 +27,8 @@ export const manReviewContent = {
         "Time to explore the solution space. The final decision usually comes down to: should we maximize for a seamless fit into the current tool OR … maximize for the most useful version of the new thing?",
         "Finally, I develop. First, I check if there’s any new info that I need from the back-end. If so, I write a REQ document for the back-end functions and send it to my boss for him to implement. Then I code … and code … and code.",
         "One month later, CEO is doing a manual review and notices something else … and the cycle continues.",
-        "I’m very proud of how this project evolved over the years. It required me to solve abstract and challenging design problems. I had to learn complicated internal processes with a million “what ifs”, and transform them into intuitive, efficient experiences. I had to carefully manage how the system was displaying the status of its users, reviews, and variables, which required precise wording and a crystal-clear mental model. And coding the front-end was certainly no walk in the park either."
+        "I’m very proud of how this project evolved over the years. It required me to solve abstract and challenging design problems. I had to learn complicated internal processes with a million “what ifs”, and transform them into intuitive, efficient experiences. I had to carefully manage how the system was displaying the status of its users, reviews, and variables, which required precise wording and a crystal-clear mental model. And coding the front-end was certainly no walk in the park either.",
+        "This message from the CEO shows our constant cyclical progress"
     ],
     improvements: "Through this cycle of improvements, we stumbled across some profound discoveries that clarified what we really needed this tool to do. Here are a few key features that took this internal tool from mediocre to great:",
     userView: [
@@ -35,6 +39,8 @@ export const manReviewContent = {
         "Because each report has to be reviewed at least once before a user can view it, users fresh off of the signup process will be stuck on the accuracy check until we approve their report. The longer we wait to get them their report, the less likely it is that we convert them into a sale. A user with an update to their report, however, already has a report. They may not even know that there is an update waiting to be reviewed and approved.",
         "Paid user with update > Free-preview user with update",
         "A paid user is paying a subscription fee to keep their report updated. A user still on the free-preview of their report, however, probably means that they received their free preview and decided not to purchase the full report. Which means, it would be a waste of company resources to keep their report updated.",
+        "Organizing by reports was not the way to go",
+        "Organizing by users was much more useful",
     ],
     versionControl: [
         "Version Control - What’s Changed?",
@@ -43,17 +49,20 @@ export const manReviewContent = {
         "Which could be just one variable amongst hundreds. Without knowing which variable has been changed, the reviewer would be forced to check every variable again. This is a massive amount of duplicated work saved.",
         "The AI can make the same mistake twice.",
         "We might have manually fixed a variable in the previous report that is now broken again because the report was re-generated. With version control, we can identify and fix it again with one click instead of taking the unnecessary time to re-solve it.",
+        "An example of version control, with the old report variables layered on top of the new ones",
     ],
     changeLog: [
         "Change Log - To Generate or Not?",
         "A user’s medical record can change for many reasons. Sometimes, it’s critical information that would dramatically affect their Yerbba Report. Say, for example, that someone completed their lumpectomy. The post-treatment options in that person’s report could look a lot different knowing the results of the surgery. Other times, however, the change could be as small as a routine flu shot, having no effect on their Yerbba Report.",
         "In the case of insignificant updates, we don’t want to spend the resources required to generate a whole new report for that user. Not only does it cost money to use the required APIs, but it will also cost time to complete the subsequent manual review on the new version of the report.",
         "Therefore, we needed a tool to see which raw medical records have changed so that the manual reviewer can decide whether or not to generate a new version of the report and kickstart the manual review process.",
+        "Change Log modal displaying updated medical records for a given user",
         "An essential part of the Change Log was building a custom diff checker. It wasn’t enough to know which raw medical records changed. We needed to know how they changed. And we needed this custom diff checker for two reasons:",
         "Speed",
         "it’s much faster to click a button and immediately get the comparison within our internal tool than it is to spend time copying and pasting each document into a third party diff checker.",
         "Privacy",
-        "We couldn’t use public diff checkers on the internet because that would mean exposing the data of our patients."
+        "We couldn’t use public diff checkers on the internet because that would mean exposing the data of our patients.",
+        "Custom diff checker that opens straight from the Change Log, and automatically loads a diff for every updated record",
     ],
     lessons: [
         "Dig deep in root-cause-analysis as early as possible",
