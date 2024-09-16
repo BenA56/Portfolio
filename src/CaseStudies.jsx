@@ -51,7 +51,7 @@ function CaseStudies(props) {
         : null}
 
         {/* ShotDoctor case study card */}
-        {show.cards ? 
+        {/* {show.cards ? 
             <CaseStudy
                 name="Shot Doctor Cards"
                 desc="Displaying statistical inefficiencies to help college coaches make more effective adjustments"
@@ -62,7 +62,7 @@ function CaseStudies(props) {
                 textColor="white"
                 accentColor="#FFCDA8"
             />
-        : null}
+        : null} */}
         </React.Fragment>
     )
 }

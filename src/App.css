@@ -22,8 +22,8 @@
 }
 
 .header {
-  font-size: 50px;
-  line-height: 50px;
+  font-size: 56px;
+  line-height: 56px;
   font-weight: bold;
 }
 
@@ -126,4 +126,42 @@
 .screenshot {
   outline: 2px solid #d5d5d5;
   border-radius: 16px;
+}
+
+.me {
+  font-size: 56px;
+  font-weight: bold;
+  background: linear-gradient(135deg, 
+    #8BC34A 10%,   /* Light green */
+    #4CAF50 10%,   /* Dark green starts */
+    #4CAF50 15%,   /* Dark green ends */
+    #8BC34A 15%,   /* Light green starts */
+    #8BC34A 25%,   /* Light green */
+    #4CAF50 25%,   /* Dark green starts */
+    #4CAF50 30%,   /* Dark green ends */
+    #8BC34A 30%    /* Light green starts again */
+  );
+  background-size: 150%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.tree {
+  font-size: 56px;
+  font-weight: bold;
+  background: linear-gradient(135deg, 
+    #4E342E 10%,   /* Dark brown */
+    #3E2723 10%,   /* Even darker brown starts */
+    #3E2723 15%,   /* Even darker brown ends */
+    #4E342E 15%,   /* Dark brown starts */
+    #4E342E 25%,   /* Dark brown */
+    #3E2723 25%,   /* Even darker brown starts */
+    #3E2723 30%,   /* Even darker brown ends */
+    #4E342E 30%    /* Dark brown starts again */
+  );
+  background-size: 150%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }

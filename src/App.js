@@ -17,9 +17,13 @@ function App() {
         <div style={{display: "flex", alignItems: "center", justifyContent: "center", borderRadius: "20px", height: "190px", width: "190px", overflow: "hidden", marginTop: "48px"}}>
           <img src="/portfolio.jpeg" alt="portfolio" height="300px"/>
         </div>
-        <div className='header'> Hi, I'm Ben Arteaga.  </div>
-        <div className='bigContent' style={{maxWidth: "700px"}}> I'm a <b>Product Designer</b> with a Computer Science degree. After 2.5 years spent designing and building a personalized breast cancer report ... I eagerly await my next challenge. </div>
-        <div className='header2'> Check Out My Work</div>
+        <div style={{display: "flex", flexDirection: "row", alignItems: "center", gap: "24px"}}>
+          <div className='me'> Ben Arteaga |</div>
+          <div className="tree"> Product Designer </div>
+        </div>
+        <div className='bigContent' style={{maxWidth: "700px"}}> I'm a Product Designer with a Computer Science degree. After 2.5 years handling all of the design and front-end work for a small healthcare startup ... I'm looking for a new challenge. </div>
+        <a className="bigContent" href="/Ben_Arteaga_Resume.pdf" target="_blank"> <b>My Resume</b> </a>
+        <div className='header2'>My Work</div>
         <div className='caseStudies'>
           <CaseStudies show={{
             report: true,
