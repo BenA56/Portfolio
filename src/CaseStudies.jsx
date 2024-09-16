@@ -18,19 +18,7 @@ function CaseStudies(props) {
                 company="Yerbba"
                 backgroundColor="#1C1C2A"
                 accentColor="#A2A5D6"
-            />
-        : null}
-
-        {/* Signup redesign case study card */}
-        {show.signup ?
-            <CaseStudy
-                name="EHR Signup"
-                desc="Creating a signup process that guides patients through giving access to their electronic health records"
-                logo="/Yerbba-Signup.png"
-                role="Product Designer & F-E Developer"
-                company="Yerbba"
-                backgroundColor="#1C1C2A"
-                accentColor="#A2A5D6"
+                favorite={true}
             />
         : null}
 
@@ -45,6 +33,20 @@ function CaseStudies(props) {
                 backgroundColor="#E2E2F0"
                 textColor="#1C1C2A"
                 accentColor="#5E5F7D"
+                favorite={true}
+            />
+        : null}
+
+        {/* Signup redesign case study card */}
+        {show.signup ?
+            <CaseStudy
+                name="EHR Signup"
+                desc="Creating a signup process that guides patients through giving access to their electronic health records"
+                logo="/Yerbba-Signup.png"
+                role="Product Designer & F-E Developer"
+                company="Yerbba"
+                backgroundColor="#1C1C2A"
+                accentColor="#A2A5D6"
             />
         : null}
 

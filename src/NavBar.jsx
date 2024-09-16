@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./NavBar.css"
 
 const tabs = [
-    "Summary", "Breast Cancer Report", "EHR Signup", "AI Manual Review Tool", "Shot Doctor Cards"
+    "Summary", "Breast Cancer Report", "AI Manual Review Tool", "EHR Signup", "Shot Doctor Cards"
 ]
 
 function Tab(props) {

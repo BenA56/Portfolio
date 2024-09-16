@@ -11,7 +11,7 @@
     cursor: pointer;
     text-decoration: none;
     transition: box-shadow 0.3s;
-
+    position: relative;
 }
 
 .card:hover {

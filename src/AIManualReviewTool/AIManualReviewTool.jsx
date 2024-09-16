@@ -31,7 +31,7 @@ function AIManualReviewTool(props) {
                 {/* Basic REQS */}
                 <div className="section">
                     <div className="header2"> Basic REQs </div>
-                    <div className="bigContent"> {manReviewContent.reqs[0]} </div>
+                    <div className="bigContent"> <b>{manReviewContent.reqs[0]}</b> </div>
                     <ol style={{marginTop: "0px"}}>
                         <li className="bigContent"> {manReviewContent.reqs[1]} </li>
                         <li className="bigContent"> {manReviewContent.reqs[2]} </li>
@@ -40,7 +40,7 @@ function AIManualReviewTool(props) {
                         <li className="bigContent"> {manReviewContent.reqs[5]} </li>
                         <li className="bigContent"> {manReviewContent.reqs[6]} </li>
                     </ol>
-                    <div className="bigContent"> {manReviewContent.reqs[7]} </div>
+                    <div className="bigContent"> <b>{manReviewContent.reqs[7]}</b> </div>
                     <ol style={{marginTop: "0px", display: "flex", flexDirection: "column", gap: "24px"}}>
                         <li>
                             <div className="bullet">

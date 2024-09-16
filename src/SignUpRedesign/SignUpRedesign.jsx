@@ -87,9 +87,9 @@ function SignUpRedesign(props) {
                         <div className="bigContent"> {content.keysToSuccess[6]} </div>
                     </div>
                 </div>
-                <div style={{display: "flex", flexDirection: "column", gap: "40px"}}>
+                <div style={{display: "flex", flexDirection: "column", gap: "40px", alignItems: "center", width: "100%"}}>
                     <div className="header2"> Final User Flow </div>
-                    <div style={{display: "flex", flexDirection: "row", flexWrap: "wrap", gap: "40px"}}>
+                    <div style={{display: "flex", flexDirection: "row", flexWrap: "wrap", gap: "40px", maxWidth: "1250px"}}>
                         {content.userFlow.map((step, index) => {
                             return (
                                 <div style={{display: "flex", flexDirection: "column", gap: "20px", width: "390px"}}>

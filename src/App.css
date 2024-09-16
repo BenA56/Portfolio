@@ -71,6 +71,14 @@
   gap: 40px;
 }
 
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  width: 100%;
+}
+
 .deepDive {
   display: flex;
   flex-direction: column;
@@ -80,6 +88,15 @@
   padding: 48px;
   border-radius: 20px;
   color: white;
+}
+
+.deepDiveLabel {
+  padding: 10px 16px;
+  border-radius: 100px;
+  background-color: #C2004d;
+  outline: 2px solid #FB94BD;
+  color: white;
+  width: fit-content;
 }
 
 .section .cases {

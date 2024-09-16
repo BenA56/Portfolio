@@ -55,12 +55,14 @@ function ReportRedesign(props) {
                 {/* Context */}
                 <div className="section">
                     <div className="header2"> The Context </div>
-                    <div className="bigContent"> <b>The Company</b> - Yerbba, a 5-person startup </div>
-                    <div className="bigContent"> <b>My Role</b> - Product Designer and F-E Developer </div>
-                    <div className="bigContent"> <b>The Project Team</b> - CEO/Founder and ME</div>
-                    <div className="bigContent"> <b>Duration</b> - 6 months design + 8 months development = 14 months </div>
+                    <div className="list">
+                        <div className="bigContent"> <b>The Company</b> - Yerbba, a 5-person startup </div>
+                        <div className="bigContent"> <b>My Role</b> - Product Designer and F-E Developer </div>
+                        <div className="bigContent"> <b>The Project Team</b> - CEO/Founder and Me </div>
+                        <div className="bigContent"> <b>Duration</b> - 6 months design + 8 months development = 14 months </div>
+                    </div>
                     <img src="/report/Old-Yerbba.png" alt="old" width="100%" height="auto" />
-                    <div className="content" style={{color: "#808080"}}> Summary page of the old Yerbba Report </div>
+                    <div className="content" className="caption"> Summary page of the old Yerbba Report </div>
                     <div className="bigContent"> {reportContent.context}<b>{reportContent.goal}</b> </div>
                 </div>
 
@@ -70,10 +72,18 @@ function ReportRedesign(props) {
                     <div className="bigContent"> {reportContent.research[0]} </div>
                     <div className="bigContent"> {reportContent.research[1]} </div>
                     <img src="/report/Research-Screenshots.png" alt="research" width="1000px" height="auto" />
-                    <div className="bigContent"> <b>Conclusion #1</b> - {reportContent.conclusions[0]} </div>
-                    <div className="bigContent"> <b>Conclusion #2</b> - {reportContent.conclusions[1]} </div>
-                    <div className="bigContent"> <b>Conclusion #3</b> - {reportContent.conclusions[2]} </div>
-                    <div className="bigContent"> <b>Conclusion #4</b> - {reportContent.conclusions[3]} </div>
+                    <div style={{display: "flex", flexDirection: "column", gap: "8px"}}>
+                        <div className="caption"> Grouping notes to create themes from (left to right): </div>
+                        <div className="caption"> usability test #1 (friends & family) </div>
+                        <div className="caption"> usability test #2 (breast cancer patients via UserBrain) </div>
+                        <div className="caption"> stakeholder interviews with Dr. Jennifer Griggs </div>
+                    </div>
+                    <div className="list">
+                        <div className="bigContent"> <b>Conclusion #1</b> - {reportContent.conclusions[0]} </div>
+                        <div className="bigContent"> <b>Conclusion #2</b> - {reportContent.conclusions[1]} </div>
+                        <div className="bigContent"> <b>Conclusion #3</b> - {reportContent.conclusions[2]} </div>
+                        <div className="bigContent"> <b>Conclusion #4</b> - {reportContent.conclusions[3]} </div>
+                    </div>
                 </div>
 
                 {/* Design Iteration */}
@@ -85,7 +95,7 @@ function ReportRedesign(props) {
                         <img src="/report/Sketches-1.png" alt="sketch" width="230px" height="auto" />
                         <img src="/report/Sketches-2.png" alt="sketch" width="230px" height="auto" />
                     </div>
-                    <div className="label"> {reportContent.iteration[2]} </div>
+                    <div className="caption"> {reportContent.iteration[2]} </div>
                     <div className="bigContent"> {reportContent.iteration[3]} </div>
                     <ul>
                         <li className="bigContent"> <b>{reportContent.iteration[4]}</b> {reportContent.iteration[5]} </li>
@@ -93,13 +103,16 @@ function ReportRedesign(props) {
                         <li className="bigContent"> <b>{reportContent.iteration[8]}</b></li>
                     </ul>
                     <img src="/report/Figma-Board.png" alt="figma" width="100%" height="auto" />
-                    <div className="label"> {reportContent.iteration[9]} </div>
+                    <div className="caption"> {reportContent.iteration[9]} </div>
                     <div className="bigContent"> {reportContent.iteration[10]} </div>
                     <div className="bigQuote"> "{reportContent.iteration[11]}" </div>
                 </div>
 
                 {/* Deep Dive #1 */}
                 <div className="deepDive">
+                    <div className="deepDiveLabel">
+                        <div className="bigContent"> Deep Dive #1 </div>
+                    </div>
                     <div className="header2"> Treatment Categories Visualization </div>
                     <div className="bigContent"> {reportContent.visualization[0]} </div>
                     <div>
@@ -129,18 +142,27 @@ function ReportRedesign(props) {
                     <div className="bigContent"> {reportContent.testing[0]} </div>
                     <div className="bigQuote"> "{reportContent.testing[1]}" </div>
                     <img src="/report/research-screenshots-2.png" alt="report" width="1000px" height="auto" />
+                    <div className="caption"> Synthesizing qualitative usability data to make improvements between each round of testing </div>
                     <div className="bigContent"> {reportContent.testing[2]} </div>
                 </div>
 
                 {/* Deep Dive #2 */}
                 <div className="deepDive">
+                    <div className="deepDiveLabel">
+                        <div className="bigContent"> Deep Dive #2 </div>
+                    </div>
                     <div className="header2"> Treatment Options Discoverability </div>
                     <div className="bigContent"> {reportContent.deepDive2[0]} </div>
                     <div className="bigContent"> {reportContent.deepDive2[1]} </div>
-                    <img src="/report/Bad-Cards.png" alt="bad" width="100%" height="auto" />
+                    <div style={{display: "flex", flexDirection: "column", alignItems: "center", gap: "24px"}}>
+                        <div className="deepDiveLabel">
+                            <div className="bigContent"> No one clicks on the cards :( </div>
+                        </div>
+                        <img src="/report/Bad-Cards.png" alt="bad" width="100%" height="auto" />
+                    </div>
                     <div className="bigContent"> {reportContent.deepDive2[2]} </div>
                     <div style={{display: "flex", flexDirection: "column", gap: "48px", alignItems: "center"}}>
-                        <div style={{padding: "10px 16px", borderRadius: "100px", backgroundColor: "#C2004D", outline: "2px solid #FB94BD", color: "white"}}>
+                        <div className="deepDiveLabel">
                             <div className="bigContent"> Now they click :) </div>
                         </div>
                         <div style={{display: "flex", flexDirection: "row", gap: "24px"}}>
@@ -157,6 +179,8 @@ function ReportRedesign(props) {
                 <div className="section">
                     <div className="header2"> Launch </div>
                     <div className="bigContent"> {reportContent.launch} </div>
+                    <iframe src="https://drive.google.com/file/d/1j8cF4zUwlQW2twcn9kJyZNldQyevPGDY/preview" width="100%" height="380px"></iframe>
+                    <div className="caption"> Walkthrough of the final Yerbba Report </div>
                 </div>
 
                 {/* Lessons Learned */}

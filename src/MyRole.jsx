@@ -4,7 +4,7 @@ function MyRole(props) {
     const {ux, frontEnd, backEnd} = props
 
     return (
-        <div style={{display: "flex", flexDirection: "column", gap: "40px"}}>
+        <div style={{display: "flex", flexDirection: "column", alignItems: "center", gap: "40px"}}>
             <div style={{fontSize: "32px", lineHeight: "32px", fontWeight: "bold"}}> My Role </div>
             {ux ? 
             <div className="row">

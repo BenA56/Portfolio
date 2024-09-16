@@ -1,12 +1,12 @@
 export const manReviewContent = {
     background: [
-        "How does a small startup ensure that they’re producing accurate breast cancer reports when their AI is still learning how to walk? Unfortunately for us, the only solution was to manually review each report for accuracy. When I joined the company, these manual reviews were done by literally sorting through documents and directly editing the database. It was incredibly inefficient, painful to keep track of, and unkind to mistakes. We needed a better system. We needed a robust, flexible yet efficient, internal tool. And thus began a two-year journey to create the Manual Review Tool.",
+        "How does a small startup ensure that they’re producing accurate breast cancer reports when their AI is still learning how to walk? Unfortunately for us, the only solution was to manually review each report for accuracy. When I joined the company, these manual reviews were done by sorting through documents and directly editing the database. It was incredibly inefficient, painful to keep track of, and unkind to mistakes. We needed a better system. We needed a robust, flexible yet efficient, internal tool. And thus began a two-year journey to create the Manual Review Tool.",
         "The Yerbba AI takes in a user’s raw medical records, extracts the information relevant to breast cancer, runs that information through in-house algorithms, and finally produces a list of variables. These variables then feed into the front-end to display the user’s actual Yerbba Report. So, the manual review tool needed to allow Yerbba employees of present and future to review these final variables and make sure that they produce an accurate report.",
     ],
     reqs: [
         "Journey for the manual reviewer:",
         "Check for reports that need review (could be new reports or reports with updates)",
-        "Select a document with a report that needs reviewing",
+        "Select a document within the report that needs review",
         "Check all variables within that document for correctness. Fix any that are incorrect.",
         "Repeat steps 2-3 for all documents that need reviewing",
         "Push the report to our testing environment and make sure everything looks good",
@@ -23,7 +23,7 @@ export const manReviewContent = {
     process: [
         "The process for this project was a never-ending journey full of twists and turns. I worked on this tool off and on for almost the entire 2.5 years that I worked for Yerbba. After the initial build, it looked a little something like this:",
         "My CEO/Founder comes to me with an inefficiency, a bug, or a new use case involving the manual review process.",
-        "I make him walk me through his current process for the task at hand. I round out the problem by asking questions and digging at the root cause. Although, he tended to phrase things in solution-speak, I’m careful not to jump to solutions.",
+        "I make him walk me through his current process for the task at hand. I round out the problem by asking questions and digging at the root cause. Although he tends to phrase things in solution-speak, I’m careful not to jump to solutions.",
         "Time to explore the solution space. The final decision usually comes down to: should we maximize for a seamless fit into the current tool OR … maximize for the most useful version of the new thing?",
         "Finally, I develop. First, I check if there’s any new info that I need from the back-end. If so, I write a REQ document for the back-end functions and send it to my boss for him to implement. Then I code … and code … and code.",
         "One month later, CEO is doing a manual review and notices something else … and the cycle continues.",
