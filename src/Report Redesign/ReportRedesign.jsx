@@ -1,7 +1,4 @@
 import NavBar from "../NavBar"
-import MyRole from "../MyRole"
-import CaseStudyHeader from "../CaseStudyHeader"
-import Warning from "../Warning"
 import CaseStudies from "../CaseStudies"
 import { reportContent } from "./reportContent"
 import Banner from "../Banner.jsx"
@@ -62,7 +59,7 @@ function ReportRedesign(props) {
                         <div className="bigContent"> <b>Duration</b> - 6 months design + 8 months development = 14 months </div>
                     </div>
                     <img src="/report/Old-Yerbba.png" alt="old" width="100%" height="auto" />
-                    <div className="content" className="caption"> Summary page of the old Yerbba Report </div>
+                    <div className="caption"> Summary page of the old Yerbba Report </div>
                     <div className="bigContent"> {reportContent.context}<b>{reportContent.goal}</b> </div>
                 </div>
 
@@ -179,7 +176,7 @@ function ReportRedesign(props) {
                 <div className="section">
                     <div className="header2"> Launch </div>
                     <div className="bigContent"> {reportContent.launch} </div>
-                    <iframe src="https://drive.google.com/file/d/1j8cF4zUwlQW2twcn9kJyZNldQyevPGDY/preview" width="100%" height="380px"></iframe>
+                    <iframe title="walkthrough" src="https://drive.google.com/file/d/1j8cF4zUwlQW2twcn9kJyZNldQyevPGDY/preview" width="100%" height="380px"></iframe>
                     <div className="caption"> Walkthrough of the final Yerbba Report </div>
                 </div>
 

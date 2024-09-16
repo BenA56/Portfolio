@@ -1,6 +1,5 @@
 import NavBar from "../NavBar"
 import MyRole from "../MyRole"
-import CaseStudyHeader from "../CaseStudyHeader"
 import Warning from "../Warning"
 import CaseStudies from "../CaseStudies"
 import Banner from "../Banner"
