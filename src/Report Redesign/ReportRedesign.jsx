@@ -124,10 +124,22 @@ function ReportRedesign(props) {
                     <div className="bigContent"> 2. {reportContent.visualization[6]} </div>
                     <div className="bigContent"> {reportContent.visualization[7]} </div>
                     <div className="bigContent"> {reportContent.visualization[8]} </div>
-                    <div className="bigContent"> {reportContent.visualization[9]} </div>
                     <img src="/report/Visualizations.png" alt="vis" width="100%" height="auto"/>
-                    <div className="bigContent"> {reportContent.visualization[10]} </div>
-                    <div className="bigContent"> {reportContent.visualization[11]} </div>
+                    <div className="bigContent"> {reportContent.visualization[9]} </div>
+                    <ol>
+                        <li>
+                            <div style={{display: "flex", flexDirection: "column", gap: "16px", paddingBottom: "24px"}}>
+                                <div className="bigContent"> <b>Necessity Bars - </b>{reportContent.visualization[10]} </div>
+                                <img src="/report/Necessity-Bars.png" alt="bars" width="50%" height="auto" />
+                            </div>
+                        </li>
+                        <li>
+                            <div style={{display: "flex", flexDirection: "column", gap: "16px", paddingBottom: "24px"}}>
+                                <div className="bigContent"> <b>Treatment Category Relationships - </b>{reportContent.visualization[11]} </div>
+                                <img src="/report/Category-Relationships.png" alt="rels" width="30%" height="auto" />
+                            </div>
+                        </li>
+                    </ol>
                     <div className="bigContent"> {reportContent.visualization[12]} </div>
                     <div className="bigContent"> {reportContent.visualization[13]} </div>
                     <img src="/report/Final-Options.png" alt="final" width="100%" height="auto"/>
