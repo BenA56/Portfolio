@@ -1,37 +1,50 @@
+import React, { useState } from "react"
 import './App.css';
-import NavBar from './NavBar';
-import CaseStudies from './CaseStudies';
-
-export const pageTitle = {
-  fontFamily: "Mukta",
-  fontSize: "50px",
-  lineHeight: "50px",
-
-}
+import Hero from './Home/Hero';
+import Navigation from "./Home/Navigation";
+import CaseStudy from "./Home/CaseStudy";
 
 function App() {
+  const [selected, setSelected] = useState("work")
+
   return (
-    <div className="App">
-      <NavBar selectedTab="Summary"/>
-      <div className='page'>
-        <div style={{display: "flex", alignItems: "center", justifyContent: "center", borderRadius: "20px", height: "190px", width: "190px", overflow: "hidden", marginTop: "48px"}}>
-          <img src="/portfolio.jpeg" alt="portfolio" height="300px"/>
-        </div>
-        <div style={{display: "flex", flexDirection: "row", alignItems: "center", gap: "24px"}}>
-          <div className='me'> Ben Arteaga |</div>
-          <div className="tree"> Product Designer </div>
-        </div>
-        <div className='bigContent' style={{maxWidth: "700px"}}> I'm a Product Designer with a Computer Science degree. After 2.5 years handling all of the design and front-end work for a small healthcare startup ... I'm looking for a new challenge. </div>
-        <a className="bigContent" href="/Ben_Arteaga_Resume.pdf" target="_blank"> <b>My Resume</b> </a>
-        <div className='header2'>My Work</div>
-        <div className='caseStudies'>
-          <CaseStudies show={{
-            report: true,
-            signup: true,
-            review: true,
-            cards: true
-          }} />
-        </div>
+    <div >
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet"></link>
+      <div className='background'>
+        <Navigation selected={selected} setSelected={setSelected}/>
+
+        {selected == "work" ?
+          <React.Fragment>
+          <Hero />
+          <div className='caseStudies'>
+
+            <CaseStudy
+              img="/report/My-Reports.png"
+              title="The Yerbba Report"
+              desc="Empowering breast cancer patients to make educated decisions by transforming their medical records into a personazlized report"
+              page="BreastCancerReport"
+            />
+
+            <CaseStudy
+              img="/Manual-Review.png"
+              title="AI Manual Review Tool"
+              desc="Creating an efficient, flexible tool for manually reviewing AI-generated breast cancer reports"
+              page="AIManualReviewTool"
+            />
+
+            <CaseStudy
+              img="/signup/Yerbba-Signup.png"
+              title="EHR Sign Up"
+              desc="Creating a trustworthy sign up flow that encourages patients to give access to their electronic health records"
+              page="EHRSignup"
+            />
+          </div>
+          </React.Fragment>
+        :
+          <div> About Me! </div>
+        }
       </div>
     </div>
   );

@@ -1,0 +1,65 @@
+.navLayout {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 800px;
+    flex-wrap: wrap;
+}
+
+.signature {
+    flex-direction: row;
+    align-items: flex-start;
+    min-width: 214px;
+    max-width: 214px;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    min-width: 214px;
+    max-width: 214px;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.tabContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    border-radius: 100px;
+    background-color: #DED7B7;
+    padding: 6px 8px;
+}
+
+.tabSelected {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    border-radius: 100px;
+    padding: 10px 16px;
+    cursor: pointer;
+    background-color: #081704;
+    color: #F0F5EF;
+}
+
+.tabNotSelected {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    border-radius: 100px;
+    background-color: #DED7B7;
+    transition: background-color 0.4s ease;
+    padding: 10px 16px;
+    cursor: pointer;
+    color: #40483E;
+}
+
+.tabNotSelected:hover {
+    background-color: #B9B295;
+}

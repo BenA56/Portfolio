@@ -1,0 +1,33 @@
+.heroLayout {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+.notebook {
+    margin-bottom: -240px;
+}
+
+.circle {
+    min-width: 432px;
+    max-width: 432px;
+    min-height: 60px;
+    max-height: 60px;
+    border-radius: 100px;
+    border: 2px dashed #081704;
+    position: absolute;
+    top: 276px;
+    right: 172px;
+}
+
+.dashBorder {
+    padding: 2px 4px 8px 4px;
+    border-radius: 100px;
+    border: 2px dashed #081704;
+    width: fit-content;
+    margin-left: 6px;
+    margin-right: 6px;
+}
