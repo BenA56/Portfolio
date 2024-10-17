@@ -48,3 +48,23 @@
     align-items: center;
     gap: 24px;
 }
+
+@media screen and (max-width: 768px) {
+    .sectionOuter {
+        gap: 64px;
+        padding: 64px 24px;
+    }
+
+    .sectionInner {
+        gap: 48px;
+        width: 100%;
+    }
+
+    .imageSection {
+        gap: 32px;
+    }
+
+    .imageLayout {
+        gap: 16px
+    }
+}

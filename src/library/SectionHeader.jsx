@@ -26,7 +26,7 @@ function SectionHeader(props) {
                 <div className="l1"> {label} </div>
                 <img src="/utility/underline.svg" alt="underline" width="auto" height="auto" />
             </div>
-            <div className="h2"> {title} </div>
+            <div className={center ? "h2" : "h2 left"}> {title} </div>
         </div>
     )
 }
