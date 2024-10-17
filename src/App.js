@@ -9,9 +9,6 @@ function App() {
 
   return (
     <div >
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-      <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet"></link>
       <div className='background'>
         <Navigation selected={selected} setSelected={setSelected}/>
 

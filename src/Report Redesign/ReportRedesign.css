@@ -1,0 +1,24 @@
+.heroImages {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+@media screen and (max-width: 768px) {
+    .heroImages {
+        width: 100%;
+        gap: 24px;
+    }
+}
+
+.heroBottomRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 48px;
+    margin-top: -32px;
+    width: 100%;
+}
