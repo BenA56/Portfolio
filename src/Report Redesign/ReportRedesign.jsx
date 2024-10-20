@@ -10,6 +10,15 @@ import BulletPoint from "../library/BulletPoint.jsx"
 import Mission from "./Mission.jsx"
 import Stakeholders from "./Stakeholders.jsx"
 import Competitors from "./Competitors.jsx"
+import Constraints from "./Constraints.jsx"
+import Research from "./Research.jsx"
+import Navigation from "./Navigation.jsx"
+import DesignSystem from "./DesignSystem.jsx"
+import TreatCategories from "./TreatCategories.jsx"
+import TreatOptions from "./TreatOptions.jsx"
+import Testing from "./Testing.jsx"
+import Launch from "./Launch.jsx"
+import Learnings from "./Learnings.jsx"
 
 function ReportRedesign(props) {
     return (
@@ -37,7 +46,16 @@ function ReportRedesign(props) {
             <Mission />
             <Stakeholders />
             <Competitors />
-
+            <Constraints />
+            <Research />
+            <Navigation />
+            <DesignSystem />
+            <TreatCategories />
+            <TreatOptions />
+            <Testing />
+            <Launch />
+            <Learnings />
+            
         </div>
     )
 }

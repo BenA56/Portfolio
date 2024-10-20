@@ -1,0 +1,49 @@
+.explorations {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.explorationLeft {
+    width: 300px;
+    height: auto;
+}
+
+.explorationRight {
+    width: 300px;
+    height: auto;
+    margin-left: -60px;
+}
+
+.finals {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.finalLeft {
+    width: 900px;
+    height: auto;
+}
+
+.finalRight {
+    width: 234px;
+    height: auto;
+    margin-top: 48px;
+    margin-left: -24px;
+}
+
+@media screen and (max-width: 1200px) {
+    .finals {
+        width: 100%;
+    }
+
+    .finalLeft {
+        width: 80%;
+    }
+
+    .finalRight {
+        width: 20%;
+    }
+}

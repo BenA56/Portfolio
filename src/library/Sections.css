@@ -29,10 +29,7 @@
     flex-direction: column;
     gap: 24px;
     align-items: center;
-}
-
-.alignLeft {
-    align-items: flex-start;
+    width: 100%;
 }
 
 .imageSection {
@@ -40,6 +37,11 @@
     flex-direction: column;
     gap: 48px;
     align-items: center;
+    width: 100%;
+}
+
+.alignLeft {
+    align-items: flex-start;
 }
 
 .imageLayout {
@@ -47,6 +49,11 @@
     flex-direction: column;
     align-items: center;
     gap: 24px;
+}
+
+.bigImage {
+    width: 150%;
+    height: auto;
 }
 
 @media screen and (max-width: 768px) {
@@ -66,5 +73,40 @@
 
     .imageLayout {
         gap: 16px
+    }
+
+    .bigImage {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.comparison {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    width: 1248px;
+    flex-wrap: wrap;
+    margin-top: 24px;
+}
+
+.compItem {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+}
+
+@media screen and (max-width: 1248px) {
+    .comparison {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .compItem {
+        width: 100%
     }
 }
