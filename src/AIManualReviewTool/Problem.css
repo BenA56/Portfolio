@@ -1,0 +1,20 @@
+.webFlows {
+    display: inline;
+}
+
+.mobileFlows {
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .webFlows {
+        display: none;
+    }
+
+    .mobileFlows {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 48px;
+    }
+}

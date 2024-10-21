@@ -1,0 +1,17 @@
+.webProcess {
+    display: inline;
+}
+
+.mobileProcess {
+    display: none;
+}
+
+@media screen and (max-width: 1100px) {
+    .webProcess {
+        display: none;
+    }
+
+    .mobileProcess {
+        display: inline;
+    }
+}

@@ -1,12 +1,6 @@
-import NavBar from "../NavBar"
-import CaseStudies from "../CaseStudies"
-import { reportContent } from "./reportContent"
-import Banner from "../Banner.jsx"
-import SectionHeader from "../library/SectionHeader.jsx"
 import BackButton from "../library/BackButton.jsx"
 import "../library/Sections.css";
 import "./ReportRedesign.css";
-import BulletPoint from "../library/BulletPoint.jsx"
 import Mission from "./Mission.jsx"
 import Stakeholders from "./Stakeholders.jsx"
 import Competitors from "./Competitors.jsx"

@@ -1,0 +1,25 @@
+.timeLayout {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+}
+
+.old {
+    background-color: #D3B1B1;
+    padding: 10px;
+    text-decoration: line-through;
+}
+
+.new {
+    background-color: #A9C0A3;
+    padding: 10px;
+    text-decoration: line-through;
+}
+
+.line {
+    width: 100%;
+    background-color: #A6A6A6;
+    height: 1px;
+}
