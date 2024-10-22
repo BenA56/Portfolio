@@ -1,0 +1,20 @@
+.levels {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.sideText {
+    max-width: 144px;
+}
+
+@media screen and (max-width: 700px) {
+    .sideText {
+        max-width: none;
+        width: 100%;
+    }
+}

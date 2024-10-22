@@ -1,0 +1,30 @@
+.numConcepts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 96px;
+    width: 1200px;
+    justify-content: center;
+}
+
+.threeOnOne {
+    width: fit-content;
+}
+
+.oneOnThree {
+    width: 744px;
+}
+
+@media screen and (max-width: 1200px) {
+    .numConcepts {
+        width: 100%;
+    }
+
+    .threeOnOne {
+        width: 100%;
+    }
+
+    .oneOnThree {
+        width: 100%;
+    }
+}

@@ -1,0 +1,79 @@
+.signUpHighlights {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    margin-top: -96px;
+    flex-wrap: wrap;
+}
+
+.hlLeft {
+    margin-right: -96px;
+    width: 240px;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 0px 6px 6px 0px rgb(0,0,0,0.25);
+    position: relative;
+    z-index: 2;
+}
+
+.hlMiddle {
+    width: 70%;
+    height: auto;
+    position: relative;
+    margin-top: 144px;
+    z-index: 1;
+    border-radius: 16px;
+    box-shadow: 0px 6px 6px 0px rgb(0,0,0,0.25);
+}
+
+.hlRight {
+    margin-left: -96px;
+    margin-top: 288px;
+    width: 240px;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 0px 6px 6px 0px rgb(0,0,0,0.25);
+    z-index: 2;
+}
+
+.basicSignUpHighlights {
+    display: none;
+    flex-direction: column;
+    gap: 48px;
+    width: 100%;
+    padding: 0px 24px;
+}
+
+.basicOne {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 0px 6px 6px 0px rgb(0,0,0,0.25);
+}
+
+.basicRow {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.basicTwo {
+    width: 50%;
+    height:fit-content;
+    border-radius: 16px;
+    box-shadow: 0px 6px 6px 0px rgb(0,0,0,0.25);
+}
+
+@media screen and (max-width: 1100px) {
+    .signUpHighlights {
+        display: none;
+    }
+
+    .basicSignUpHighlights {
+        display: flex;
+    }
+}
