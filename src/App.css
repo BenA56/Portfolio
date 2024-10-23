@@ -1,177 +1,9 @@
-.App {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  font-family: Arial, Helvetica, sans-serif;
-  margin-bottom: 190px;
-}
-
-.page {
-  display: flex;
-  gap: 40px;
-  flex-direction: column;
-  margin-left: 190px;
-}
-
-.caseStudyContent {
-  display: flex;
-  gap: 80px;
-  flex-direction: column;
-  width: 100%;
-  align-items: center;
-}
-
-.header {
-  font-size: 56px;
-  line-height: 56px;
-  font-weight: bold;
-}
-
-.header2 {
-  font-size: 32px;
-  line-height: 32px;
-  font-weight: bold;
-}
-
-.subHeader {
-  font-size: 24px;
-  line-height: 24px;
-  font-weight: bold;
-}
-
-.label {
-  font-size: 14px;
-  font-weight: medium;
-  color: "#808080"
-}
-
-.caption {
-  font-size: 20px;
-  color: #808080;
-  font-style: italic;
-  line-height: 28px;
-  text-align: center;
-}
-
-.bigContent {
-  font-size: 20px;
-  line-height: 30px;
-}
-
-.bigQuote {
-  font-size: 32px;
-  font-style: italic;
-}
-
-.section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 640px;
-  gap: 40px;
-}
-
-.list {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  align-items: flex-start;
-  width: 100%;
-}
-
-.deepDive {
-  display: flex;
-  flex-direction: column;
-  max-width: 640px;
-  gap: 40px;
-  background-color: #282738;
-  padding: 48px;
-  border-radius: 20px;
-  color: white;
-}
-
-.deepDiveLabel {
-  padding: 10px 16px;
-  border-radius: 100px;
-  background-color: #C2004d;
-  outline: 2px solid #FB94BD;
-  color: white;
-  width: fit-content;
-}
-
-.section .cases {
-  max-width: none;
-}
-
-.subSection {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.bullet {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.caseStudies {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  gap: 40px;
-}
-
-.screenshot {
-  outline: 2px solid #d5d5d5;
-  border-radius: 16px;
-}
-
-.me {
-  font-size: 56px;
-  font-weight: bold;
-  background: linear-gradient(135deg, 
-    #8BC34A 10%,   /* Light green */
-    #4CAF50 10%,   /* Dark green starts */
-    #4CAF50 15%,   /* Dark green ends */
-    #8BC34A 15%,   /* Light green starts */
-    #8BC34A 25%,   /* Light green */
-    #4CAF50 25%,   /* Dark green starts */
-    #4CAF50 30%,   /* Dark green ends */
-    #8BC34A 30%    /* Light green starts again */
-  );
-  background-size: 150%;
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-
-.tree {
-  font-size: 56px;
-  font-weight: bold;
-  background: linear-gradient(135deg, 
-    #4E342E 10%,   /* Dark brown */
-    #3E2723 10%,   /* Even darker brown starts */
-    #3E2723 15%,   /* Even darker brown ends */
-    #4E342E 15%,   /* Dark brown starts */
-    #4E342E 25%,   /* Dark brown */
-    #3E2723 25%,   /* Even darker brown starts */
-    #3E2723 30%,   /* Even darker brown ends */
-    #4E342E 30%    /* Dark brown starts again */
-  );
-  background-size: 150%;
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-
 .background {
   background-color: #F4F2E9;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 64px;
+  padding: 64px 0px 128px 0px;
   gap: 96px;
 }
 
@@ -225,6 +57,11 @@
     line-height: 26px;
   }
 
+  .background {
+    gap: 64px;
+    padding-top: 48px;
+  }
+
   .b1 {
     font-size: 20px;
     line-height: 30px;
@@ -233,6 +70,11 @@
   .l1 {
     font-size: 12px;
     line-height: 12px;
+  }
+
+  .h1 {
+    font-size: 32px;
+    line-height: 44px;
   }
 
   .h2 {
@@ -252,6 +94,10 @@
   font-family: "Poetsen One", sans-serif;
 }
 
+.smallButtonText {
+  font-size: 12px;
+}
+
 .center {
   text-align: center;
 }
@@ -268,6 +114,12 @@
   width: 100%;
   padding: 48px;
   box-sizing: border-box;
+}
+
+@media screen and (max-width: 1300px) {
+  .caseStudies {
+    padding: 0px 16px;
+  }
 }
 
 .imgStyle {

@@ -48,3 +48,55 @@
     align-items: center;
     gap: 8px;
 }
+
+.readButton {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+}
+
+@media screen and (max-width: 1300px) {
+    .case {
+        gap: 32px;
+    }
+
+    .case:hover {
+        gap: 32px;
+    }
+
+    .caseDescription {
+        border: none;
+        background-color: #F4F2E9;;
+        margin-left: 0px;
+        margin-top: -4px;
+        gap: 16px;
+        padding: 0px;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .caseImage {
+        width: 100%;
+        height: auto;
+    }
+
+    .readButton {
+        background-color: #DED7B7;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+        padding: 16px 16px 16px 24px;
+        border-radius: 50px;
+        text-decoration: none;
+        color: #40483E;
+        box-shadow: 0px 4px 4px 0px rgb(222,215,183,0.5);
+        transition: background-color 0.4s ease, margin-left 0.4s ease;
+    }
+
+    .readButton:active {
+        margin-left: 16px;
+    }
+}

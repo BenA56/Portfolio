@@ -5,10 +5,12 @@
     align-items: center;
     position: relative;
     width: 100%;
+    margin-bottom: -24px;
 }
 
 .notebook {
     margin-bottom: -240px;
+    width: 900px;
 }
 
 .circle {
@@ -30,4 +32,15 @@
     width: fit-content;
     margin-left: 6px;
     margin-right: 6px;
+}
+
+@media screen and (max-width: 900px) {
+    .notebook {
+        width: "100%";
+        margin-bottom: -264px;
+    }
+
+    .textWrapper {
+        padding: 0px 16px;
+    }
 }

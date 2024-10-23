@@ -1,4 +1,4 @@
-import { useState } from "react"
+import React from "react"
 import "./Navigation.css"
 
 const Book = ({color}) => (
@@ -25,6 +25,9 @@ function Navigation(props) {
     }
 
     return (
+        <React.Fragment>
+        
+        {/* Web Nav */}
         <div className="navLayout">
             <div className="signature">
                 <img src="/home/Signature.svg" alt="signature" width="90px" height="auto"/>
@@ -42,10 +45,46 @@ function Navigation(props) {
             </div>
 
             <div className="links">
-                <div> LinkedIn </div>
-                <div> Resume </div>
+                <a className="linkLayout" href="/Ben_Arteaga_Resume.pdf" target="_blank">
+                    <div className="button"> Resume </div>
+                    <img src="/utility/open-modal.png" alt="open" width="16px" height="auto" />
+                </a>
+                <a className="linkLayout" href="https://www.linkedin.com/in/ben-arteaga-336393190/" target="_blank" rel="noopener noreferrer">
+                    <div className="button"> LinkedIn </div>
+                    <img src="/utility/open-modal.png" alt="open" width="16px" height="auto" />
+                </a>
             </div>
         </div>
+
+        {/* Mobile Nav */}
+        <div className="navMobileLayout">
+
+            <img src="/home/Signature.svg" alt="signature" width="90px" height="auto"/>
+            <div className="navMobileTop">
+                <div className="linkLayout">
+                    <div className="button"> Resume </div>
+                    <img src="/utility/open-modal.png" alt="open" width="16px" height="auto" />
+                </div>
+                <div className="linkLayout">
+                    <div className="button"> LinkedIn </div>
+                    <img src="/utility/open-modal.png" alt="open" width="16px" height="auto" />
+                </div>
+            </div>
+
+            {/* Tabs */}
+            <div className="tabContainer">
+                <div onClick={handleWorkClick} className={selected === "work" ? "tabSelected" : "tabNotSelected"}>
+                    <Briefcase color={selected === "work" ? "#F0F5EF" : "#40483E"} />
+                    <div className="button"> Work </div>
+                </div>
+                <div onClick={handleStoryClick} className={selected === "story" ? "tabSelected" : "tabNotSelected"}>
+                    <Book color={selected === "story" ? "#F0F5EF" : "#40483E"} />
+                    <div className="button"> Story </div>
+                </div>
+            </div>
+
+        </div>
+        </React.Fragment>
     )
 }
 

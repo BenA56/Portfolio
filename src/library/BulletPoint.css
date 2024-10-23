@@ -3,8 +3,7 @@
     flex-direction: row;
     align-items: center;
     gap: 24px;
-    max-width: 100%;        /* Prevent overflowing the parent */
-    word-wrap: break-word;
+    width: 100%;
 }
 
 @media screen and (max-width: 768px) {

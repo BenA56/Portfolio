@@ -11,8 +11,10 @@ function CaseStudy(props) {
                 <div className='h2 left'> {title} </div>
                 <div className='content'>{desc}</div>
                 <div className="caseSignifier">
-                    <div className="button"> Read Case Study </div>
-                    <img src="/utility/Arrow-Right.svg" alt="arrow" width="24px" height="24px" />
+                    <div className="readButton">
+                        <div className="button"> Read Case Study </div>
+                        <img src="/utility/Arrow-Right.svg" alt="arrow" width="24px" height="24px" />
+                    </div>
                 </div>
             </div>
         </Link>

@@ -3,6 +3,7 @@ import './App.css';
 import Hero from './Home/Hero';
 import Navigation from "./Home/Navigation";
 import CaseStudy from "./Home/CaseStudy";
+import MyStory from "./MyStory";
 
 function App() {
   const [selected, setSelected] = useState("work")
@@ -40,7 +41,7 @@ function App() {
           </div>
           </React.Fragment>
         :
-          <div> About Me! </div>
+          <MyStory />
         }
       </div>
     </div>
