@@ -15,7 +15,7 @@ import ScrollToTop from './ScrollToTop';
 
 const router = createBrowserRouter([
   {
-    path: "/Summary",
+    path: "/",
     element: <React.Fragment>
       <ScrollToTop/>
       <App/>
