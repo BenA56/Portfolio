@@ -26,21 +26,50 @@
 }
 
 .dashBorder {
-    padding: 2px 4px 8px 4px;
+    padding: 2px 12px 8px 12px;
     border-radius: 100px;
     border: 2px dashed #081704;
     width: fit-content;
-    margin-left: 6px;
+    margin-left: 2px;
     margin-right: 6px;
+    white-space: nowrap;
+    box-sizing: border-box;
 }
 
 @media screen and (max-width: 900px) {
     .notebook {
-        width: "100%";
-        margin-bottom: -264px;
+        width: 100%;
+        height: auto;
+        margin-bottom: -240px;
     }
 
     .textWrapper {
         padding: 0px 16px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .notebook {
+        margin-bottom: -180px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .notebook {
+        margin-bottom: -160px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .notebook {
+        margin-bottom: -120px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .notebook {
+        margin-bottom: -96px;
     }
 }

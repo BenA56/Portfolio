@@ -5,9 +5,11 @@ function Hero(props) {
         <div className="heroLayout">
             <img className="notebook" src="/home/Notebook.svg" alt="notebook"/>
             <div className="textWrapper">
-                <div className="h1"> I’m Ben, a Product Designer who wrangles
-                <span className="h1 dashBorder"> complex </span>
-                problems into seamless experiences </div>
+                <div className="h1">
+                    <span> I’m Ben, a Product Designer who wrangles </span>
+                    <span className="h1 dashBorder">complex</span>
+                    <span> problems into seamless experiences </span>
+                </div>
             </div>
         </div>
     )
