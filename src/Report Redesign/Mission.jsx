@@ -17,22 +17,22 @@ function Mission(props) {
                     />
                     <div className="bulletList">
                         <BulletPoint
-                            image=""
+                            image="/utility/assess.png"
                             text="Assess the UX of the old Yerbba Report for untapped value"
                             dark={true}
                         />
                         <BulletPoint
-                            image=""
+                            image="/utility/b-cancer.png"
                             text="Research the needs of breast cancer patients to determine what they value enough to pay for"
                             dark={true}
                         />
                         <BulletPoint
-                            image=""
+                            image="/utility/iterative.png"
                             text="Iterate and test designs to produce a high-fidelity prototype"
                             dark={true}
                         />
                         <BulletPoint
-                            image=""
+                            image="/utility/launch.png"
                             text="Build and launch the Yerbba Report"
                             dark={true}
                         />

@@ -22,11 +22,11 @@ function TreatCategories(props) {
                     <div className="subSection">
                         <div className="h3"> Why put resources into this? </div>
                         <BulletPoint
-                            image=""
+                            image="/utility/magnet.png"
                             text="Marketing needed a visualization that could be used to communicate the value of the product at a glance"
                         />
                         <BulletPoint
-                            image=""
+                            image="/utility/way.png"
                             text="Patients were frustrated by how difficult it is to visualize the next couple years of their lives. Without this birds eye view, they struggle to answer life’s most basic questions:"
                         />
                     </div>
