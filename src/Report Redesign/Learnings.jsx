@@ -1,4 +1,3 @@
-import BulletPoint from "../library/BulletPoint"
 import SectionHeader from "../library/SectionHeader"
 
 function Learnings(props) {

@@ -1,6 +1,5 @@
 import "../library/Sections.css";
 import "./ReportRedesign.css";
-import BulletPoint from "../library/BulletPoint.jsx"
 import SectionHeader from "../library/SectionHeader.jsx"
 import "./Competitors.css"
 
