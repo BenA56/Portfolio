@@ -13,7 +13,7 @@ function CaseStudy(props) {
                 <div className="caseSignifier">
                     <div className="readButton">
                         <div className="button"> Read Case Study </div>
-                        <img src="/utility/Arrow-Right.svg" alt="arrow" width="24px" height="24px" />
+                        <img src="/utility/right-arrow.png" alt="arrow" width="20px" height="auto" />
                     </div>
                 </div>
             </div>

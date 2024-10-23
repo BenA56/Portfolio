@@ -15,6 +15,7 @@ import Launch from "./Launch.jsx"
 import Learnings from "./Learnings.jsx"
 import SectionHeader from "../library/SectionHeader.jsx";
 import CaseStudy from "../Home/CaseStudy.jsx";
+import KeyInsight from "../library/KeyInsight.jsx";
 
 function ReportRedesign(props) {
     return (
@@ -47,7 +48,13 @@ function ReportRedesign(props) {
             <Navigation />
             <DesignSystem />
             <TreatCategories />
+            <KeyInsight
+                insight="What matters most to breast cancer patients for the content of the report is ease of understanding"
+            />
             <TreatOptions />
+            <KeyInsight
+                insight="Since breast cancer patients don’t know what information they should be getting, the interface needs to lead them"
+            />
             <Testing />
             <Launch />
             <Learnings />
