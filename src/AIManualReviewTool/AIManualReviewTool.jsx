@@ -8,6 +8,8 @@ import VersionControl from "./VersionControl"
 import Generations from "./Generations"
 import Results from "./Results"
 import Learnings from "./Learnings"
+import SectionHeader from "../library/SectionHeader"
+import CaseStudy from "../Home/CaseStudy"
 
 
 function AIManualReviewTool(props) {
@@ -42,6 +44,20 @@ function AIManualReviewTool(props) {
             <Generations />
             <Results />
             <Learnings />
+
+            <div className="sectionOuter">
+                <SectionHeader
+                    label="Next Up"
+                    title="Check out another case study"
+                    center={true}
+                />
+                <CaseStudy
+                    img="/signup/Yerbba-Signup.png"
+                    title="EHR Sign Up"
+                    desc="Creating a trustworthy sign up flow that encourages patients to give access to their electronic health records"
+                    page="EHRSignup"
+                />
+            </div>
 
         </div>
     )

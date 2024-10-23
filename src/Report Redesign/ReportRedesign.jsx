@@ -13,6 +13,8 @@ import TreatOptions from "./TreatOptions.jsx"
 import Testing from "./Testing.jsx"
 import Launch from "./Launch.jsx"
 import Learnings from "./Learnings.jsx"
+import SectionHeader from "../library/SectionHeader.jsx";
+import CaseStudy from "../Home/CaseStudy.jsx";
 
 function ReportRedesign(props) {
     return (
@@ -49,6 +51,20 @@ function ReportRedesign(props) {
             <Testing />
             <Launch />
             <Learnings />
+
+            <div className="sectionOuter">
+                <SectionHeader
+                    label="Next Up"
+                    title="Check out another case study"
+                    center={true}
+                />
+                <CaseStudy
+                    img="/Manual-Review.png"
+                    title="AI Manual Review Tool"
+                    desc="Creating an efficient, flexible tool for manually reviewing AI-generated breast cancer reports"
+                    page="AIManualReviewTool"
+                />
+            </div>
             
         </div>
     )

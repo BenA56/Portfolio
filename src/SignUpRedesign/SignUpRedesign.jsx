@@ -9,6 +9,8 @@ import Portal from "./Portal"
 import Results from "./Results"
 import Testing from "./Testing"
 import Trust from "./Trust"
+import SectionHeader from "../library/SectionHeader"
+import CaseStudy from "../Home/CaseStudy"
 
 
 function SignUpRedesign(props) {
@@ -24,7 +26,7 @@ function SignUpRedesign(props) {
                     <div style={{display: "flex", flexDirection: "column", alignItems: "center", gap: "24px", maxWidth: "800px"}}>
                         <div className="h1"> EHR Sign Up </div>
                         <div className="b1 center"> Creating a trustworthy sign up flow that encourages patients to give access to their electronic health records </div>
-                        <div className="l1"> @Yerbba, Jan 2023 - Feb 2024 </div>
+                        <div className="l1"> @Yerbba, Jun 2022 - Oct 2022 </div>
                     </div>
                 </div>
                 <div className="signUpHighlights">
@@ -50,6 +52,20 @@ function SignUpRedesign(props) {
             <ErrorHandling />
             <Results />
             <Improvements />
+
+            <div className="sectionOuter light">
+                <SectionHeader
+                    label="Next Up"
+                    title="Check out another case study"
+                    center={true}
+                />
+                <CaseStudy
+                    img="/report/My-Reports.png"
+                    title="The Yerbba Report"
+                    desc="Empowering breast cancer patients to make educated decisions by transforming their medical records into a personazlized report"
+                    page="BreastCancerReport"
+                />
+            </div>
 
         </div>
     )

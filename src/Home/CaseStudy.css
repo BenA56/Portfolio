@@ -67,7 +67,7 @@
 
     .caseDescription {
         border: none;
-        background-color: #F4F2E9;;
+        background-color: transparent;
         margin-left: 0px;
         margin-top: -4px;
         gap: 16px;

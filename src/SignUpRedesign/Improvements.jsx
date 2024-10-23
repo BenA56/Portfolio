@@ -18,6 +18,17 @@ function Improvements(props) {
                 </div>
 
                 <div className="imageSection">
+                    <div className="subSection alignLeft">
+                        <div className="h3"> Allowing users to directly report issues </div>
+                        <BulletPoint
+                            image="/utility/feedback.png"
+                            text="This opened up a line of communication between us and our users. Often times, people that reached out with issues ended up agreeing to be interviewed and participate in research."
+                        />
+                        <BulletPoint
+                            image="/utility/search-dark.png"
+                            text="Helping us spot small problems sometimes led to larger discoveries, such as a major health system we had never heard of or a system of broken FHIR endpoints."
+                        />
+                    </div>
                     <div className="comparison">
                         <div className="compItem">
                             <div className="imageSection">
