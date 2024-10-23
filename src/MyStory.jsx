@@ -13,10 +13,11 @@ function MyStory(props) {
                 <div className="storyContent">
                     <SectionHeader
                         label="the basics"
-                        title="Hi, I’m Ben Arteaga"
+                        title="Hi, I’m Ben"
                     />
                     <div className="storyPars">
-                        <div className="content">Thanks for checking out my work. I’ve come a long ways and still have a ton to learn. Here’s how I got to where I am now.</div>
+                        <div className="content"> I love thinking about how the digital experiences we build shape the world. Nowadays, I'm locked in on becoming the best designer I can be ... but it hasn't always been that way. </div>
+                        <div className="content"> As every 20-something can attest to, it takes a lot of twists, turns, and adaptations to figure out your reason to get out of bed every morning. Here's my story. </div>
                         <BulletPoint
                             image="/utility/graduate.png"
                             text="University of Michigan ‘22, Computer science"
@@ -42,8 +43,8 @@ function MyStory(props) {
                         title="Discovering Design"
                     />
                     <div className="storyPars">
-                        <div className="content">Coding never felt quite right to me. I didn’t mind it, but there was a certain itch that it didn’t scratch. How something was made didn’t excite me like thinking about what to make.</div>
-                        <div className="content">And then one day at a hackathon, I did my first ever “Crazy 8s” exercise where I brainstormed 8 different ideas for the layout of an app in 8 minutes. My mind was blown. </div>
+                        <div className="content"> As satisfying as it was to finish each coding project for my Computer Science courses, it always felt like something was missing. </div>
+                        <div className="content"> Then one fateful day at a university hackathon, I took a leap and joined the designers instead of the coders. As I put pen to paper sketching wireframe after wireframe, something inside me felt unleashed. So I fed the flame. </div>
                     </div>
                 </div>
             </div>
@@ -57,9 +58,9 @@ function MyStory(props) {
                         title="Failing Fast"
                     />
                     <div className="storyPars">
-                        <div className="content">With minimal UX Design training, I needed a real-world crash course. So I volunteered to design for two startups.</div>
-                        <div className="content">The first was a student pipe-dream that sought to merge investing and fantasy sports. This is where I built my first full-product prototype.</div>
-                        <div className="content">The first was a student pipe-dream that sought to merge investing and fantasy sports. This is where I built my first full-product prototype.</div>
+                        <div className="content">With minimal design training, I needed a real-world crash course. So I spent the first year of my journey volunteering for startups.</div>
+                        <div className="content">The first was a student-run startup that sought to merge investing and fantasy sports. This is where I built my first full-product prototype.</div>
+                        <div className="content">The second was a basketball analytics company called ShotQuality that had 60+ real college programs as clients. I conducted user interviews with coaches, redesigned the navigation, and designed several new features. </div>
                     </div>
                 </div>
             </div>
@@ -90,7 +91,7 @@ function MyStory(props) {
                     <div className="storyPars">
                         <div className="content">Feeling burnt out and stagnant five months after launching the Yerbba Report, I decided to leave the company in July 2024. I needed clarity on whether this industry was right for me</div>
                         <div className="content">After just a month away from tech (which I spent trying my hand at basketball content creation) I missed it. I missed interviewing users. I missed brainstorming ideas. And most of all I missed looking at the systems that govern our lives and asking “how can we make this better?” </div>
-                        <div className="content">So now I’m searching for my next challenge. I want to collaborate. I want to hone my craft as a designer. I want to take a product and make it 1% better everyday. </div>
+                        <div className="content">So now I’m searching for my next challenge. I want to collaborate. I want to hone my craft as a designer. I want to take a product and make it 1% better everyday. Looking for talent? Hit me up. </div>
                     </div>
                 </div>
             </div>
