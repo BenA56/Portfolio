@@ -1,4 +1,3 @@
-import BulletPoint from "../library/BulletPoint.jsx"
 import SectionHeader from "../library/SectionHeader.jsx"
 import "./Results.css"
 

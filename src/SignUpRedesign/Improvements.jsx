@@ -32,7 +32,7 @@ function Improvements(props) {
                     <div className="comparison">
                         <div className="compItem">
                             <div className="imageSection">
-                                <img className="imgStyle" src="/signup/Sign-Up.png" width="100%" height="auto"/>
+                                <img className="imgStyle" src="/signup/Sign-Up.png" alt="first" width="100%" height="auto"/>
                                 <div className="bulletList">
                                     <BulletPoint
                                         image="/utility/remove.png"
@@ -49,7 +49,7 @@ function Improvements(props) {
                         </div>
                         <div className="compItem">
                             <div className="imageSection">
-                                <img className="imgStyle" src="/signup/Zoc-Doc.png" width="100%" height="auto"/>
+                                <img className="imgStyle" src="/signup/Zoc-Doc.png" alt="zocdoc" width="100%" height="auto"/>
                                 <div className="bulletList">
                                     <BulletPoint
                                         image="/utility/check.png"

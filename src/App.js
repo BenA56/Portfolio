@@ -13,7 +13,7 @@ function App() {
       <div className='background'>
         <Navigation selected={selected} setSelected={setSelected}/>
 
-        {selected == "work" ?
+        {selected === "work" ?
           <React.Fragment>
           <Hero />
           <div className='caseStudies'>

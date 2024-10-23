@@ -3,7 +3,7 @@ import "./SectionHeader"
 import "../App.css"
 
 function SectionHeader(props) {
-    const { center, light, label, title } = props
+    const { center, label, title } = props
 
     const layoutStyle = {
         display: "flex",
