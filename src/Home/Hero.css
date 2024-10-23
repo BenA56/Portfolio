@@ -28,12 +28,13 @@
 .dashBorder {
     padding: 2px 12px 8px 12px;
     border-radius: 100px;
-    border: 2px dashed #081704;
+    border: 4px dashed #507C45;
     width: fit-content;
     margin-left: 2px;
     margin-right: 6px;
     white-space: nowrap;
     box-sizing: border-box;
+    color: #507C45;
 }
 
 @media screen and (max-width: 900px) {
