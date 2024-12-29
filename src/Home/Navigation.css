@@ -1,27 +1,3 @@
-.navLayout {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 800px;
-    flex-wrap: wrap;
-}
-
-.navMobileLayout {
-    display: none;
-    width: 100%;
-}
-
-.navMobileTop {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 4px;
-    box-sizing: border-box;
-}
-
 .linkLayout {
     display: flex;
     flex-direction: row;
@@ -37,36 +13,6 @@
 
 .linkLayout:hover {
     background-color: #B9B295;
-}
-
-@media screen and (max-width: 600px) {
-    .navLayout {
-        display: none;
-    }
-
-    .navMobileLayout {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 32px;
-        width: "100%";
-    }
-
-    .tabContainer {
-        margin-bottom: -96px;
-        z-index: 3;
-        box-shadow: 0px 4px 4px 0px rgb(222,215,183,0.5);
-    }
-
-    .links {
-        /* width: fit-content;
-        min-width: none;
-        max-width: none; */
-        display: none;
-        /* margin-top: -24px; */
-        /* margin-bottom: 24px; */
-
-    }
 }
 
 .signature {
@@ -90,10 +36,21 @@
     display: flex;
     flex-direction: row;
     gap: 8px;
-    align-items: center;
-    border-radius: 100px;
-    background-color: #DED7B7;
-    padding: 6px 8px;
+    align-items: flex-start;
+    border-radius: 20px;
+    padding: 8px 8px;
+    width: fit-content;
+    max-height: 69px;
+    overflow: visible;
+    box-sizing: border-box;
+    z-index: 11;
+}
+
+.glass {
+    background-color: rgb(64,72,62,0.6);
+    box-shadow: 0px 4px 4px rgb(0,0,0,0.25);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(8px); /* For Safari */
 }
 
 .tabSelected {
@@ -101,11 +58,12 @@
     flex-direction: row;
     gap: 8px;
     align-items: center;
-    border-radius: 100px;
-    padding: 10px 16px;
+    border-radius: 20px;
+    padding: 16px 24px;
     cursor: pointer;
     background-color: #081704;
     color: #F0F5EF;
+    box-shadow: 0px 2px 4px 0px rgb(0,0,0,0.4);
 }
 
 .tabNotSelected {
@@ -113,15 +71,107 @@
     flex-direction: row;
     gap: 8px;
     align-items: center;
-    border-radius: 100px;
-    background-color: #DED7B7;
-    transition: background-color 0.4s ease;
-    padding: 10px 16px;
+    border-radius: 20px;
+    background-color: none;
+    transition: box-shadow 0.3s ease;
+    padding: 16px 24px;
     cursor: pointer;
-    color: #40483E;
+    color: #F0F5EF;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.contact:hover {
+    background-color: #40483E;
 }
 
 .tabNotSelected:hover {
-    background-color: #B9B295;
+    /* background-color: #40483E; */
+    box-shadow: 0px 2px 4px 0px rgb(0,0,0,0.4);
+}
+
+.static-tab-selected {
+    box-shadow: 0px 2px 4px 0px rgb(204,229,197,0.25);
+}
+
+.static-tab {
+    box-shadow: none;
+}
+
+.static-tab:hover {
+    box-shadow: 0px 2px 4px 0px rgb(204,229,197,0.25);
+}
+
+.scroll-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: none;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 10000;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 24px;
+}
+
+.scroll-nav.visible {
+    transform: translateY(0);
+}
+
+.nav-divider {
+    min-width: 2px;
+    max-width: 2px;
+    min-height: 18px;
+    max-height: 18px;
+    border-radius: 100px;
+    background-color: #F0F5EF;
+}
+
+.mini-sig {
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+@media screen and (max-width: 600px) {
+    .static-nav {
+        display: none;
+    }
+
+    .scroll-nav {
+        display: none;
+    }
+
+    .tabContainer {
+        display: none;
+    }
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    background-color: #40483E;
+}
+
+.web-contact-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    color: #CCE5C5;
+}
+
+.web-contact-link:hover {
+    text-decoration: underline;
 }
 

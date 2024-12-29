@@ -1,11 +1,11 @@
-.heroLayout {
+.hero-layout {
     display: flex;
     flex-direction: column;
     gap: 0px;
     align-items: center;
     position: relative;
     width: 100%;
-    margin-bottom: -24px;
+    color: #F0F5EF;
 }
 
 .notebook {
@@ -26,9 +26,12 @@
 }
 
 .dashBorder {
-    padding: 2px 12px 8px 12px;
-    border-radius: 100px;
-    border: 4px dashed #081704;
+    padding: 0px 12px 6px 12px;
+    background: 
+        linear-gradient(#081704, #081704) padding-box,
+        linear-gradient(0deg, #AD579A, #DF9FD1) border-box;
+    border: 6px solid transparent;
+    border-radius: 24px;
     width: fit-content;
     margin-left: 2px;
     margin-right: 6px;
@@ -73,3 +76,24 @@
         margin-bottom: -96px;
     }
 }
+
+.name-title {
+    color: #CCE5C5;
+    margin-top: 24px;
+}
+
+.pink-gradient {
+    background: linear-gradient(0deg, #ff6b6b, #4ecdc4);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.green-gradient {
+    background: linear-gradient(0deg, #38FF00, #F1F9EF);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+

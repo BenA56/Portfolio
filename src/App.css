@@ -1,10 +1,14 @@
 .background {
-  background-color: #F4F2E9;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 64px 0px 128px 0px;
-  gap: 96px;
+  padding: 48px 0px 128px 0px;
+  background-color: #081704;
+  position: relative;
+}
+
+.playbook {
+  background-color: #DDE5DC;
 }
 
 .h1 {
@@ -113,8 +117,9 @@
   align-items: center;
   gap: 64px;
   width: 100%;
-  padding: 48px;
+  padding: 96px 48px;
   box-sizing: border-box;
+  background-color: #F0F5EF;
 }
 
 @media screen and (max-width: 1300px) {
@@ -142,4 +147,50 @@
   flex-direction: column;
   gap: 24px;
   align-items: flex-start;
+}
+
+.playbook-cta {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 144px;
+  background-color: #F0F5EF;
+  padding: 96px;
+}
+
+.test-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  height: 600px;
+  backdrop-filter: blur(20px); /* Applies blur to elements behind this layer */
+  z-index: 10; /* Ensure it's above other content */
+  padding-top: 48px;
+}
+
+@media screen and (max-width: 800px) {
+  .test-wrapper {
+    height: 460px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .test-wrapper {
+    height: 400px;
+  }
+}
+
+.sig-spotlight {
+  min-width: 76px;
+  max-width: 76px;
+  min-height: 76px;
+  max-height: 76px;
+  background-color: #40483E;
+  position: absolute;
+  top: 152px;
+  left: auto;
+  right: auto;
+  border-radius: 100px;
 }

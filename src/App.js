@@ -4,6 +4,7 @@ import Hero from './Home/Hero';
 import Navigation from "./Home/Navigation";
 import CaseStudy from "./Home/CaseStudy";
 import MyStory from "./MyStory";
+import PlaybookCTA from "./Playbook/PlaybookCTA";
 
 function App() {
   const [selected, setSelected] = useState("work")
@@ -12,10 +13,14 @@ function App() {
     <div >
       <div className='background'>
         <Navigation selected={selected} setSelected={setSelected}/>
+        <div className="sig-spotlight"></div>
 
         {selected === "work" ?
           <React.Fragment>
-          <Hero />
+          <div className="test-wrapper">
+            <img src="/home/Signature-green.svg" alt="signature" height="48px" width="auto" />
+            <Hero />
+          </div>
           <div className='caseStudies'>
 
             <CaseStudy
@@ -39,9 +44,13 @@ function App() {
               page="EHRSignup"
             />
           </div>
+
+          {/* Playbook CTA */}
+          <PlaybookCTA />
           </React.Fragment>
-        :
+        : selected === "story" ?
           <MyStory />
+        : null
         }
       </div>
     </div>

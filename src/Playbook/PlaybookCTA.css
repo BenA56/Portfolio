@@ -1,0 +1,122 @@
+.playbook-cta {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 144px;
+    background-color: #CCE5C5;
+    padding: 96px;
+    position: relative;
+    color: #081704;
+  }
+
+.playbook-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 48px;
+    max-width: 370px;
+    backdrop-filter: blur(24px); /* Applies blur to elements behind this layer */
+    z-index: 10; /* Ensure it's above other content */
+    position: relative;
+    padding-left: 48px;
+}
+
+.playbook-right {
+    width: 450px;
+    height: auto;
+}
+
+.playbook-button {
+    padding: 16px 24px;
+    font-size: 20px;
+    line-height: 28px;
+    font-family: "Poetsen One", sans-serif;
+    background-color: #081704;
+    color: #F0F5EF;
+    border-radius: 16px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px 0px rgb(0,0,0,0.25);
+    transition: background-color 0.2s ease;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+}
+
+.playbook-button:hover {
+    background-color: #AD579A;
+    color: #F0F5EF;
+}
+
+.hover {
+    background-color: #AD579A;
+    color: #F0F5EF;
+}
+
+.splotch-cta {
+    min-width: 215px;
+    max-width: 215px;
+    min-height: 145px;
+    max-height: 145px;
+    background-color: #9DDD8A;
+    position: absolute;
+    top: 260px;
+    left: 340px;
+    border-radius: 48px;
+}
+
+.image-container {
+    height: 624px;
+    width: 450px;
+    overflow: hidden;
+    position: relative;
+    padding: 0px 16px;
+    cursor: pointer;
+}
+
+.image-stack {
+    transition: transform 0.3s ease;
+}
+
+.image-wrapper {
+    width: 100%;
+}
+
+.image-wrapper img {
+    width: 100%;
+    display: block;
+    margin-bottom: 16px;
+    box-shadow: 0px 4px 8px 0px rgb(0,0,0,0.25);
+    border-radius: 16px;
+}
+
+.gradient-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background: linear-gradient(to bottom, 
+      #CCE5C5 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    z-index: 2;
+    pointer-events: none;
+  }
+
+  .gradient-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background: linear-gradient(to top, 
+      #CCE5C5 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    z-index: 2;
+    pointer-events: none;
+  }

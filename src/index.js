@@ -12,6 +12,7 @@ import ShotDoctorCardRedesign from './ShotDoctorCardRedesign/ShotDoctorCardRedes
 import AIManualReviewTool from './AIManualReviewTool/AIManualReviewTool';
 import SignUpRedesign from './SignUpRedesign/SignUpRedesign';
 import ScrollToTop from './ScrollToTop';
+import Playbook from './Playbook/Playbook';
 
 const router = createBrowserRouter([
   {
@@ -48,6 +49,13 @@ const router = createBrowserRouter([
       <ScrollToTop/>
       <SignUpRedesign />
     </React.Fragment>,
+  },
+  {
+    path: "/playbook",
+    element: <React.Fragment>
+        <ScrollToTop />
+        <Playbook />
+    </React.Fragment>
   }
 ]);
 
