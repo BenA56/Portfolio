@@ -5,37 +5,23 @@ import "./MyStory.css"
 
 function MyStory(props) {
     return (
-        <div className="storyLayout">
+        <div className="story-layout">
 
-            {/* Basics */}
-            <div className="storySection">
-                <img className="storyImage" src="/story/My-Story-1.jpg" alt="story" />
-                <div className="storyContent">
-                    <SectionHeader
-                        label="the basics"
-                        title="Hi, I’m Ben"
-                    />
-                    <div className="storyPars">
-                        <div className="content"> I love thinking about how the digital experiences we build shape the world. Nowadays, I'm locked in on becoming the best designer I can be ... but it hasn't always been that way. </div>
-                        <div className="content"> As every 20-something can attest to, it takes a lot of twists, turns, and adaptations to figure out your reason to get out of bed every morning. Here's my story. </div>
-                        <BulletPoint
-                            image="/utility/graduate.png"
-                            text="University of Michigan ‘22, Computer science"
-                        />
-                        <BulletPoint
-                            image="/utility/suitcase.png"
-                            text="Last worked for Yerbba, 2022 - 2024"
-                        />
-                        <BulletPoint
-                            image="/utility/location.png"
-                            text="Based in Ann Arbor, Mi"
-                        />
-                    </div>
+            <div className="face-wrapper">
+                <div className="face-container">
+                    <img className="my-face" src="/story/My-Story-1.jpg" alt="story" />
+                    <div className="mask"></div>
                 </div>
             </div>
 
+            <div className="story-hero">
+                <div className="h1 green-gradient"> Hi, I'm Ben </div>
+                <div className="b1 center"> I love thinking about how the digital experiences we build shape the world. Nowadays, I'm locked in on becoming the best designer I can be ... but it hasn't always been that way. </div>
+                <div className="b1 center"> As every 20-something can attest to, it takes a lot of twists, turns, and adaptations to figure out your reason to get out of bed every morning. <span className="pink-gradient"> <b>Here's my story.</b> </span></div>
+            </div>
+
             {/* Discovering Design */}
-            <div className="storySection">
+            <div className="story-section">
                 <img className="storyImage" src="/story/My-Story-2.jpg" alt="story" />
                 <div className="storyContent">
                     <SectionHeader
@@ -50,7 +36,7 @@ function MyStory(props) {
             </div>
 
             {/* Failing Fast */}
-            <div className="storySection">
+            <div className="story-section filled">
                 <img className="storyImage" src="/story/My-Story-3.jpg" alt="story" />
                 <div className="storyContent">
                     <SectionHeader
@@ -66,7 +52,7 @@ function MyStory(props) {
             </div>
 
             {/* Leveling Up */}
-            <div className="storySection">
+            <div className="story-section">
                 <img className="storyImage" src="/story/My-Story-4.jpg" alt="story" />
                 <div className="storyContent">
                     <SectionHeader
@@ -81,7 +67,7 @@ function MyStory(props) {
             </div>
 
             {/* Leveling Up */}
-            <div className="storySection">
+            <div className="story-section">
                 <img className="storyImage" src="/story/My-Story-5.jpg" alt="story" />
                 <div className="storyContent">
                     <SectionHeader

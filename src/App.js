@@ -11,12 +11,12 @@ function App() {
 
   return (
     <div >
-      <div className='background'>
+      <div className={"background" + (selected == "story" ? " my-story" : "")}>
         <Navigation selected={selected} setSelected={setSelected}/>
-        <div className="sig-spotlight"></div>
-
+        
         {selected === "work" ?
           <React.Fragment>
+          <div className="sig-spotlight"></div>
           <div className="test-wrapper">
             <img src="/home/Signature-green.svg" alt="signature" height="48px" width="auto" />
             <Hero />

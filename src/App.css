@@ -5,6 +5,7 @@
   padding: 48px 0px 128px 0px;
   background-color: #081704;
   position: relative;
+  overflow: hidden;
 }
 
 .playbook {
@@ -149,16 +150,6 @@
   align-items: flex-start;
 }
 
-.playbook-cta {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  gap: 144px;
-  background-color: #F0F5EF;
-  padding: 96px;
-}
 
 .test-wrapper {
   display: flex;
