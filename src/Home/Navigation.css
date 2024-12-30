@@ -44,6 +44,7 @@
     overflow: visible;
     box-sizing: border-box;
     z-index: 11;
+    background-color: #081704;
 }
 
 .glass {
