@@ -33,7 +33,10 @@ const MobileNav = (props) => {
         {isOpen ? (
           <X className="menu-icon" />
         ) : (
-          <Menu className="menu-icon" />
+          <div className='menu-button-layout'>
+            <div className='button'> {selected == "work" ? "Work" : "Story"} </div>
+            <Menu className="menu-icon" />
+          </div>
         )}
       </button>
 
