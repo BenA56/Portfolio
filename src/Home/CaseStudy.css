@@ -56,6 +56,14 @@
     align-items: center;
 }
 
+.white-arrow {
+    display: none;
+}
+
+.dark-arrow {
+    display: block;
+}
+
 @media screen and (max-width: 1300px) {
     .case {
         gap: 32px;
@@ -83,20 +91,29 @@
     }
 
     .readButton {
-        background-color: #DED7B7;
+        background-color: #081704;
         display: flex;
         flex-direction: row;
         align-items: center;
-        gap: 8px;
-        padding: 16px 16px 16px 24px;
-        border-radius: 50px;
+        gap: 16px;
+        font-size: 20px;
+        padding: 16px 24px;
+        border-radius: 16px;
         text-decoration: none;
-        color: #40483E;
-        box-shadow: 0px 4px 4px 0px rgb(222,215,183,0.5);
+        color: #F0F5EF;
+        box-shadow: 0px 4px 8px 0px rgb(0,0,0,0.25);
         transition: background-color 0.4s ease, margin-left 0.4s ease;
     }
 
     .readButton:active {
         margin-left: 16px;
+    }
+
+    .white-arrow {
+        display: block;
+    }
+    
+    .dark-arrow {
+        display: none;
     }
 }

@@ -12,8 +12,9 @@ function CaseStudy(props) {
                 <div className='content'>{desc}</div>
                 <div className="caseSignifier">
                     <div className="readButton">
-                        <div className="button"> Read Case Study </div>
-                        <img src="/utility/right-arrow.png" alt="arrow" width="20px" height="auto" />
+                        <div className="button" style={{fontSize: "20px", lineHeight: "28px"}}> Read Case Study </div>
+                        <img src="/utility/right-arrow.png" className="dark-arrow" alt="arrow" width="20px" height="auto" />
+                        <img src="/playbook/arrow.svg" className="white-arrow" alt="arrow" height="20px" width="auto" />
                     </div>
                 </div>
             </div>

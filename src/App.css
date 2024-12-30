@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 48px 0px 128px 0px;
+  padding: 48px 0px 0px 0px;
   background-color: #081704;
   position: relative;
   overflow: hidden;
@@ -64,8 +64,13 @@
   }
 
   .background {
-    gap: 64px;
+    gap: 48px;
     padding-top: 48px;
+    padding-bottom: 0px;
+  }
+
+  .caseStudies {
+    margin-bottom: -48px;
   }
 
   .b1 {
@@ -125,7 +130,7 @@
 
 @media screen and (max-width: 1300px) {
   .caseStudies {
-    padding: 0px 16px;
+    padding: 48px 16px;
   }
 }
 
@@ -184,4 +189,16 @@
   left: auto;
   right: auto;
   border-radius: 100px;
+}
+
+@media screen and (max-width: 800px) {
+  .sig-spotlight {
+    top: 200px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .sig-spotlight {
+    top: 84px;
+  }
 }

@@ -6,6 +6,8 @@
     position: relative;
     width: 100%;
     color: #F0F5EF;
+    padding-bottom: 48px;
+    box-sizing: border-box;
 }
 
 .notebook {
