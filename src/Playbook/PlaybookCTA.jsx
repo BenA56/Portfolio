@@ -61,8 +61,15 @@ function PlaybookCTA(props) {
             <div className="splotch-cta"></div>
             <div className="playbook-left">
                 <div className="l1" style={{color: "#40483E"}}> INTRODUCING ... </div>
-                <img src="/playbook/Playbook.png" alt="playbook" width="282px" height="auto" />
+                <img src="/playbook/Playbook.png" alt="playbook" className="playbook-cta-image" />
                 <div className="b1">Uncovering design themes from successful products</div>
+
+                {/* Static example image for mobile */}
+                <div className="lemonade-mobile-container">
+                  <img className="lemonade-mobile-image" src="/playbook/Lemonade-Mobile.jpg" alt="lemonade" />
+                  <div className="lemonade-mobile-gradient"></div>
+                </div>
+                
                 <button
                     className={"playbook-button " + (isHovering ? "hover" : "")}
                     onMouseEnter={() => setIsHovering(true)}
