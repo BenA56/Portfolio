@@ -64,11 +64,11 @@ const MobileNav = (props) => {
               Story
             </div>
           </button>
-          <div className="nav-item">
+          {/* <div className="nav-item">
             <a href="/playbook" className="nav-link">
               Playbook
             </a>
-          </div>
+          </div> */}
             <div className='contact-group'>
                 <a className="contact-link" href="/Ben_Arteaga_Resume.pdf" target="_blank">
                     <div> Resume </div>

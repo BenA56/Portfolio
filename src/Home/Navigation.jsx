@@ -89,11 +89,11 @@ function Navigation(props) {
                     <div className="contact-links">
                         <div className="web-contact-link">
                             LinkedIn
-                            <img src="/utility/link-icon.svg" width="16" height="auto" />
+                            <img src="/utility/link-icon.svg" alt="link" width="16" height="auto" />
                         </div>
                         <div className="web-contact-link">
                             Resume
-                            <img src="/utility/link-icon.svg" width="16" height="auto" />
+                            <img src="/utility/link-icon.svg" alt="link" width="16" height="auto" />
                         </div>
                     </div>
                 : null}
@@ -124,11 +124,11 @@ function Navigation(props) {
                         <div className="contact-links">
                             <div className="web-contact-link">
                                 LinkedIn
-                                <img src="/utility/link-icon.svg" width="16" height="auto" />
+                                <img src="/utility/link-icon.svg" alt="link" width="16" height="auto" />
                             </div>
                             <div className="web-contact-link">
                                 Resume
-                                <img src="/utility/link-icon.svg" width="16" height="auto" />
+                                <img src="/utility/link-icon.svg" alt="link" width="16" height="auto" />
                             </div>
                         </div>
                     : null}
