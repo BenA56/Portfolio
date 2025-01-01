@@ -11,7 +11,7 @@ function App() {
 
   return (
     <div >
-      <div className={"background" + (selected == "story" ? " my-story" : "")}>
+      <div className={"background" + (selected === "story" ? " my-story" : "")}>
         <Navigation selected={selected} setSelected={setSelected}/>
         
         {selected === "work" ?

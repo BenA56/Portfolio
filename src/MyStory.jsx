@@ -1,6 +1,5 @@
 import React from "react"
 import SectionHeader from "./library/SectionHeader"
-import BulletPoint from "./library/BulletPoint"
 import "./MyStory.css"
 
 function MyStory(props) {
