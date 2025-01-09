@@ -102,7 +102,7 @@ function Playbook(props) {
                     <img src="/playbook/Signature.svg" alt="sig" width="92px" height="auto" />
                     <div className="playbook-hero-inner">
                         <img src="/playbook/Playbook.png" alt="playbook" width="282px" height="auto" />
-                        <div className="b1"> Welcome to my playbook. A place where I study designs and catalog things I like. </div>
+                        <div className="b1"> Welcome to my playbook! In the pages below you'll find design themes that I've uncovered from studying successful products. </div>
                     </div>
                 </div>
 

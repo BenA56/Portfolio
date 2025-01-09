@@ -21,7 +21,7 @@
     flex-direction: column;
     gap: 64px;
     align-items: center;
-    max-width: 450px;
+    max-width: 600px;
     text-align: center;
     margin-bottom: 72px;
     backdrop-filter: blur(24px); /* Applies blur to elements behind this layer */
@@ -44,7 +44,7 @@
     max-height: 145px;
     background-color: #9DDD8A;
     position: absolute;
-    top: 176px;
+    top: 152px;
     left: auto;
     right: auto;
     border-radius: 48px;
@@ -102,7 +102,7 @@
 }
 
 .sidebar-item:hover {
-    background-color: #e0e0e0;
+    text-decoration: underline;
 }
 
 .sidebar-product {

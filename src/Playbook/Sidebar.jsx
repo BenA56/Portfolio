@@ -9,7 +9,7 @@ const Sidebar = ({ products, activeSection, onSectionClick }) => (
     <div className='sidebar-container'>
 
       <div className="sidebar">
-          <div className='label' style={{color: "#40483E"}}> PRODUCTS </div>
+          <div className='l1' style={{color: "#40483E", marginBottom: "8px"}}> PLAYBOOK -> PRODUCTS </div>
         {products.map((product, index) => {
 
           const active = activeSection === product.id

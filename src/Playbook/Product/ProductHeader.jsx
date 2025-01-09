@@ -11,8 +11,8 @@ function ProductHeader(props) {
                 <div className="header"> {name} </div>
             </div>
             <div className="productNumber">
-                <div className="label"> PRODUCT </div>
-                <div className="number"> {index + 1} </div>
+                <div className="l1" style={{color: "#40483E"}}> PRODUCT </div>
+                <div className="b1"> #{index + 1} </div>
             </div>
         </div>
     )
