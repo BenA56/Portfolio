@@ -207,7 +207,7 @@
   
   .modal {
     background-color: #F0F5EF;
-    padding: 20px;
+    padding: 20px 20px 40px 20px;
     border-radius: 24px 24px 0px 0px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     width: 90%;

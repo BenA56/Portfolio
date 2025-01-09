@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import SidebarTheme from './SidebarTheme';
 
 
 const MobileSidebar = ({ products, activeSection, onSectionClick }) => {
@@ -6,7 +7,8 @@ const MobileSidebar = ({ products, activeSection, onSectionClick }) => {
     const [currSection, setCurrSection] = useState(null)
   
     const handleButtonClick = () => setModalOpen(!isModalOpen);
-    const handleProductClick = (id) => {
+
+    const handleSectionClick = (id) => {
       onSectionClick(id);
       setModalOpen(false);
     };
@@ -48,14 +50,28 @@ const MobileSidebar = ({ products, activeSection, onSectionClick }) => {
               <h3>Select a Product</h3>
               <ul>
                 {products.map((product, index) => (
+                  <React.Fragment>
+                  {/* Product */}
                   <li
                     key={product.id}
                     className={activeSection === product.id ? 'active ' : ' '}
-                    onClick={() => handleProductClick(product.id)}
+                    onClick={() => handleSectionClick(product.id)}
                   >
                     <img src={product.logo} className='sidebar-logo' alt="logo" />
                     {product.name}
                   </li>
+                  
+                  {/* Themes */}
+                  <div className='sidebar-themes' style={{marginBottom: "16px"}}>
+                    {product.themes.map((theme, index) => (
+                        <SidebarTheme
+                          theme={theme}
+                          active={activeSection === theme.id}
+                          onSectionClick={handleSectionClick}
+                        />
+                      ))}
+                  </div>
+                  </React.Fragment>
                 ))}
               </ul>
             </div>

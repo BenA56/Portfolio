@@ -17,11 +17,11 @@ function DesignDetail(props) {
         <div className="detail-image-wrapper">
             <div className="hover-signifier">
                 <img src="/playbook/hover.png" alt="hover" width="16px" height="16px" />
-                <div>Hover to Reveal</div>
+                <div>Hover/Tap to Reveal</div>
             </div>
             <img src={image1} alt="ghost" className="ghost-image" />
-            <img onMouseEnter={revealDetail} src={image1} alt="context" width="100%" height="auto" className={"detail-image"}/>
-            <img onMouseLeave={hideDetail} src={image2} alt="context" width="100%" height="auto" className={"detail-image " + (!reveal ? "hide" : "")}/>
+            <img onClick={revealDetail} onMouseEnter={revealDetail} src={image1} alt="context" width="100%" height="auto" className={"detail-image"}/>
+            <img onClick={hideDetail} onMouseLeave={hideDetail} src={image2} alt="context" width="100%" height="auto" className={"detail-image " + (!reveal ? "hide" : "")}/>
         </div>
     )
 }

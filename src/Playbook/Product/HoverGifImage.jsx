@@ -7,18 +7,20 @@ const HoverGifImage = ({
   gifImage, 
   alt = 'Hover image', 
 }) => {
-  const [isHovering, setIsHovering] = useState(false);
+  const [isHovering, setIsHovering] = useState(true);
+
+  console.log("isHovering", isHovering)
 
   return (
     <div 
       className={`hover-gif-container`}
-      onMouseEnter={() => setIsHovering(true)}
-      onMouseLeave={() => setIsHovering(false)}
+      // onMouseEnter={() => setIsHovering(true)}
+      // onMouseLeave={() => setIsHovering(false)}
     >
-      <div className="hover-signifier">
+      {/* <div className="hover-signifier">
           <img src="/playbook/play.svg" alt="hover" width="16px" height="16px" />
-          <div>Hover to Play</div>
-      </div>
+          <div>Hover/Tap to Play</div>
+      </div> */}
       <img 
         src={isHovering ? gifImage : staticImage} 
         alt={alt}

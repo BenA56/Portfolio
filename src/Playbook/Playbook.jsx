@@ -76,8 +76,6 @@ function Playbook(props) {
         navigate("/")
     }
 
-    console.log(activeSection)
-
     return (
         <div className="playbook-page">
             <div className="playbook-container">

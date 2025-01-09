@@ -50,12 +50,12 @@ function ProductCard(props) {
                                 {example.content?.map(paragraph => (
                                     <div className='content'> {paragraph} </div>
                                 ))}
-                                {example.image?.type == "static" ?
+                                {example.image?.type === "static" ?
                                     <DesignDetail
                                         image1={example.image.before}
                                         image2={example.image.after}
                                     />
-                                : example.image?.type == "gif" ?
+                                : example.image?.type === "gif" ?
                                     <HoverGifImage
                                         staticImage={example.image.before}
                                         gifImage={example.image.after}
