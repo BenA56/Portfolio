@@ -4,7 +4,7 @@ export const products = [
       name: 'Claude',
       logo: "/playbook/products/claude/Claude.jpeg",
       introduction: [
-        {label: "Problem it's solving", content: "It’s very difficult to define the problem that Claude is solving. What seperates is from Chat-GPT and other generative AI’s? It certainly feels different, but how and why? With other products, you can see the design and you know what problem they’re solving. But with generative AI, it’s so much about conversation design that it feels more hidden. I need to spend more time talking with Claude to figure this out."},
+        {label: "Problem it's solving", content: "It’s very difficult to define the problem that Claude is solving. What seperates it from Chat-GPT and other generative AI’s? It certainly feels different, but how and why? With other products, you can see the design and you know what problem they’re solving. But with generative AI, it’s so much about conversation design that it feels more hidden. I need to spend more time talking with Claude to figure this out."},
         {label: "Audience", content: "For a generative AI company is the audience just ... everybody?"}
       ],
       themes: [
@@ -13,7 +13,7 @@ export const products = [
             title: 'Experiment by optionality',
             content: [
                 "The designers of Claude have gone out of their way to give their users ultimate flexibility. Multiple ways to close and open side bars, multiple ways to navigate into older chats, and multiple ways to start a new chat.",
-                "Why do this? I think that building in all of this optionality allows users to decide how they want to use Claude. And it allows Claude to experiment with their product in a product space that lacks established patterns. And patterns that are established have been around for such a short period of time, that they probably won’t be the final patterns we end up settling on for generative AI.",
+                "Why do this? I think that building in all of this optionality allows users to decide how they want to use Claude. And it allows Claude to experiment with their product in a product space that lacks established patterns. And patterns that are established have been around for such a short period of time, that they probably won’t be the patterns we settle on.",
                 "In other words, why not add mini experiments to your product while we’re still in the early phases of establishing our relationship with AI?"
             ],
             examples: [
@@ -25,14 +25,15 @@ export const products = [
                     type: "static"
                 }},
                 {letter: "B", title: "Two ways to start a new chat", content: [
-                    "There are two different ways to start a chat with two different results. If you want to jump into a new, blank chat, you can select “Start new chat” in the sidebar. But if you want to start a new chat without interrupting your current chat, you can select the “+” button in the top right corner of the screen. This will open a chat modal layered on top of your current chat, where you always have the option to easily close it out. Maybe the designers at Claude are wondering if people will be more likely to start a new chat when they feel like they can abandon it easily?"
+                    "There are two different ways to start a chat with two different results. If you want to jump into a new, blank chat, you can select “Start new chat” in the sidebar. But if you want to start a new chat without interrupting your current chat, you can select the “+” button in the top right corner of the screen. This will open a chat modal layered on top of your current chat, where you always have the option to easily close it out.",
+                    "Perhaps the designers at Claude are wondering if people will be more likely to start a new chat when they feel like they can abandon it easily?",
                 ], image: {
                     before: "/playbook/products/claude/TH1-Ex2a.jpg",
                     after: "/playbook/products/claude/TH1-Ex2b.jpg",
                     type: "static"
                 }},
-                {letter: "C", title: "Two ways to manage navigational sidebar (pin or hover)", content: [
-                    "I was surprised to find that if you drift your mouse to the left side of the screen the navigational side bar automatically opens. My first instinct was “huh ... I don’t like this”. It felt a bit hacky and I didn’t feel like I had control. There was nothing that indicated exactly where the hover would be triggered and in order to keep viewing the sidebar, I had to keep my mouse in the side bar. This felt limiting.",
+                {letter: "C", title: "Two ways to manage the navigational sidebar (pin or hover)", content: [
+                    "I was surprised to find that if you drift your mouse to the left side of the screen, the side bar automatically opens. My first instinct was “huh ... I don’t like this”. It felt a bit hacky and I didn’t feel like I had control. There was nothing that indicated exactly where the hover would be triggered and in order to keep viewing the sidebar, I had to keep my mouse in the side bar. This felt limiting.",
                     "It wasn’t until later that I realized there was an option to pin the sidebar if you wanted, but I’m convinced that I only discovered this because I was exploring the interface in search of design details."
                 ], image: {
                     before: "/playbook/products/claude/TH1-Ex3a.jpg",
@@ -49,7 +50,7 @@ export const products = [
             ],
             examples: [
                 {letter: "A", title: "Hovering on Claude feels like chatting with an NPC", content: [
-                    "This is one of those surprises that a lot of people wouldn’t discover, but when you do see it it feels like you stumbled upon one of those characters in a video game that you never thought to talk to and then they offer you a thrilling quest.",
+                    "This is one of those easter eggs that some users might never find. But when you do, it feels like you stumbled upon one of those characters in a video game that you never thought to talk to and then they offer you a thrilling quest.",
                     "I think the italics are critical for making it feel like Claude is a character that’s actually talking to you."
                 ], image: {
                     before: "/playbook/products/claude/TH2-Ex1a.jpg",
@@ -81,7 +82,7 @@ export const products = [
       logo: "/playbook/products/lemonade/Lemonade.jpeg",
       introduction: [
         {label: "Problem it's solving", content: "Insurance sucks. It feels like they’re trying to rip you off and the processes feel like jumping through a thousand hoops and each time you complete a step you're reminded that you're doing this because something horrific might happen to you one day."},
-        {label: "Audience", content: "Anyone who needs insurance? But it seems based on the imagery that they are specifically appealing to younger, urban people that believe in progress and are willing to buy insurance from a lesser known brand if it means that they’re part of a vision for a better world. Older people are probably more likely to be skeptical of newer institutions when it comes to high-stakes things like insurance."}
+        {label: "Audience", content: "Anyone who needs insurance? But it seems (based on their imagery) that they are specifically appealing to younger, urban people who believe in progress and are willing to buy insurance from a lesser known brand if it means that they’re part of a vision for a better world. Older people are probably more likely to be skeptical of newer institutions when it comes to high-stakes things like insurance."}
       ],
       themes: [
         {
@@ -106,14 +107,14 @@ export const products = [
                     type: "gif"
                 }},
                 {letter: "C", title: "A map appears when you select your address", content: [
-                    "When you select your address, a map appears out of thin air. Not only does this feel like a magician’s sleight of hand but it’s also a way for the interface to say “Oh I know that place! It’s here right?”. This gives me an extra confidence boost to move forward.",
+                    "When you select your address, a map appears out of thin air. Not only does this feel like a magician’s sleight of hand but it’s also a way for the interface to say “Oh I know that place! It’s this one, right?”. This gives me an extra confidence boost to move forward.",
                 ], image: {
                     before: "/playbook/products/lemonade/TH1-Ex3a.jpg",
                     after: "/playbook/products/lemonade/TH1-Ex3b.gif",
                     type: "gif"
                 }},
                 {letter: "D", title: "Interactions are fundamental to the quote experience", content: [
-                    "Instead of trying to tell you everything you need to know about your quote, which would surely be an overwhelming experience, Lemonade lets you discover your options through exploration. Since you've been delighted by all of your previous interactions before getting your quote, it feels natural to start interacting with the quote itself. In this way, these delightful surprises set the user up for success in the most fundamental part of the Lemonade experience.",
+                    "Instead of trying to tell you everything you need to know about your quote, which would be overwhelming, Lemonade lets you discover your options through exploration. Since you've been delighted by all of your previous interactions before getting to your quote, it feels natural to start interacting with the quote itself. In this way, these delightful surprises set the user up for success in the most fundamental part of the Lemonade experience.",
                 ], image: {
                     before: "/playbook/products/lemonade/TH1-Ex4a.jpg",
                     after: "/playbook/products/lemonade/TH1-Ex4b.gif",
