@@ -18,13 +18,13 @@ const MobileSidebar = ({ products, activeSection, onSectionClick }) => {
 
       for(var i = 0; i < products.length; ++i) {
         const product = products[i]
-        if(product.id == activeSection) {
+        if(product.id === activeSection) {
           setCurrSection(product.name)
           found = true
         } else {
           for(var j = 0; j < product.themes.length; ++j) {
             const theme = product.themes[j]
-            if(theme.id == activeSection) {
+            if(theme.id === activeSection) {
               setCurrSection(theme.title)
               found = true
             }

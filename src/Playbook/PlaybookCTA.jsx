@@ -1,4 +1,4 @@
-import React, {useRef, useState, useEffect} from "react"
+import React, {useRef, useState, /* useEffect */} from "react"
 import "./PlaybookCTA.css"
 import { useNavigate } from "react-router-dom";
 
@@ -12,45 +12,45 @@ const initialScrollPosition = 2300;
 function PlaybookCTA(props) {
     const [isHovering, setIsHovering] = useState(false);
     const containerRef = useRef(null);
-    const [scrollPosition, setScrollPosition] = useState(initialScrollPosition);
-    const animationRef = useRef(null);
-    const startTimeRef = useRef(null);
+    const [scrollPosition, /* setScrollPosition */] = useState(initialScrollPosition);
+    // const animationRef = useRef(null);
+    // const startTimeRef = useRef(null);
     const navigate = useNavigate();
 
-    const animate = (timestamp) => {
-        if (!startTimeRef.current) startTimeRef.current = timestamp;
-        const progress = timestamp - startTimeRef.current;
-        const duration = 4000; // Total scroll duration in ms
+    // const animate = (timestamp) => {
+    //     if (!startTimeRef.current) startTimeRef.current = timestamp;
+    //     const progress = timestamp - startTimeRef.current;
+    //     const duration = 4000; // Total scroll duration in ms
         
-        if (isHovering && containerRef.current) {
-          const maxScroll = containerRef.current.scrollHeight - containerRef.current.clientHeight;
-          const remainingScroll = maxScroll - initialScrollPosition;
-          const percentage = Math.min(progress / duration, 1);
-          setScrollPosition(initialScrollPosition + (remainingScroll * percentage));
-        }
+    //     if (isHovering && containerRef.current) {
+    //       const maxScroll = containerRef.current.scrollHeight - containerRef.current.clientHeight;
+    //       const remainingScroll = maxScroll - initialScrollPosition;
+    //       const percentage = Math.min(progress / duration, 1);
+    //       setScrollPosition(initialScrollPosition + (remainingScroll * percentage));
+    //     }
     
-        if (isHovering && progress < duration) {
-          animationRef.current = requestAnimationFrame(animate);
-        }
-    };
+    //     if (isHovering && progress < duration) {
+    //       animationRef.current = requestAnimationFrame(animate);
+    //     }
+    // };
     
-    useEffect(() => {
-        if (isHovering) {
-          startTimeRef.current = null;
-          animationRef.current = requestAnimationFrame(animate);
-        } else {
-          if (animationRef.current) {
-            cancelAnimationFrame(animationRef.current);
-          }
-          setScrollPosition(initialScrollPosition);
-        }
+    // useEffect(() => {
+    //     if (isHovering) {
+    //       startTimeRef.current = null;
+    //       animationRef.current = requestAnimationFrame(animate);
+    //     } else {
+    //       if (animationRef.current) {
+    //         cancelAnimationFrame(animationRef.current);
+    //       }
+    //       setScrollPosition(initialScrollPosition);
+    //     }
     
-        return () => {
-          if (animationRef.current) {
-            cancelAnimationFrame(animationRef.current);
-          }
-        };
-    }, [isHovering]);
+    //     return () => {
+    //       if (animationRef.current) {
+    //         cancelAnimationFrame(animationRef.current);
+    //       }
+    //     };
+    // }, [isHovering]);
 
     function handleClick() {
         navigate("/playbook")
