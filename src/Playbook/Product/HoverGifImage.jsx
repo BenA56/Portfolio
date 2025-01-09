@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import "./HoverGifImage.css";
+import "./DesignDetail.css";
 
 const HoverGifImage = ({ 
   staticImage, 
@@ -14,6 +15,10 @@ const HoverGifImage = ({
       onMouseEnter={() => setIsHovering(true)}
       onMouseLeave={() => setIsHovering(false)}
     >
+      <div className="hover-signifier">
+          <img src="/playbook/play.svg" alt="hover" width="16px" height="16px" />
+          <div>Hover to Play</div>
+      </div>
       <img 
         src={isHovering ? gifImage : staticImage} 
         alt={alt}
