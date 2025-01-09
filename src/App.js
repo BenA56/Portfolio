@@ -4,7 +4,7 @@ import Hero from './Home/Hero';
 import Navigation from "./Home/Navigation";
 import CaseStudy from "./Home/CaseStudy";
 import MyStory from "./MyStory";
-// import PlaybookCTA from "./Playbook/PlaybookCTA";
+import PlaybookCTA from "./Playbook/PlaybookCTA";
 
 function App() {
   const [selected, setSelected] = useState("work")
@@ -46,7 +46,7 @@ function App() {
           </div>
 
           {/* Playbook CTA */}
-          {/* <PlaybookCTA /> */}
+          <PlaybookCTA />
           </React.Fragment>
         : selected === "story" ?
           <MyStory />

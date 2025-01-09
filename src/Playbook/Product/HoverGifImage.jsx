@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import "./HoverGifImage.css";
 import "./DesignDetail.css";
 
@@ -7,9 +7,7 @@ const HoverGifImage = ({
   gifImage, 
   alt = 'Hover image', 
 }) => {
-  const [isHovering, setIsHovering] = useState(true);
-
-  console.log("isHovering", isHovering)
+  // const [isHovering, setIsHovering] = useState(true);
 
   return (
     <div 
@@ -22,7 +20,7 @@ const HoverGifImage = ({
           <div>Hover/Tap to Play</div>
       </div> */}
       <img 
-        src={isHovering ? gifImage : staticImage} 
+        src={gifImage} 
         alt={alt}
         className="w-full h-auto object-cover transition-all duration-300"
         width="100%"
