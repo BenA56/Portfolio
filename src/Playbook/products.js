@@ -183,5 +183,47 @@ export const products = [
               ]
           },
         ],
-      },
+    },
+    {
+        id: 'product4',
+        name: 'ElevenLabs',
+        logo: "/playbook/products/elevenLabs/ElevenLabs.jpg",
+        introduction: [
+          {label: "Problem it's solving", content: "Basically it's generative AI for all things voices. Translating your text into voices. Creating custom AI agents that people can talk to. Etc etc."},
+          {label: "Audience", content: "At first based on the landing site I was thinking content and entertainment creators. Ya know, audiobooks, podcasts, and TikTok clips. But after exploring the product more, I realized the use cases are infinite. A teacher could use it to create videos out of their lesson plan. A content creator could use the dubbing technology to make their content available across the world (looking at you, Mr. Beast)."}
+        ],
+        themes: [
+            { 
+                id: 'theme4-1',
+                title: 'Mental Model is Muddy',
+                type: "critique",
+                content: [
+                  "ElevenLabs has so many different ideas and mini-experiments thrown together in their interface that it’s hard to form a mental model of the basic objects, actions, and navigational patterns. It feels like I’m at Hogwarts and the magical stairs are shifting and contorting, leading me to unexpected places with no idea how to get back.",
+                ],
+                examples: [
+                    {letter: "A", title: "Convert to what?", content: [
+                        "Maybe I’m just new to the audio space, but I have no idea what “Convert” means. Is this similar to downloading? I expect that in the dropdown it will show me different formats to convert TO, clearing up my confusion. But instead it just gives me options for which elements I can convert. I still don't know what converting means."
+                    ], image: {
+                        before: "/playbook/products/elevenLabs/TH1-Ex1a.jpg",
+                        after: "/playbook/products/elevenLabs/TH1-Ex1b.jpg",
+                        type: "static"
+                    }},
+                    {letter: "B", title: "Verified vs. Default?", content: [
+                        "It seems what they’re getting at is human vs robot. But verified vs default doesn’t model this well. There’s a mixture of mental models going on here. “Default” usually just means that its the one you start out with. It's singular in nature. But they’re using default to refer to all of the robot-made sounds. They’re also using Twitter’s verfied vs. not-verified system, denoted with check marks on human voices. But the problem is: most people on Twitter are not verified but are still human. So I don’t associate no check mark to mean that the person is a robot.",
+                    ], image: {
+                        before: "/playbook/products/elevenLabs/TH1-Ex2a.jpg",
+                        after: "/playbook/products/elevenLabs/TH1-Ex2b.jpg",
+                        type: "static"
+                    }},
+                    {letter: "C", title: "Conversational AI - What is my goal?", content: [
+                        "When I first clicked on the “Conversational AI” tab, I thought I was going to be chatting with ElevenLab’s version of Chat-GPT. This was further reinforced by the calls to action on the AI agent cards. “Talk to ..”, “Speak with …”, and “Try” are a stark contrast to the final CTA of “CREATE”. This inconsistency shrouds the page in confusion.",
+                    ], image: {
+                        before: "/playbook/products/elevenLabs/TH1-Ex3a.jpg",
+                        after: "/playbook/products/elevenLabs/TH1-Ex3b.jpg",
+                        type: "static"
+                    }},
+                ]
+            },
+          ],
+    }
 ]
