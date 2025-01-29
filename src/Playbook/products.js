@@ -225,5 +225,104 @@ export const products = [
                 ]
             },
           ],
-    }
+    },
+    {
+        id: 'product5',
+        name: 'Solace',
+        logo: "/playbook/products/solace/Solace.jpg",
+        introduction: [
+          {label: "Navigating your treatment is a nightmare", content: "Navigating your treatment journey is complicated. You need to be educated in your own to disease in order to make decisions that align with your values. But how do you educate yourself? Your doctor has a limited amount of time to explain things to you and may have incentives that don’t align with your values. When you go home, you can’t take your doctor with you so you are forced onto the internet. But the information on the internet is not personalized to you, and the resulting burden of piecing together the relevant information can be stressful and scary. Plus, the internet does not give you the emotional support you need."},
+          {label: "Having someone in your corner", content: "What Solace offers is almost like a medical lawyer. A lawyer is on your side, helping you navigate the complex legal system to achieve the outcome that you desire. In a similar fashion, Solace connects you with a “medical advocate” to help you navigate the complex medical system. This gives you confidence that you’re making the right decisions for yourself and achieving the best outcomes possible."},
+          {label: "For patients and caregivers", content: "Solace is primarily for people navigating complex diagnosis. But Solace is also for anyone that might be taking charge of managing the treatment. Often, the person that is sick might not be fit to manage their own disease and they might have a loved one advocating for them."},
+          {label: "My connection", content: "I’ve seen this first hand. When my girlfriend’s mom got into a car crash, it was up to her to be the advocate. Her mom has an autoimmune disease that often gets overlooked in all the hustle and bustle of the hospital. My girlfriend made sure that her mom’s unique circumstances were always being taken into account ….. but not everyone has a heroic daughter in med school to fight for them."},
+          {label: "For advocates", content: "Also, we must not forget that Solace is providing an experience to the health advocates themselves. This, I’m very curious about. Who are the health advocates? Why would they be interested in working with Solace? What do they value in their experience?"}
+        ],
+        themes: [
+          {  
+              id: 'theme5-1',
+              title: 'Smooth visual elements soothe the soul',
+              content: [
+                  "The visual design of a healthcare platform needs to feel soothing. Users are most likely coming to the platform because their experiences so far have felt cold and clinical. So you need to make them feel calm, soothed, and cared for.",
+                  "Solace accomplishes this with smooth visual design elements. Swoopy lines, delicate fonts, and rounded frames feel like wind and water. Like a calming breathe in and out.",
+              ],
+              examples: [
+                  {letter: "A", title: "Swoopy lines", content: [
+                      "Solace uses these swoopy lines throughout it’s interface not only for a smooth feel, but also to frame content and help guide your eyes to the right place."
+                  ], image: {
+                      before: "/playbook/products/solace/TH1-Ex1a.jpg",
+                      after: "/playbook/products/solace/TH1-Ex1b.jpg",
+                      type: "static"
+                  }},
+                  {letter: "B", title: "Curved frames", content: [
+                      "Instead of the typical straight line between different color backgrounds, Solace opts for gentle curves that feel like soothing transitions as you scroll through the page",
+                  ], image: {
+                      before: "/playbook/products/solace/TH1-Ex2a.jpg",
+                      after: "/playbook/products/solace/TH1-Ex2b.jpg",
+                      type: "static"
+                  }},
+                  {letter: "C", title: "Delicate font", content: [
+                      "Solace’s header font feels like it was written by a calligraphy master from yesteryear. It feels almost video-game like, as if I’m playing a video game that takes place in a beautiful castle. It’s a beautiful font. And beauty is not normally a part of the healthcare system. So it feels really nice to have something beautiful.",
+                  ], image: {
+                      before: "/playbook/products/solace/TH1-Ex3a.jpg",
+                      after: "/playbook/products/solace/TH1-Ex3b.jpg",
+                      type: "static"
+                  }},
+              ]
+          },
+          {   
+              id: 'theme5-2',
+              title: 'Movement feels alive and steady',
+              content: [
+                  "If you were at the doctor’s office, how would you want your doctor to move? Probably slow and steady. Like they’re not going to do anything that you don’t have time to question. And they’re not wavering at all, showing that they’re confident.",
+                  "Solace’s interface replicates this type of movement with lots of animations, ranging from subtle arrows sliding a few precise pixels over, to entire element gliding over the top of one another"
+              ],
+              examples: [
+                  {letter: "A", title: "Arrows move to usher you through the interface", content: [
+                      "Arrows in Solace tend to shift when you hover on buttons that take you to different pages. This just feels nice. It’s like someone is holding a door open for me and gesturing me through.",
+                  ], image: {
+                      before: "/playbook/products/solace/TH2-Ex1a.jpg",
+                      after: "/playbook/products/solace/TH2-Ex1b.gif",
+                      type: "gif"
+                  }},
+                  {letter: "B", title: "Components slide up into position after loading", content: [
+                      "There’s something nice about seeing an objext approaching you before it assumes its position. Continuing with the medical metaphors, you wouldn’t want your doctor to just appear out of thin air at your bedside. You would want to see them approaching you with a calm, unhurried pace and maybe even a small smile.",
+                  ], image: {
+                      before: "/playbook/products/solace/TH2-Ex2a.jpg",
+                      after: "/playbook/products/solace/TH2-Ex2b.gif",
+                      type: "gif"
+                  }},
+                  {letter: "C", title: "Boxes Slide on top of each other as you scroll", content: [
+                      "This one is interesting because it flips how we fundamentally perceive movement through our screens. Usually, we think of it like reading a newspaper. As you get to the bottom of the page, you slide the newspaper upwards on the table before you to bring the bottom into view. But the way Solace does this animation, it’s like the content on the newspaper is shifting for you. It’s like Solace is bending over backwards to bring ITSELF into view instead of you bringing it into view."
+                  ], image: {
+                      before: "/playbook/products/solace/TH2-Ex3a.jpg",
+                      after: "/playbook/products/solace/TH2-Ex3b.gif",
+                      type: "gif"
+                  }},
+              ]
+          },
+          {  
+            id: 'theme5-3',
+            title: 'Thoughtful "what ifs" prove they care',
+            content: [
+                "How do you prove to patients and caretakers that you really care about them? The simplest way is to be thoughtful. Show that you are anticipating their needs and potential confusions.",
+            ],
+            examples: [
+                {letter: "A", title: "Emergency disclaimer feels safe", content: [
+                    "In an emergency, seconds matter. Solace makes sure that you’re not wasting these precious seconds on their platform when it’s not for emergencies. Telling the user when NOT to use their platform shows that they care ultimately about the user and not just their own conversion rates. And shows that they prioritize safety above all."
+                ], image: {
+                    before: "/playbook/products/solace/TH3-Ex1a.jpg",
+                    after: "/playbook/products/solace/TH3-Ex1b.jpg",
+                    type: "static"
+                }},
+                {letter: "B", title: "Offer to sign up by phone feels generous", content: [
+                    "If there’s one thing I learned working at Yerbba, it’s that in healthcare people really appreciate a human touch. Solace offers the option to sign up by phone, something I haven’t seen many other products do. Even if a potential user doesn’t take them up on this offer, I guarantee they will appreciate the invitation.",
+                ], image: {
+                    before: "/playbook/products/solace/TH3-Ex2a.jpg",
+                    after: "/playbook/products/solace/TH3-Ex2b.jpg",
+                    type: "static"
+                }},
+            ]
+        },
+        ],
+      },
 ]
