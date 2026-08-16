@@ -1,119 +1,255 @@
-.case {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    border-radius: 24px;
-    flex-wrap: wrap;
-    justify-content: center;
-    cursor: pointer;
-    gap: 0px;
-    transition: gap 0.4s ease;
-    text-decoration: none;
-    color: #081704;
-}
-
-.case:hover {
-    gap: 16px;
-}
-
-.case:active {
-    gap: 48px;
-}
-
-.caseImage {
-    border-radius: 24px;
-    box-shadow: 0px 4px 8px 0px rgb(0,0,0,0.25);
-    position: relative;
-    z-index: 2;
-    max-width: 800px;
-}
-
-.caseDescription {
+.cardCase {
     display: flex;
     flex-direction: column;
     gap: 24px;
-    align-items: flex-start;
-    max-width: 300px;
-    border-radius: 0px 24px 24px 0px;
-    border: 2px dashed #081704;
-    margin-left: -2px;
-    position: relative;
-    z-index: 1;
-    background-color: white;
-    padding: 48px;
+    width: 100%;
+    min-height: 492px;
+    box-sizing: border-box;
+    background-color: #FAFDFA;
+    border: 1px solid #dbe0da;
+    border-radius: 16px;
+    padding: 24px;
+    text-decoration: none;
+    color: inherit;
+    transition: box-shadow 0.3s ease;
 }
 
-.caseSignifier {
-    display: flex;
-    align-items: center;
-    gap: 8px;
+.cardCase:hover {
+    box-shadow: 0px 8px 8px 0px rgb(0,0,0,0.15);
 }
 
-.readButton {
+.cardCase--solo {
+    border-radius: 4px 4px 16px 16px;
+    min-height: unset;
+    gap: 72px;
+}
+
+.cardCase--top {
+    border-radius: 4px;
+    min-height: unset;
+    gap: 72px;
+}
+
+.cardCase--solo .cardCaseImage {
+    flex: none;
+    height: 260px;
+    min-height: unset;
+    margin-top: 0;
+    object-position: top;
+    width: calc(100% - 24px);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 16px 16px 4px 4px;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.15);
+    transition: box-shadow 0.3s ease, height 0.4s ease, margin-top 0.4s ease;
+}
+
+.cardCase--solo:hover .cardCaseImage {
+    height: 308px;
+    margin-top: -48px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+}
+
+.cardCase--top .cardCaseImageRow {
     display: flex;
     flex-direction: row;
-    gap: 8px;
+    gap: 16px;
+    width: 100%;
+    height: 260px;
+    margin-top: 0;
+    transition: height 0.4s ease, margin-top 0.4s ease;
+}
+
+.cardCase--top .cardCaseImageRow .cardCaseImage {
+    flex: 1;
+    min-width: 0;
+    height: 100%;
+    object-position: top;
+    border-radius: 12px 12px 4px 4px;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.15);
+    transition: box-shadow 0.3s ease;
+}
+
+.cardCase--top .cardCaseImageRow .cardCaseImage:first-child {
+    flex: 2;
+}
+
+.cardCase--top:hover .cardCaseImageRow {
+    height: 308px;
+    margin-top: -48px;
+}
+
+.cardCase--top:hover .cardCaseImageRow .cardCaseImage {
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+}
+
+.cardCase--row-left {
+    border-radius: 4px 4px 4px 16px;
+    min-height: unset;
+    gap: 72px;
+}
+
+.cardCase--row-left .cardCaseBody {
+    justify-content: flex-end;
+}
+
+.cardCase--row-left .cardCaseImage {
+    flex: none;
+    height: 260px;
+    min-height: unset;
+    margin-top: 0;
+    object-position: top;
+    border-radius: 12px 12px 4px 4px;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.15);
+    transition: box-shadow 0.3s ease, height 0.4s ease, margin-top 0.4s ease;
+}
+
+.cardCase--row-left:hover .cardCaseImage {
+    height: 308px;
+    margin-top: -48px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+}
+
+.cardCase--row-right {
+    border-radius: 4px 4px 16px 4px;
+    min-height: unset;
+    gap: 72px;
+}
+
+.cardCase--row-right .cardCaseBody {
+    justify-content: flex-end;
+}
+
+.cardCase--row-right .cardCaseImage {
+    flex: none;
+    height: 260px;
+    min-height: unset;
+    margin-top: 0;
+    object-position: top;
+    border-radius: 12px 12px 4px 4px;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.15);
+    transition: box-shadow 0.3s ease, height 0.4s ease, margin-top 0.4s ease;
+}
+
+.cardCase--row-right:hover .cardCaseImage {
+    height: 308px;
+    margin-top: -48px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+}
+
+.cardCaseHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
+    gap: 16px;
+    width: 100%;
 }
 
-.white-arrow {
-    display: none;
+.cardCaseQuestion {
+    display: flex;
+    flex-direction: column;
 }
 
-.dark-arrow {
-    display: block;
+.cardCaseEyebrow {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 1.5;
+    color: #000000;
 }
 
-@media screen and (max-width: 1300px) {
-    .case {
-        gap: 32px;
+.cardCaseHeading {
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 1.5;
+    color: #000000;
+}
+
+.cardCaseButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: transparent;
+    color: #081704;
+    border: 1.5px solid #081704;
+    font-family: "Poetsen One", sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 12px 16px;
+    border-radius: 12px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cardCaseButtonArrow {
+    flex-shrink: 0;
+    width: 12px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.cardCase:hover .cardCaseButton {
+    background-color: #081704;
+    color: #F0F5EF;
+}
+
+.cardCase:hover .cardCaseButtonArrow {
+    transform: translateX(4px);
+}
+
+.cardCaseBody {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex: 1;
+    min-height: 0;
+}
+
+.cardCaseImage {
+    width: 100%;
+    flex: 1;
+    min-height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0);
+    transition: box-shadow 0.3s ease;
+}
+
+.cardCase:hover .cardCaseImage {
+    box-shadow: 0px 8px 16px 0px rgb(0,0,0,0.3);
+}
+
+@media screen and (max-width: 700px) {
+    .cardCase {
+        min-height: unset;
     }
 
-    .case:hover {
-        gap: 32px;
+    .cardCaseHeader {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
     }
 
-    .caseDescription {
-        border: none;
-        background-color: transparent;
-        margin-left: 0px;
-        margin-top: -4px;
-        gap: 16px;
-        padding: 0px;
-        width: 100%;
-        align-items: center;
-        text-align: center;
+    .cardCaseEyebrow {
+        font-size: 14px;
     }
 
-    .caseImage {
-        width: 100%;
-        height: auto;
+    .cardCaseHeading {
+        font-size: 18px;
     }
 
-    .readButton {
-        background-color: #081704;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 16px;
-        font-size: 20px;
-        padding: 16px 24px;
+    .cardCaseImage {
+        min-height: 220px;
+    }
+
+    .cardCase--solo,
+    .cardCase--top,
+    .cardCase--row-left,
+    .cardCase--row-right {
         border-radius: 16px;
-        text-decoration: none;
-        color: #F0F5EF;
-        box-shadow: 0px 4px 8px 0px rgb(0,0,0,0.25);
-        transition: background-color 0.4s ease, margin-left 0.4s ease;
-    }
-
-    .readButton:active {
-        margin-left: 16px;
-    }
-
-    .white-arrow {
-        display: block;
-    }
-    
-    .dark-arrow {
-        display: none;
     }
 }

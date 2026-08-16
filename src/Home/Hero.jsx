@@ -13,7 +13,10 @@ function Hero(props) {
                     <span> experiences </span>
                 </div>
             </div>
-            <div className="b1 name-title"> Ben Arteaga | Product Design </div>
+            <div className="whoRow">
+                <img className="miniMe" src="/home/Headshot.jpg" alt="story" />
+                <div className="b1 name-title"> Ben Arteaga | Product Design </div>
+            </div>
         </div>
     )
 }

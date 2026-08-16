@@ -41,6 +41,20 @@
     box-sizing: border-box;
 }
 
+.whoRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 24px;
+    gap: 16px;
+}
+
+.miniMe {
+    border-radius: 100px;
+    width: 64px;
+    height: 64px;
+}
+
 @media screen and (max-width: 900px) {
     .notebook {
         width: 100%;
@@ -81,7 +95,7 @@
 
 .name-title {
     color: #CCE5C5;
-    margin-top: 24px;
+    margin-top: 0px;
 }
 
 .pink-gradient {

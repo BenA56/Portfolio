@@ -68,19 +68,19 @@ function Navigation(props) {
         <React.Fragment>
         
         {/* Static nav at top of hero */}
-        <div className="tabContainer static">
+        <div className="tabContainer">
             <div style={{display: "flex", flexDirection: "row", alignItems: "center", gap: "8px"}}>
-                <div onClick={handleWorkClick} className={selected === "work" ? "tabSelected static-tab-selected" : "tabNotSelected static-tab"}>
-                    <Briefcase color={"#F0F5EF"} />
+                <div onClick={handleWorkClick} className={selected === "work" ? "tabSelected" : "tabNotSelected"}>
+                    <Briefcase color={selected === "work" ? "#081704" : "#40483E"} />
                     <div className="button"> Work </div>
                 </div>
-                <div onClick={handleStoryClick} className={selected === "story" ? "tabSelected static-tab-selected" : "tabNotSelected static-tab"}>
-                    <Book color={"#F0F5EF"} />
+                <div onClick={handleStoryClick} className={selected === "story" ? "tabSelected" : "tabNotSelected"}>
+                    <Book color={selected === "story" ? "#081704" : "#40483E"} />
                     <div className="button"> Story </div>
                 </div>
                 <div className="nav-divider"></div>
             </div>
-            <div onMouseEnter={handleStaticContactHover} onMouseLeave={handleStaticContactLeave} className="tabNotSelected static-tab contact">
+            <div onMouseEnter={handleStaticContactHover} onMouseLeave={handleStaticContactLeave} className="tabNotSelected contact">
                 <div style={{display: "flex", flexDirection: "row", gap: "8px"}}>
                     <div className="button"> Contact </div>
                     <img src="/home/down-arrow.svg" alt="down" width="16px" height="auto" />
@@ -102,15 +102,16 @@ function Navigation(props) {
         
         {/* nav that's sticky to top when you scroll */}
         <div className={`scroll-nav ${isVisible ? 'visible' : ''}`}>
-            <div className="tabContainer glass">
+            <div className="tabContainer">
                 <div style={{display: "flex", flexDirection: "row", alignItems: "center", gap: "8px"}}>
-                    <img src="/home/Signature-green.svg" alt="sig" height="32px" width="auto" className="mini-sig"/>
+                    <img className="navHeadshot" src="/home/Headshot.jpg" alt="headshot" />
+                    {/* <img src="/home/Signature-green.svg" alt="sig" height="32px" width="auto" className="mini-sig"/> */}
                     <div onClick={handleWorkClick} className={selected === "work" ? "tabSelected" : "tabNotSelected"}>
-                        <Briefcase color={"#F0F5EF"} />
+                        <Briefcase color={selected === "work" ? "#081704" : "#40483E"} />
                         <div className="button"> Work </div>
                     </div>
                     <div onClick={handleStoryClick} className={selected === "story" ? "tabSelected" : "tabNotSelected"}>
-                        <Book color={"#F0F5EF"} />
+                        <Book color={selected === "story" ? "#081704" : "#40483E"} />
                         <div className="button"> Story </div>
                     </div>
                     <div className="nav-divider"></div>

@@ -23,6 +23,13 @@ const router = createBrowserRouter([
     </React.Fragment>,
   },
   {
+    path: "/ActionBar",
+    element: <React.Fragment>
+      <ScrollToTop/>
+      <div> hello! </div>
+    </React.Fragment>
+  },
+  {
     path: "/BreastCancerReport",
     element: <React.Fragment>
       <ScrollToTop/>

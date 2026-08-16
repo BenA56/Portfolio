@@ -2,20 +2,31 @@ import "./CaseStudy.css"
 import { Link } from "react-router-dom";
 
 function CaseStudy(props) {
-    const { img, title, desc, page } = props
+    const { img, images, title, question, page, variant } = props
 
     return (
-        <Link className="case" to={`/${page}`}>
-            <img className="caseImage" src={img} alt="screenshot" width="90%" height="auto"/>
-            <div className="caseDescription">
-                <div className='h2 left'> {title} </div>
-                <div className='content'>{desc}</div>
-                <div className="caseSignifier">
-                    <div className="readButton">
-                        <div className="button" style={{fontSize: "20px", lineHeight: "28px"}}> Read Case Study </div>
-                        <img src="/utility/right-arrow.png" className="dark-arrow" alt="arrow" width="20px" height="auto" />
-                        <img src="/playbook/arrow.svg" className="white-arrow" alt="arrow" height="20px" width="auto" />
+        <Link className={"cardCase" + (variant ? ` cardCase--${variant}` : "")} to={`/${page}`}>
+            <div className="cardCaseHeader">
+                <div className="cardCaseQuestion">
+                    <div className="cardCaseEyebrow">What if ...</div>
+                    <div className="cardCaseHeading">{question}</div>
+                </div>
+            </div>
+            <div className="cardCaseBody">
+                {images ? (
+                    <div className="cardCaseImageRow">
+                        {images.map((src, i) => (
+                            <img className="cardCaseImage" src={src} alt={title} key={i} />
+                        ))}
                     </div>
+                ) : (
+                    <img className="cardCaseImage" src={img} alt={title} />
+                )}
+                <div className="cardCaseButton">
+                    Read Case Study
+                    <svg className="cardCaseButtonArrow" width="13" height="21" viewBox="0 0 13 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.5173 11.2809L4.01998 19.7783C3.43266 20.3656 2.48296 20.3656 1.90189 19.7783L0.489832 18.3662C-0.0974846 17.7789 -0.0974846 16.8292 0.489832 16.2481L6.5067 10.2187L0.483583 4.19563C-0.103733 3.60832 -0.103733 2.65861 0.483583 2.07754L1.89564 0.659236C2.48296 0.07192 3.43266 0.07192 4.01373 0.659236L12.5111 9.15658C13.1046 9.7439 13.1046 10.6936 12.5173 11.2809Z" fill="currentColor"/>
+                    </svg>
                 </div>
             </div>
         </Link>

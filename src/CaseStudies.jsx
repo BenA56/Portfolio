@@ -7,6 +7,20 @@ function CaseStudies(props) {
 
     return (
         <React.Fragment>
+
+        {/* Report redesign case study card */}
+        {show.report ?
+            <CaseStudy
+                name="Underwritig Action Bar"
+                desc="Giving underwriters a way to perform critical actions at any time in the underwriting process, without leaving their workflow"
+                logo=""
+                role="UX Designer"
+                company="UWM"
+                backgroundColor="#1C1C2A"
+                accentColor="#A2A5D6"
+                favorite={true}
+            />
+        : null}
         
         {/* Report redesign case study card */}
         {show.report ?

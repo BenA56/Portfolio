@@ -1,0 +1,53 @@
+.companyOvercard {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #dbe0da;
+    border-radius: 16px 16px 4px 4px;
+    padding: 16px 24px;
+}
+
+.companyOvercardName {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000000;
+}
+
+.companyOvercardTags {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.companyOvercardChip {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    width: fit-content;
+    background-color: #ededed;
+    border-radius: 999px;
+    padding: 4px 12px;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #000000;
+    white-space: nowrap;
+}
+
+.companyOvercardDot {
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius: 999px;
+    background-color: #CCCCCC;
+    flex-shrink: 0;
+}

@@ -28,7 +28,7 @@ function NavBar(props) {
     const {selectedTab} = props
 
     return (
-        <div style={{display: "flex", flexDirection: "row", gap: "20px", alignItems: "center", marginTop: "60px", position: "sticky", top: "0px", zIndex: "1000", backgroundColor: "white", borderBottom: "2px solid black", padding: "16px 0px 16px 190px"}}>
+        <div style={{display: "flex", flexDirection: "row", gap: "20px", alignItems: "center", marginTop: "60px", position: "sticky", top: "0px", left: "24px", zIndex: "1000", backgroundColor: "white", borderBottom: "2px solid black", padding: "16px 0px 16px 190px"}}>
             <div className='me' style={{fontSize: "24px"}}> Ben Arteaga | </div>
             {tabs.map(tabName => {
                 return (
