@@ -4,9 +4,6 @@
   align-items: center;
   padding: 0px;
   background-color: #f0f5ef;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='200' viewBox='0 0 120 200'%3E%3Cg fill='none' stroke='%23081704' stroke-linecap='round'%3E%3Cpath d='M8,-4 C13,22 3,48 9,74 C15,100 2,126 8,152 C14,178 4,196 9,204' stroke-width='1.4' stroke-opacity='0.05'/%3E%3Cpath d='M23,-6 C18,20 27,45 20,72 C13,99 24,124 19,150 C14,176 22,198 18,206' stroke-width='1' stroke-opacity='0.045'/%3E%3Cpath d='M40,-3 C46,24 36,49 43,76 C50,103 38,128 44,154 C50,180 39,197 45,205' stroke-width='1.6' stroke-opacity='0.06'/%3E%3Cpath d='M58,-5 C53,21 61,47 55,73 C49,99 60,125 54,151 C48,177 59,199 53,207' stroke-width='1' stroke-opacity='0.04'/%3E%3Cpath d='M76,-4 C82,23 71,48 78,75 C85,102 72,127 79,153 C86,179 73,198 80,206' stroke-width='1.3' stroke-opacity='0.055'/%3E%3Cpath d='M93,-6 C88,19 96,44 90,71 C84,98 95,123 89,149 C83,175 94,197 88,205' stroke-width='1' stroke-opacity='0.045'/%3E%3Cpath d='M108,-3 C114,22 104,47 111,74 C118,101 105,126 112,152 C119,178 106,196 113,204' stroke-width='1.5' stroke-opacity='0.05'/%3E%3C/g%3E%3C/svg%3E");
-  background-repeat: repeat;
-  background-size: 120px 200px;
   position: relative;
 }
 

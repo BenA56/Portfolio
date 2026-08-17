@@ -1,0 +1,26 @@
+.imgPlaceholder {
+    width: 100%;
+    min-height: 240px;
+    box-sizing: border-box;
+    border: 2px dashed rgba(8, 23, 4, 0.35);
+    background-color: rgba(8, 23, 4, 0.03);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    text-align: center;
+}
+
+.imgPlaceholder .imgPlaceholderLabel {
+    color: rgba(8, 23, 4, 0.55);
+    max-width: 320px;
+}
+
+.dark .imgPlaceholder {
+    border-color: rgba(240, 245, 239, 0.4);
+    background-color: rgba(240, 245, 239, 0.06);
+}
+
+.dark .imgPlaceholder .imgPlaceholderLabel {
+    color: rgba(240, 245, 239, 0.7);
+}

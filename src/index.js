@@ -13,6 +13,7 @@ import AIManualReviewTool from './AIManualReviewTool/AIManualReviewTool';
 import SignUpRedesign from './SignUpRedesign/SignUpRedesign';
 import ScrollToTop from './ScrollToTop';
 import Playbook from './Playbook/Playbook';
+import ActionBar from './ActionBar/ActionBar';
 
 const router = createBrowserRouter([
   {
@@ -26,7 +27,7 @@ const router = createBrowserRouter([
     path: "/ActionBar",
     element: <React.Fragment>
       <ScrollToTop/>
-      <div> hello! </div>
+      <ActionBar />
     </React.Fragment>
   },
   {

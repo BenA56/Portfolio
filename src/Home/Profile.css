@@ -43,6 +43,13 @@
     width: 100%;
 }
 
+.profile-bio-highlight {
+    background-color: #DED7B7;
+    border-radius: 3px;
+    padding: 0 2px;
+    font-style: italic;
+}
+
 .profile-contact {
     display: flex;
     flex-direction: column;

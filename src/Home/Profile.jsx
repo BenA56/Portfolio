@@ -21,7 +21,7 @@ function Profile(props) {
             <div className="profile-name">Ben Arteaga</div>
             <div className="profile-title">UX Designer</div>
             <div className="profile-bio">
-                In 2020, I stumbled across UX Design at a hackathon and never looked back. I got experience working for free at several startups before working at Yerbba.
+                Hi, I&rsquo;m Ben! Since graduating college in 2022 (Go Blue), I&rsquo;ve been creating designs across the <span className="profile-bio-highlight">Healthcare</span> and <span className="profile-bio-highlight">Fintech</span> spaces. I love the challenge of creating an experience that&rsquo;s both <span className="profile-bio-highlight">intuitive</span> to learn and <span className="profile-bio-highlight">efficient</span> to use once you learn it.
             </div>
 
             <div className="profile-contact">

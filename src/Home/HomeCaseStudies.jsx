@@ -8,7 +8,7 @@ function HomeCaseStudies(props) {
             <div className="home-case-studies-group">
                 <CompanyOvercard
                     company="United Wholesale Mortgage (UWM)"
-                    descriptor="Established Enterprise Company"
+                    descriptor="Large Fintech Company"
                     dateRange="2025 - Present"
                     current
                 />
