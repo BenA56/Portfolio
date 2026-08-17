@@ -1,0 +1,47 @@
+.countdownLayout {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+}
+
+.countdownItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    min-width: 64px;
+}
+
+.countdownNumber {
+    font-size: 56px;
+    line-height: 56px;
+    font-family: "Poetsen One", sans-serif;
+}
+
+.countdownColon {
+    font-size: 40px;
+    line-height: 56px;
+    font-family: "Poetsen One", sans-serif;
+    transform: translateY(-8px);
+}
+
+@media screen and (max-width: 768px) {
+    .countdownNumber {
+        font-size: 36px;
+        line-height: 36px;
+    }
+
+    .countdownItem {
+        min-width: 48px;
+    }
+
+    .countdownColon {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .countdownLayout {
+        gap: 8px;
+    }
+}

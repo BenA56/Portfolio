@@ -1,0 +1,106 @@
+.caseStudySwitcher {
+    position: fixed;
+    top: 40px;
+    right: 180px;
+    z-index: 3;
+}
+
+.caseStudySwitcherButton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    max-width: min(60vw, 400px);
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+    padding: 16px 24px;
+    border-radius: 50px;
+    color: #081704;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.15);
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.caseStudySwitcherButton:hover {
+    background-color: #081704;
+    color: #F0F5EF;
+}
+
+.caseStudySwitcherButton:hover .caseStudySwitcherChevron {
+    filter: brightness(0) invert(1);
+}
+
+.caseStudySwitcherTitle {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.caseStudySwitcherChevron {
+    flex-shrink: 0;
+    transform: rotate(-90deg);
+    transition: transform 0.4s ease, filter 0.3s ease;
+}
+
+.caseStudySwitcherChevron.open {
+    transform: rotate(90deg);
+}
+
+.caseStudySwitcherPanel {
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 4px;
+    min-width: 220px;
+    max-width: 80vw;
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    padding: 8px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.15);
+    z-index: 4;
+}
+
+.caseStudySwitcherLink {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 12px 16px;
+    border-radius: 12px;
+    color: #081704;
+    text-decoration: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.caseStudySwitcherLink:hover {
+    background-color: #DED7B7;
+}
+
+.caseStudySwitcherLink--current {
+    background-color: #CCE5C5;
+    font-weight: 600;
+    cursor: default;
+}
+
+.caseStudySwitcherCheck {
+    flex-shrink: 0;
+    color: #40483E;
+}
+
+@media screen and (max-width: 768px) {
+    .caseStudySwitcher {
+        top: 0px;
+        right: 108px;
+    }
+
+    .caseStudySwitcherButton {
+        max-width: 40vw;
+        padding: 12px 16px;
+    }
+}

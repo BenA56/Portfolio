@@ -11,7 +11,7 @@ function RespCaseStudy(props) {
                     <div className="h2"> {title} </div>
                     <div className="content center"> {desc} </div>
                     <div style={{display: "flex", alignItems: "center", gap: "8px"}}>
-                        <div className="button"> Read Case Study </div>
+                        <div className="button"> {title} </div>
                         <img src="/utility/Arrow-Right.svg" alt="arrow" width="24px" height="24px" />
                     </div>
                 </div>

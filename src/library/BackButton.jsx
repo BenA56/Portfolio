@@ -6,7 +6,7 @@ function BackButton(props) {
     return (
         <Link to="/" className="backButton">
             <img src="/utility/previous.png" alt="arrow" width="20px" height="auto" />
-            <div className="button"> Back </div>
+            <div className="button"> Home </div>
         </Link>
     )
 }

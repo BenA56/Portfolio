@@ -1,4 +1,6 @@
 import BackButton from "../library/BackButton"
+import CaseStudySwitcher from "../library/CaseStudySwitcher"
+import ProfileWidget from "../library/ProfileWidget"
 import Mission from "./Mission"
 import Problem from "./Problem"
 import Constraints from "./Constraits"
@@ -17,14 +19,15 @@ function AIManualReviewTool(props) {
         <div style={{width: "100%"}}>
 
             <BackButton />
+            <CaseStudySwitcher current="AIManualReviewTool" />
+            <ProfileWidget />
 
             {/* Hero */}
             <div className="sectionOuter">
                 <div style={{display: "flex", flexDirection: "column", alignItems: "center", gap: "64px", marginTop: "-24px"}}>
-                    <img src="/home/Signature.svg" alt="signature" width="92px" height="auto" />
                     <div style={{display: "flex", flexDirection: "column", alignItems: "center", gap: "24px", maxWidth: "800px"}}>
                         <div className="h1"> AI Manual Review Tool </div>
-                        <div className="b1 center"> A 2-year journey to create a flexible and efficient user-management system </div>
+                        <div className="b1 center"> What if Yerbba employees could review AI-generated reports all in one screen? </div>
                         <div className="l1"> @Yerbba, 2022 - 2024 </div>
                     </div>
                 </div>

@@ -1,4 +1,6 @@
 import BackButton from "../library/BackButton.jsx"
+import CaseStudySwitcher from "../library/CaseStudySwitcher.jsx"
+import ProfileWidget from "../library/ProfileWidget.jsx"
 import "../library/Sections.css";
 import "./ReportRedesign.css";
 import Mission from "./Mission.jsx"
@@ -22,14 +24,15 @@ function ReportRedesign(props) {
         <div style={{width: "100%"}}>
 
             <BackButton />
+            <CaseStudySwitcher current="BreastCancerReport" />
+            <ProfileWidget />
 
             {/* Yerbba Hero */}
             <div className="sectionOuter">
                 <div style={{display: "flex", flexDirection: "column", alignItems: "center", gap: "64px", marginTop: "-24px"}}>
-                    <img src="/home/Signature.svg" alt="signature" width="92px" height="auto" />
                     <div style={{display: "flex", flexDirection: "column", alignItems: "center", gap: "24px", maxWidth: "800px"}}>
                         <div className="h1"> The Yerbba Report </div>
-                        <div className="b1 center"> Empowering breast cancer patients to make educated decisions by transforming their medical records into a personazlized report </div>
+                        <div className="b1 center"> What if breast cancer patients understood all of their unique treatment options? </div>
                         <div className="l1"> @Yerbba, Jan 2023 - Feb 2024 </div>
                     </div>
                 </div>
