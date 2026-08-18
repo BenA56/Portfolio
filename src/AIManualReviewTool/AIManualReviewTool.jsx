@@ -28,7 +28,7 @@ function AIManualReviewTool(props) {
                     <div style={{display: "flex", flexDirection: "column", alignItems: "center", gap: "24px", maxWidth: "800px"}}>
                         <div className="h1"> AI Manual Review Tool </div>
                         <div className="b1 center"> What if Yerbba employees could review AI-generated reports all in one screen? </div>
-                        <div className="l1"> @Yerbba, 2022 - 2024 </div>
+                        <div className="l1"> @Yerbba </div>
                     </div>
                 </div>
                 <div className="heroImages">

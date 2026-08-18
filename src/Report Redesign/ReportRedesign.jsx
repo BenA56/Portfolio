@@ -33,7 +33,7 @@ function ReportRedesign(props) {
                     <div style={{display: "flex", flexDirection: "column", alignItems: "center", gap: "24px", maxWidth: "800px"}}>
                         <div className="h1"> The Yerbba Report </div>
                         <div className="b1 center"> What if breast cancer patients understood all of their unique treatment options? </div>
-                        <div className="l1"> @Yerbba, Jan 2023 - Feb 2024 </div>
+                        <div className="l1"> @Yerbba </div>
                     </div>
                 </div>
                 <div className="heroImages">

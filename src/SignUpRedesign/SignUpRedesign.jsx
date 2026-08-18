@@ -29,7 +29,7 @@ function SignUpRedesign(props) {
                     <div style={{display: "flex", flexDirection: "column", alignItems: "center", gap: "24px", maxWidth: "800px"}}>
                         <div className="h1"> EHR Sign Up </div>
                         <div className="b1 center"> What if breast cancer patients could connect their health records while understanding and trusting the system? </div>
-                        <div className="l1"> @Yerbba, Jun 2022 - Oct 2022 </div>
+                        <div className="l1"> @Yerbba </div>
                     </div>
                 </div>
                 <div className="signUpHighlights">

@@ -19,7 +19,7 @@ function ActionBar(props) {
                     <div style={{display: "flex", flexDirection: "column", alignItems: "center", gap: "24px", maxWidth: "800px"}}>
                         <div className="h1"> Running AUS </div>
                         <div className="b1 center"> What if underwriters could run AUS from anywhere in their loan? </div>
-                        <div className="l1"> @UWM, 2025 - Present </div>
+                        <div className="l1"> @United Wholesale Mortgage (UWM) </div>
                     </div>
                 </div>
                 <div className="heroImages">
