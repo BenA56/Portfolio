@@ -1,0 +1,116 @@
+.timelineLayout {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 64px;
+    width: 100%;
+    max-width: 900px;
+}
+
+.timelineSidebar {
+    flex-shrink: 0;
+    width: 180px;
+    position: sticky;
+    top: 160px;
+    box-sizing: border-box;
+}
+
+.timelineTrack {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-left: 4px;
+}
+
+.timelineTrack::before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    bottom: 6px;
+    left: 9px;
+    width: 2px;
+    background-color: #DED7B7;
+}
+
+.timelineEvent {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    text-align: left;
+}
+
+.timelineDot {
+    flex-shrink: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    border: 2px solid #DED7B7;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+}
+
+.timelineLabel {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #40483E;
+    transition: color 0.3s ease, font-weight 0.3s ease;
+}
+
+.timelineEvent:hover .timelineLabel {
+    text-decoration: underline;
+}
+
+.timelineEvent.active .timelineDot {
+    background-color: #081704;
+    border-color: #081704;
+    transform: scale(1.2);
+}
+
+.timelineEvent.active .timelineLabel {
+    color: #081704;
+    font-weight: 700;
+}
+
+.timelineContent {
+    display: flex;
+    flex-direction: column;
+    gap: 96px;
+    flex: 1;
+    min-width: 0;
+    max-width: 600px;
+}
+
+.timelineStep {
+    scroll-margin-top: 140px;
+}
+
+@media screen and (max-width: 768px) {
+    .timelineLayout {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+
+    .timelineSidebar {
+        display: none;
+    }
+
+    .timelineContent {
+        gap: 64px;
+        width: 100%;
+    }
+
+    .timelineStep {
+        scroll-margin-top: 0;
+    }
+}

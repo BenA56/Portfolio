@@ -2,7 +2,7 @@ import BackButton from "../library/BackButton"
 import CaseStudySwitcher from "../library/CaseStudySwitcher"
 import ProfileWidget from "../library/ProfileWidget"
 import Problem from "./Problem"
-import ComingSoon from "./ComingSoon"
+import Journey from "./Journey"
 import FinalScreenshots from "./FinalScreenshots"
 
 function ActionBar(props) {
@@ -28,8 +28,8 @@ function ActionBar(props) {
             </div>
 
             <Problem />
+            <Journey />
             <FinalScreenshots />
-            <ComingSoon />
 
         </div>
     )

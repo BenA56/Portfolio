@@ -1,57 +1,44 @@
-import SectionHeader from "../library/SectionHeader.jsx"
+import ScrollScene from "../library/ScrollScene.jsx"
 
 function Problem(props) {
+    const slides = [
+        <>
+            <div className="scrollSceneEyebrow">
+                <div className="l1">Problem</div>
+                <img src="/utility/underline.svg" alt="" width="auto" height="auto" />
+            </div>
+            <div className="scrollSceneHeadline">Imagine you're an underwriter at UWM.</div>
+            <div className="scrollSceneSubtext">Responsible for the validity of 10–15 mortgage loans a day.</div>
+            <div className="scrollSceneImageWrap imgOverlayWrap">
+                <img className="imgStyle" src="/aus/UWM-Floor.webp" alt="UWM underwriting floor" width="100%" height="auto" />
+                <div className="overlayTag l1">You work here</div>
+            </div>
+        </>,
+
+        <>
+            <div className="scrollSceneHeadline">Your goal: get every loan investor-ready.</div>
+            <div className="scrollSceneSubtext">Income, assets, and liabilities — all properly documented to satisfy Freddie Mac and Fannie Mae.</div>
+        </>,
+
+        <>
+            <div className="scrollSceneHeadline">So you run AUS. Again and again.</div>
+            <div className="scrollSceneSubtext">The Automated Underwriting System check that says you're on the right path.</div>
+        </>,
+
+        <>
+            <div className="scrollSceneHeadline">But running AUS means leaving your page.</div>
+            <div className="scrollSceneSubtext">Navigate away in Bolt, or juggle a second window in the legacy tool, Edge.</div>
+        </>,
+
+        <>
+            <div className="scrollSceneHeadline">What if you never had to leave?</div>
+            <div className="scrollSceneSubtext">Run AUS from anywhere in the loan — no friction, no legacy system.</div>
+        </>,
+    ]
+
     return (
         <div className="sectionOuter light">
-            <div className="sectionInner">
-                <div className="subSection">
-                    <SectionHeader
-                        label="Problem"
-                        title="Imagine you're an underwriter at UWM responsible for ensuring the validity of 10-15 mortgage loans per day."
-                        center={true}
-                    />
-                </div>
-            </div>
-
-            <div className="sectionInner">
-                <div className="imageLayout">
-                    <div className="imgOverlayWrap">
-                        <img className="imgStyle" src="/aus/UWM-Floor.webp" alt="UWM underwriting floor" width="100%" height="auto" />
-                        <div className="overlayTag l1">You work here</div>
-                    </div>
-                    <div className="imgLabel">An actual photo of the underwriting floor at UWM</div>
-                </div>
-            </div>
-
-            <div className="threeColLayout">
-                <div className="threeColItem">
-                    <div className="h3">Your goal ...</div>
-                    <div className="content">
-                        ... is to make sure that income, assets, and liabilities are properly documented with ratios that satisfy requirements set by the federally backed companies of Freddie Mac and Freddie Mae.
-                    </div>
-                </div>
-                <div className="threeColItem">
-                    <div className="h3">In order to do this ...</div>
-                    <div className="content">
-                        ... you run AUS (automated underwriting system) many times on each loan to make sure that you're on the right path. An eligible result means that UWM can sell that loan to Fannie or Freddie on the secondary market.
-                    </div>
-                </div>
-                <div className="threeColItem">
-                    <div className="h3">The problem is ...</div>
-                    <div className="content">
-                        ... in order to run AUS you have to either navigate away from your current page in Bolt and go to the final review page, or keep your current page open and use a different window to run it in our legacy underwriting tool (Edge).
-                    </div>
-                </div>
-            </div>
-
-            <div className="sectionInner">
-                <div className="subSection">
-                    <div className="h3 center" style={{fontSize: "32px", lineHeight: "40px"}}>But what if ...</div>
-                    <div className="content center" style={{fontSize: "26px", lineHeight: "36px"}}>
-                        ... you could access and run AUS wherever you are in your loan, without the friction of navigating away to another page or going back to the legacy system?
-                    </div>
-                </div>
-            </div>
+            <ScrollScene slides={slides} />
         </div>
     )
 }
