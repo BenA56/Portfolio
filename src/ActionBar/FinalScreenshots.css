@@ -1,18 +1,88 @@
 .finalScreenshotsSection {
-    background-color: #FFFFFF;
+    background-color: #F4F2E9;
 }
 
-.bigScreenshot {
+.carouselLayout {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 24px;
+    width: 100%;
+    max-width: 1080px;
+}
+
+.carouselContent {
+    display: flex;
+    flex-direction: column;
+    gap: 96px;
+    flex: 1;
+    min-width: 0;
+}
+
+.carouselStep {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 24px;
-    width: 100%;
-    max-width: 960px;
+    scroll-margin-top: 140px;
+}
+
+.carouselCaption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    text-align: center;
+}
+
+.carouselThumbs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+    gap: 16px;
+    position: sticky;
+    top: 160px;
+}
+
+.carouselThumb {
+    padding: 0;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    background: none;
+    cursor: pointer;
+    overflow: hidden;
+    transition: border-color 0.2s ease;
+}
+
+.carouselThumb.selected {
+    border-color: #081704;
+}
+
+.carouselThumb img {
+    display: block;
+    width: 150px;
+    height: auto;
 }
 
 @media screen and (max-width: 768px) {
-    .bigScreenshot {
+    .carouselLayout {
+        flex-direction: column;
+        align-items: center;
         gap: 16px;
+    }
+
+    .carouselContent {
+        gap: 64px;
+        width: 100%;
+    }
+
+    .carouselStep {
+        gap: 16px;
+        scroll-margin-top: 0;
+    }
+
+    .carouselThumbs {
+        display: none;
     }
 }

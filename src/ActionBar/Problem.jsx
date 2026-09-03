@@ -1,4 +1,6 @@
 import ScrollScene from "../library/ScrollScene.jsx"
+import ImagePlaceholder from "../library/ImagePlaceholder.jsx"
+import BulletPoint from "../library/BulletPoint.jsx"
 
 function Problem(props) {
     const slides = [
@@ -16,23 +18,53 @@ function Problem(props) {
         </>,
 
         <>
-            <div className="scrollSceneHeadline">Your goal: get every loan investor-ready.</div>
-            <div className="scrollSceneSubtext">Income, assets, and liabilities — all properly documented to satisfy Freddie Mac and Fannie Mae.</div>
+            <div className="scrollSceneHeadline">You bounce back and forth between the legacy and new system to hit your daily commitment of 10 loans per day.</div>
+            <div className="stackTwoCol">
+                <div className="stackTwoColItem">
+                    <img className="imgStyle" src="/bolt/Bolt.png" alt="Bolt" width="100%" height="auto" />
+                    <div className="l1">Bolt — the new system</div>
+                </div>
+                <div className="stackTwoColItem">
+                    <ImagePlaceholder label="Edge screenshot placeholder" />
+                    <div className="l1">Edge — the legacy system</div>
+                </div>
+            </div>
         </>,
 
         <>
-            <div className="scrollSceneHeadline">So you run AUS. Again and again.</div>
-            <div className="scrollSceneSubtext">The Automated Underwriting System check that says you're on the right path.</div>
+            <div className="scrollSceneHeadline">AUS is your golden ticket to hitting your daily commitment.</div>
+            <div className="bulletList">
+                <BulletPoint image="/utility/check.png" text="Placeholder — thing AUS checks for #1" />
+                <BulletPoint image="/utility/check.png" text="Placeholder — thing AUS checks for #2" />
+                <BulletPoint image="/utility/check.png" text="Placeholder — thing AUS checks for #3" />
+                <BulletPoint image="/utility/check.png" text="Placeholder — thing AUS checks for #4" />
+            </div>
         </>,
 
         <>
-            <div className="scrollSceneHeadline">But running AUS means leaving your page.</div>
-            <div className="scrollSceneSubtext">Navigate away in Bolt, or juggle a second window in the legacy tool, Edge.</div>
+            <div className="scrollSceneHeadline">You re-run AUS any time you make a change to your loan.</div>
+            <div className="stackActionList">
+                <div className="stackActionRow">
+                    <div className="content">Placeholder action #1</div>
+                    <div className="stackTag l1">Re-run AUS</div>
+                </div>
+                <div className="stackActionRow">
+                    <div className="content">Placeholder action #2</div>
+                    <div className="stackTag l1">Re-run AUS</div>
+                </div>
+                <div className="stackActionRow">
+                    <div className="content">Placeholder action #3</div>
+                    <div className="stackTag l1">Re-run AUS</div>
+                </div>
+            </div>
         </>,
 
         <>
-            <div className="scrollSceneHeadline">What if you never had to leave?</div>
-            <div className="scrollSceneSubtext">Run AUS from anywhere in the loan — no friction, no legacy system.</div>
+            <div className="scrollSceneHeadline">But if you're working a loan in Bolt, you most likely go back to Edge to run AUS.</div>
+        </>,
+
+        <>
+            <div className="scrollSceneHeadline">What if you could run AUS directly in the new system without having to leave your workflow?</div>
         </>,
     ]
 

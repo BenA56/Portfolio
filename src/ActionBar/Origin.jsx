@@ -15,6 +15,12 @@ function Origin(props) {
                     After designing an initial mock-up and presenting to stakeholders, we started to get a pulse that the final review page might not be the best place for AUS. Stakeholders were struggling with the concept because, many of them being former underwriters, they knew that AUS was not only run as a final step but run many times throughout the life of the loan. <strong>So it felt weird to navigate away to a page called "Final Review" anytime you needed to run AUS.</strong>
                 </div>
             </div>
+            <div className="imageSection">
+                <div className="imageLayout">
+                    <img className="imgStyle" src="/aus/Initial-Final-Review-Page.png" alt="Initial Final Review page design" width="100%" height="auto" />
+                    <div className="imgLabel">initial final review page I designed that didn't fit the anytime/anywhere dynamic of AUS</div>
+                </div>
+            </div>
         </div>
     )
 }

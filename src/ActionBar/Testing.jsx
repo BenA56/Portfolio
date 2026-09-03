@@ -21,6 +21,15 @@ function Testing(props) {
                     I did the tests, recording my notes on a Miro board and then grouping the notes into themes. I presented these findings to Logan before making the design updates to make sure that his thoughts as the product owner were being incorporated as well.
                 </div>
             </div>
+            <div className="imagePairRow">
+                <div className="imageLayout">
+                    <img className="imgStyle" src="/aus/Testing-Miro-Board.png" alt="Miro board with testing notes grouped into themes" />
+                    <div className="imgLabel">I took notes on each individual test, then grouped the notes into themes, which turned into a list of design improvements</div>
+                </div>
+                <div className="imageLayout">
+                    <img className="imgStyle" src="/aus/Testing-Design-Adjustments.png" alt="List of design adjustments from testing" />
+                </div>
+            </div>
         </div>
     )
 }

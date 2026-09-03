@@ -119,6 +119,35 @@
     }
 }
 
+.imagePairRow {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 24px;
+    width: 100%;
+}
+
+.imagePairRow .imgStyle {
+    height: 200px;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+@media screen and (max-width: 500px) {
+    .imagePairRow {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagePairRow .imgStyle {
+        height: auto;
+        width: 100%;
+    }
+}
+
+
 .threeColLayout {
     display: flex;
     flex-direction: row;
