@@ -1,0 +1,134 @@
+.staggerSceneOuter {
+    width: 100%;
+    position: relative;
+}
+
+.staggerScenePin {
+    width: 100%;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Clears the fixed back/case-study/profile nav, which sits in the top
+       ~100px and would otherwise overlap the first card. */
+    padding-top: 110px;
+    box-sizing: border-box;
+}
+
+/* After the last card lands the scene stops pinning and scrolls like any
+   other block, so there's no frozen stretch to scroll back through. */
+.staggerSceneReleased .staggerScenePin {
+    position: static;
+    height: auto;
+    padding-top: 0;
+}
+
+.staggerScene {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+/* Photo beside the cards rather than above them, so the scene's height is
+   max(photo, cards) instead of the sum — that's what keeps it in one screen. */
+.staggerSceneMain {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 24px;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.staggerPhotoWrap {
+    position: relative;
+    flex: 0 0 300px;
+    min-height: 0;
+}
+
+/* The source photo is a 16:9 landscape shot, so it gets cropped hard to fill
+   this portrait column. */
+.staggerPhotoWrap img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.staggerCardColumn {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.staggerSmallCard {
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    box-shadow: 0px 12px 24px 0px rgba(8, 23, 4, 0.12);
+    padding: 20px 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    text-align: left;
+    flex: 1;
+    box-sizing: border-box;
+}
+
+.staggerCardHeadline {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    font-size: clamp(18px, 1.8vw, 24px);
+    line-height: 1.3;
+}
+
+.staggerInsight {
+    width: 100%;
+    max-width: 1000px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    padding: 20px 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.staggerInsightLabel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+@media screen and (max-width: 900px) {
+    .staggerSceneMain {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Stacked, the photo has no card column to borrow its height from, so it
+       goes back to a fixed landscape-ish block instead of an absolute fill. */
+    .staggerPhotoWrap {
+        flex: none;
+        width: 100%;
+        max-width: 520px;
+        height: 280px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .staggerCardHeadline {
+        font-size: clamp(18px, 5vw, 22px);
+    }
+}
