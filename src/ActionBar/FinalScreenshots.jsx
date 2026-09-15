@@ -1,6 +1,14 @@
-import { useEffect, useRef, useState } from "react"
+import { useRef, useState } from "react"
 import "./FinalScreenshots.css"
 import SectionHeader from "../library/SectionHeader"
+
+function ArrowIcon(props) {
+    return (
+        <svg width="10" height="16" viewBox="0 0 13 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12.5173 11.2809L4.01998 19.7783C3.43266 20.3656 2.48296 20.3656 1.90189 19.7783L0.489832 18.3662C-0.0974846 17.7789 -0.0974846 16.8292 0.489832 16.2481L6.5067 10.2187L0.483583 4.19563C-0.103733 3.60832 -0.103733 2.65861 0.483583 2.07754L1.89564 0.659236C2.48296 0.07192 3.43266 0.07192 4.01373 0.659236L12.5111 9.15658C13.1046 9.7439 13.1046 10.6936 12.5173 11.2809Z" fill="currentColor"/>
+        </svg>
+    )
+}
 
 const SCREENSHOTS = [
     {
@@ -49,36 +57,17 @@ const SCREENSHOTS = [
 
 function FinalScreenshots(props) {
     const [activeId, setActiveId] = useState(SCREENSHOTS[0].id)
-    const contentRef = useRef(null)
-    const ratiosRef = useRef({})
+    const activeShot = SCREENSHOTS.find((shot) => shot.id === activeId) || SCREENSHOTS[0]
+    const thumbsRef = useRef(null)
 
-    function scrollToShot(id) {
-        document.getElementById(id)?.scrollIntoView({ behavior: "smooth" })
+    function scrollThumbs(direction) {
+        const strip = thumbsRef.current
+        if (!strip) return
+        strip.scrollBy({ left: direction * strip.clientWidth * 0.8, behavior: "smooth" })
     }
 
-    useEffect(() => {
-        const observer = new IntersectionObserver(
-            (entries) => {
-                entries.forEach((entry) => {
-                    ratiosRef.current[entry.target.id] = entry.isIntersecting ? entry.intersectionRatio : 0
-                })
-
-                const [mostVisibleId] = Object.entries(ratiosRef.current).sort((a, b) => b[1] - a[1])[0] || []
-                if (mostVisibleId) {
-                    setActiveId(mostVisibleId)
-                }
-            },
-            { threshold: Array.from({ length: 11 }, (_, i) => i / 10) }
-        )
-
-        const els = contentRef.current?.querySelectorAll("[id]")
-        els?.forEach((el) => observer.observe(el))
-
-        return () => observer.disconnect()
-    }, [])
-
     return (
-        <div className="sectionOuter finalScreenshotsSection">
+        <div id="final-product" className="sectionOuter finalScreenshotsSection">
             <SectionHeader
                 label="Final Product"
                 title="Final Production Screenshots"
@@ -86,31 +75,49 @@ function FinalScreenshots(props) {
             />
 
             <div className="carouselLayout">
-                <div className="carouselThumbs">
-                    {SCREENSHOTS.map((shot) => (
-                        <button
-                            key={shot.id}
-                            type="button"
-                            className={`carouselThumb${shot.id === activeId ? " selected" : ""}`}
-                            onClick={() => scrollToShot(shot.id)}
-                            aria-label={shot.alt}
-                            aria-current={shot.id === activeId}
-                        >
-                            <img src={shot.src} alt="" />
-                        </button>
-                    ))}
+                <div className="carouselThumbRow">
+                    <button
+                        type="button"
+                        className="carouselArrow carouselArrow--prev"
+                        onClick={() => scrollThumbs(-1)}
+                        aria-label="Scroll thumbnails left"
+                    >
+                        <ArrowIcon />
+                    </button>
+
+                    <div className="carouselThumbs" ref={thumbsRef}>
+                        {SCREENSHOTS.map((shot) => (
+                            <button
+                                key={shot.id}
+                                type="button"
+                                className={`carouselThumb${shot.id === activeId ? " selected" : ""}`}
+                                onClick={() => setActiveId(shot.id)}
+                                aria-label={shot.alt}
+                                aria-current={shot.id === activeId}
+                            >
+                                <img src={shot.src} alt="" />
+                            </button>
+                        ))}
+                    </div>
+
+                    <button
+                        type="button"
+                        className="carouselArrow carouselArrow--next"
+                        onClick={() => scrollThumbs(1)}
+                        aria-label="Scroll thumbnails right"
+                    >
+                        <ArrowIcon />
+                    </button>
                 </div>
 
-                <div className="carouselContent" ref={contentRef}>
-                    {SCREENSHOTS.map((shot) => (
-                        <div key={shot.id} id={shot.id} className="carouselStep">
-                            <div className="carouselCaption">
-                                <div className="h3">{shot.header}</div>
-                                <div className="imgLabel">{shot.label}</div>
-                            </div>
-                            <img className="imgStyle" src={shot.src} alt={shot.alt} width="100%" height="auto" />
-                        </div>
-                    ))}
+                <div className="carouselStep">
+                    <div className="carouselStage">
+                        <img className="imgStyle" src={activeShot.src} alt={activeShot.alt} />
+                    </div>
+                    <div className="carouselCaption">
+                        <div className="h3">{activeShot.header}</div>
+                        <div className="imgLabel">{activeShot.label}</div>
+                    </div>
                 </div>
             </div>
         </div>
