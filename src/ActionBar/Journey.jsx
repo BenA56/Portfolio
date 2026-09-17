@@ -1,6 +1,7 @@
 import Timeline from "../library/Timeline"
-import Origin from "./Origin"
-import Concept from "./Concept"
+import Ask from "./Ask"
+import Pivot from "./Pivot"
+import Collab from "./Collab"
 import LegacyOne from "./LegacyOne"
 import LegacyTwo from "./LegacyTwo"
 import Testing from "./Testing"
@@ -21,8 +22,9 @@ function Journey(props) {
         {
             label: "Project Origin",
             steps: [
-                { id: "origin", label: "Pivoting from the ask", content: <Origin /> },
-                { id: "concept", label: "Borrowing a sandbox idea", content: <Concept /> },
+                { id: "ask", label: "The Ask", content: <Ask /> },
+                { id: "pivot", label: "The Pivot", content: <Pivot /> },
+                { id: "collab", label: "The Collab", content: <Collab /> },
             ],
         },
         {

@@ -148,6 +148,44 @@
 }
 
 
+/* Before/after row: two panels of equal width with an arrow between them. */
+.compareRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    width: 100%;
+}
+
+.compareItem {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.compareItem .imgStyle {
+    width: 100%;
+    height: auto;
+}
+
+.compareArrow {
+    flex-shrink: 0;
+}
+
+@media screen and (max-width: 500px) {
+    .compareRow {
+        flex-direction: column;
+    }
+
+    .compareArrow {
+        transform: rotate(90deg);
+    }
+}
+
 .threeColLayout {
     display: flex;
     flex-direction: row;
