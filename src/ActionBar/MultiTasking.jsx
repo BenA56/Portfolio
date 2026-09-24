@@ -1,5 +1,4 @@
 import SectionHeader from "../library/SectionHeader.jsx"
-import ImagePlaceholder from "../library/ImagePlaceholder.jsx"
 
 function MultiTasking(props) {
     return (
@@ -27,15 +26,15 @@ function MultiTasking(props) {
             </div>
 
             <div className="imageLayout">
-                <ImagePlaceholder label="[insert AUS popover open and loading]" />
+                <img className="imgStyle" src="/aus/AUS-Popover-Loading.png" alt="The AUS popover open with the form disabled and a Running DU spinner" width="100%" height="auto" />
                 <div className="imgLabel">The popover shows the run in progress</div>
             </div>
             <div className="imageLayout">
-                <ImagePlaceholder label="[insert AUS popover closed with loading still indicated on the action bar]" />
+                <img className="imgStyle" src="/aus/In-Bar-Loading.png" alt="The action bar with the AUS pill showing a loading indicator after the popover is closed" width="100%" height="auto" />
                 <div className="imgLabel">Closing the popover keeps the run going, with the action bar holding the loading state</div>
             </div>
             <div className="imageLayout">
-                <ImagePlaceholder label="[insert AUS indicated with new result in the action bar]" />
+                <img className="imgStyle" src="/aus/In-Bar-New-Result.png" alt="The action bar with a NEW badge and a red alert icon on the AUS pill once the run finishes" width="100%" height="auto" />
                 <div className="imgLabel">A strong indicator on the action bar reminds the underwriter to go back in and check the result</div>
             </div>
         </div>

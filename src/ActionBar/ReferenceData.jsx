@@ -1,5 +1,4 @@
 import SectionHeader from "../library/SectionHeader.jsx"
-import ImagePlaceholder from "../library/ImagePlaceholder.jsx"
 
 function ReferenceData(props) {
     return (
@@ -35,7 +34,7 @@ function ReferenceData(props) {
                 </div>
             </div>
 
-            <ImagePlaceholder label="[insert reference data picture]" />
+            <img className="imgStyle" src="/aus/Ref-Numbers-Highlight.png" alt="The run complete screen with a For reference panel showing DTI, HTI, LTV, and Credit Score below the findings buttons" width="100%" height="auto" />
         </div>
     )
 }

@@ -186,6 +186,19 @@
     }
 }
 
+.compareColumn {
+    flex-direction: column;
+}
+
+.compareColumn .compareItem {
+    flex: none;
+    width: 100%;
+}
+
+.compareColumn .compareArrow {
+    transform: rotate(90deg);
+}
+
 .threeColLayout {
     display: flex;
     flex-direction: row;

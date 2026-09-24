@@ -1,5 +1,4 @@
 import SectionHeader from "../library/SectionHeader.jsx"
-import ImagePlaceholder from "../library/ImagePlaceholder.jsx"
 
 function StatusChanges(props) {
     return (
@@ -23,7 +22,7 @@ function StatusChanges(props) {
                 </div>
             </div>
 
-            <ImagePlaceholder label="[insert picture of old status column]" />
+            <img className="imgStyle" src="/aus/Old-Status-Highlight.png" alt="The Recommendation column in the legacy request history, a text-only list of wordy statuses" width="100%" height="auto" />
 
             <div className="subSection alignLeft">
                 <div className="content">
@@ -37,7 +36,7 @@ function StatusChanges(props) {
                 </div>
             </div>
 
-            <ImagePlaceholder label="[insert picture of new statuses]" />
+            <img className="imgStyle" src="/aus/New-Status-Highlight.png" alt="The redesigned AUS history with a green check on eligible runs and a red error icon on everything else" width="100%" height="auto" />
 
             <div className="subSection alignLeft">
                 <div className="content">

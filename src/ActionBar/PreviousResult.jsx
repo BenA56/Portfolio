@@ -1,5 +1,4 @@
 import SectionHeader from "../library/SectionHeader.jsx"
-import ImagePlaceholder from "../library/ImagePlaceholder.jsx"
 
 function PreviousResult(props) {
     return (
@@ -23,7 +22,15 @@ function PreviousResult(props) {
                 </div>
             </div>
 
-            <ImagePlaceholder label="[insert side by side screenshots of the AUS form and the request history tab]" />
+            <div className="compareRow compareColumn">
+                <div className="compareItem">
+                    <img className="imgStyle" src="/aus/Old-AUS-Form.png" alt="The AUS form in the legacy system, Edge" width="100%" height="auto" />
+                </div>
+                <img className="compareArrow" src="/utility/Arrow-Right.svg" alt="then" width="24px" height="24px" />
+                <div className="compareItem">
+                    <img className="imgStyle" src="/aus/Prev-Result-History-Highlight.png" alt="The Request History tab in Edge with the top row highlighted" width="100%" height="auto" />
+                </div>
+            </div>
 
             <div className="subSection alignLeft">
                 <div className="content">
@@ -31,7 +38,7 @@ function PreviousResult(props) {
                 </div>
             </div>
 
-            <ImagePlaceholder label="[insert picture of old Run AUS screen with Previous Result highlighted]" />
+            <img className="imgStyle" src="/aus/Prev-Result-Highlight.png" alt="The New Run modal with Previous Run in the same row as the Run DU button" width="100%" height="auto" />
 
             <div className="subSection alignLeft">
                 <div className="content">
@@ -48,7 +55,7 @@ function PreviousResult(props) {
                 </div>
             </div>
 
-            <ImagePlaceholder label="[insert current picture of Run AUS screen with Previous Result highlighted]" />
+            <img className="imgStyle" src="/aus/Prev-Result-Good.png" alt="The Run AUS modal with Previous Result at the top left, in the focal point of the F-scan pattern" width="100%" height="auto" />
 
             <div className="subSection alignLeft">
                 <div className="content">
