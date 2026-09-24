@@ -1,5 +1,4 @@
 import SectionHeader from "../library/SectionHeader.jsx"
-import ImagePlaceholder from "../library/ImagePlaceholder.jsx"
 
 function Ask(props) {
     return (
@@ -27,7 +26,7 @@ function Ask(props) {
                     </div>
                     <img className="compareArrow" src="/utility/Arrow-Right.svg" alt="becomes" width="24px" height="24px" />
                     <div className="compareItem">
-                        <ImagePlaceholder label="[insert Bolt AUS screenshot]" />
+                        <img className="imgStyle" src="/bolt/Bolt-Logo.png" alt="Bolt" width="100%" height="auto" />
                     </div>
                 </div>
             </div>
