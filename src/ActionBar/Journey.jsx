@@ -2,12 +2,10 @@ import Timeline from "../library/Timeline"
 import Ask from "./Ask"
 import Pivot from "./Pivot"
 import Collab from "./Collab"
-import LegacyOne from "./LegacyOne"
-import LegacyTwo from "./LegacyTwo"
-import Testing from "./Testing"
-import Noticeable from "./Noticeable"
-import Context from "./Context"
-import Friction from "./Friction"
+import PreviousResult from "./PreviousResult"
+import StatusChanges from "./StatusChanges"
+import MultiTasking from "./MultiTasking"
+import ReferenceData from "./ReferenceData"
 
 function DownArrowIcon() {
     return (
@@ -28,19 +26,12 @@ function Journey(props) {
             ],
         },
         {
-            label: "Improvements from Legacy",
+            label: "Design Details",
             steps: [
-                { id: "legacy-one", label: "Improvement over Edge #1", content: <LegacyOne /> },
-                { id: "legacy-two", label: "Improvement over Edge #2", content: <LegacyTwo /> },
-            ],
-        },
-        {
-            label: "Improvements from Testing",
-            steps: [
-                { id: "testing", label: "Testing on underwriters", content: <Testing /> },
-                { id: "noticeable", label: "Making previous result noticeable", content: <Noticeable /> },
-                { id: "context", label: "Giving the right context", content: <Context /> },
-                { id: "friction", label: "Adding friction for switching investors", content: <Friction /> },
+                { id: "previous-result", label: "Previous Result", content: <PreviousResult /> },
+                { id: "status-changes", label: "Status Changes", content: <StatusChanges /> },
+                { id: "multi-tasking", label: "Multi-tasking", content: <MultiTasking /> },
+                { id: "reference-data", label: "Reference Data", content: <ReferenceData /> },
             ],
         },
     ]
