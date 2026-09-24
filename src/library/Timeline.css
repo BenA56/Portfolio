@@ -1,0 +1,191 @@
+.timelineLayout {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 64px;
+    width: 100%;
+    max-width: 900px;
+}
+
+.timelineSidebar {
+    flex-shrink: 0;
+    width: 180px;
+    position: sticky;
+    /* `top` is set inline (TimelineSidebar.jsx), measured from the nav's actual
+       height so it centers in the viewport without ever rising above the
+       section's start — a pure CSS top:50%/translateY(-50%) trick can push a
+       sticky element's rendered box above its container, overlapping whatever
+       comes before it. */
+    box-sizing: border-box;
+}
+
+.timelineTrack {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    padding-left: 4px;
+}
+
+.timelineGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.timelineGroupLabel {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #40483E;
+}
+
+.timelineGroupSteps {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+/* One rail segment per group, running first dot to last dot, so the track
+   visibly breaks between phases instead of running as one line. */
+.timelineGroupSteps::before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    bottom: 6px;
+    /* Dots are 12px wide (radius 6px); centering a 2px line on that
+       means starting it 1px left of the radius. */
+    left: 5px;
+    width: 2px;
+    background-color: #DED7B7;
+}
+
+/* The sidebar is hidden on mobile, so the group labels reappear inline. */
+.timelineGroupHeading {
+    display: none;
+}
+
+.timelineEvent {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    text-align: left;
+}
+
+.timelineDot {
+    flex-shrink: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    border: 2px solid #DED7B7;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+}
+
+.timelineLabel {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #40483E;
+    transition: color 0.3s ease, font-weight 0.3s ease;
+}
+
+.timelineEvent:hover .timelineLabel {
+    text-decoration: underline;
+}
+
+.timelineEvent.active .timelineDot {
+    background-color: #081704;
+    border-color: #081704;
+    transform: scale(1.2);
+}
+
+.timelineEvent.active .timelineLabel {
+    color: #081704;
+    font-weight: 700;
+}
+
+.timelineSidebarFooter {
+    margin-top: 32px;
+}
+
+.timelineSkipButton {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 100px;
+    background: none;
+    color: #40483E;
+    font-family: "Poetsen One", sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.timelineSkipButton svg {
+    flex-shrink: 0;
+    width: 10px;
+    height: 10px;
+    transform: rotate(90deg);
+}
+
+.timelineSkipButton:hover {
+    background-color: #DED7B7;
+    color: #081704;
+}
+
+.timelineContent {
+    display: flex;
+    flex-direction: column;
+    gap: 96px;
+    flex: 1;
+    min-width: 0;
+    max-width: 600px;
+}
+
+.timelineStep {
+    scroll-margin-top: 140px;
+}
+
+@media screen and (max-width: 768px) {
+    .timelineLayout {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+
+    .timelineSidebar {
+        display: none;
+    }
+
+    .timelineContent {
+        gap: 64px;
+        width: 100%;
+    }
+
+    .timelineStep {
+        scroll-margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .timelineGroupHeading {
+        display: block;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+    }
+}

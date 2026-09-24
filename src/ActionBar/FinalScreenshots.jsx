@@ -3,7 +3,7 @@ import SectionHeader from "../library/SectionHeader"
 
 function FinalScreenshots(props) {
     return (
-        <div className="sectionOuter finalScreenshotsSection">
+        <div id="final-product" className="sectionOuter finalScreenshotsSection">
             <SectionHeader
                 label="Final Product"
                 title="Final Production Screenshots"

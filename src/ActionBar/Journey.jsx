@@ -1,0 +1,53 @@
+import Timeline from "../library/Timeline"
+import Ask from "./Ask"
+import Pivot from "./Pivot"
+import Collab from "./Collab"
+import PreviousResult from "./PreviousResult"
+import StatusChanges from "./StatusChanges"
+import MultiTasking from "./MultiTasking"
+import ReferenceData from "./ReferenceData"
+
+function DownArrowIcon() {
+    return (
+        <svg width="10" height="16" viewBox="0 0 13 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12.5173 11.2809L4.01998 19.7783C3.43266 20.3656 2.48296 20.3656 1.90189 19.7783L0.489832 18.3662C-0.0974846 17.7789 -0.0974846 16.8292 0.489832 16.2481L6.5067 10.2187L0.483583 4.19563C-0.103733 3.60832 -0.103733 2.65861 0.483583 2.07754L1.89564 0.659236C2.48296 0.07192 3.43266 0.07192 4.01373 0.659236L12.5111 9.15658C13.1046 9.7439 13.1046 10.6936 12.5173 11.2809Z" fill="currentColor"/>
+        </svg>
+    )
+}
+
+function Journey(props) {
+    const groups = [
+        {
+            label: "Project Origin",
+            steps: [
+                { id: "ask", label: "The Ask", content: <Ask /> },
+                { id: "pivot", label: "The Pivot", content: <Pivot /> },
+                { id: "collab", label: "The Collab", content: <Collab /> },
+            ],
+        },
+        {
+            label: "Design Details",
+            steps: [
+                { id: "previous-result", label: "Previous Result", content: <PreviousResult /> },
+                { id: "status-changes", label: "Status Changes", content: <StatusChanges /> },
+                { id: "multi-tasking", label: "Multi-tasking", content: <MultiTasking /> },
+                { id: "reference-data", label: "Reference Data", content: <ReferenceData /> },
+            ],
+        },
+    ]
+
+    function scrollToFinalProduct() {
+        document.getElementById("final-product")?.scrollIntoView({ behavior: "smooth" })
+    }
+
+    const sidebarFooter = (
+        <button type="button" className="timelineSkipButton" onClick={scrollToFinalProduct}>
+            Final Product
+            <DownArrowIcon />
+        </button>
+    )
+
+    return <Timeline groups={groups} sidebarFooter={sidebarFooter} />
+}
+
+export default Journey
