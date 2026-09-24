@@ -4,6 +4,7 @@ import ProfileWidget from "../library/ProfileWidget"
 import Problem from "./Problem"
 import Journey from "./Journey"
 import FinalScreenshots from "./FinalScreenshots"
+import TryItYourself from "./Prototype/TryItYourself"
 import Learnings from "./Learnings"
 
 function ActionBar(props) {
@@ -31,6 +32,7 @@ function ActionBar(props) {
             <Problem />
             <Journey />
             <FinalScreenshots />
+            <TryItYourself />
             <Learnings />
 
         </div>

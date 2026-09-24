@@ -1,0 +1,703 @@
+.ausOverlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    z-index: 20;
+    border-radius: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.ausPanel {
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    max-width: calc(100% - 32px);
+    min-height: 520px;
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    box-shadow: 0px 16px 40px 0px rgba(15, 32, 58, 0.35);
+    overflow: hidden;
+}
+
+.ausPanel.wide {
+    width: 1120px;
+}
+
+.ausRail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+    width: 96px;
+    flex-shrink: 0;
+    padding: 28px 8px;
+}
+
+.ausRailLabel {
+    font-weight: 800;
+    font-size: 15px;
+    color: #1A365D;
+    letter-spacing: 0.02em;
+}
+
+.ausRailItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    background: none;
+    border: none;
+    color: #A0AEC0;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 4px;
+}
+
+.ausRailItem:disabled {
+    cursor: not-allowed;
+}
+
+.ausRailItem.active {
+    color: #2B6CB0;
+}
+
+.ausDivider {
+    width: 1px;
+    background-color: #E2E8F0;
+    flex-shrink: 0;
+}
+
+.ausContent {
+    position: relative;
+    flex: 1;
+    min-width: 0;
+    padding: 28px 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.ausClose {
+    position: absolute;
+    top: 24px;
+    right: 28px;
+    background: none;
+    border: none;
+    color: #1A202C;
+    cursor: pointer;
+    padding: 4px;
+    line-height: 0;
+}
+
+.ausClose:disabled {
+    color: #CBD5E0;
+    cursor: not-allowed;
+}
+
+/* ---- Run AUS view ---- */
+
+.runView {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 100%;
+}
+
+.runTitle {
+    font-size: 26px;
+    font-weight: 800;
+    color: #1A365D;
+    margin: 0;
+    padding-right: 40px;
+}
+
+.runBody {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    flex: 1;
+}
+
+.runLeftCol {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 190px;
+    flex-shrink: 0;
+}
+
+.runColDivider {
+    width: 1px;
+    background-color: #E2E8F0;
+    flex-shrink: 0;
+}
+
+.runSectionLabel {
+    font-weight: 700;
+    font-size: 15px;
+    color: #1A202C;
+}
+
+.runPrevResult {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    color: #1A202C;
+    margin-bottom: 6px;
+}
+
+.runLink {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: none;
+    border: none;
+    color: #2B6CB0;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 2px 0;
+    text-align: left;
+}
+
+.runInfoBlock {
+    margin-top: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.runInfoMethod {
+    font-weight: 700;
+    color: #1A202C;
+    margin-top: 6px;
+}
+
+.runInfoSub {
+    color: #718096;
+    font-size: 13px;
+}
+
+.runInfoDate {
+    font-weight: 700;
+    color: #1A202C;
+    margin-top: 6px;
+}
+
+.runInfoUser {
+    color: #2B6CB0;
+    margin-top: 6px;
+}
+
+.runRightCol {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.runToggleRow {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.segmented {
+    display: flex;
+    border: 1px solid #63B3ED;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.segmented button {
+    background: #FFFFFF;
+    border: none;
+    border-right: 1px solid #63B3ED;
+    color: #2B6CB0;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 10px 16px;
+    cursor: pointer;
+}
+
+.segmented button:last-child {
+    border-right: none;
+}
+
+.segmented button.active {
+    background-color: #EBF8FF;
+}
+
+.segmented button:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.segmented.small button {
+    padding: 10px 14px;
+}
+
+.runWarning {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #FEEBC8;
+    color: #9C4221;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 10px 14px;
+    border-radius: 8px;
+    width: fit-content;
+}
+
+.runField {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex: 1;
+    min-width: 0;
+}
+
+.runField label {
+    font-weight: 700;
+    font-size: 14px;
+    color: #1A202C;
+}
+
+.runFieldRow {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.runField input,
+.runSelect select {
+    font-family: inherit;
+    font-size: 14px;
+    padding: 10px 12px;
+    border: 1px solid #E2E8F0;
+    border-radius: 8px;
+    color: #1A202C;
+    background-color: #FFFFFF;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.runField input:focus,
+.runSelect select:focus {
+    outline: 2px solid #90CDF4;
+    outline-offset: 1px;
+}
+
+.runField input:disabled,
+.runSelect.disabled select {
+    background-color: #EDF2F7;
+    color: #A0AEC0;
+}
+
+.runSelect {
+    position: relative;
+}
+
+.runSelect select {
+    appearance: none;
+    padding-right: 32px;
+    cursor: pointer;
+}
+
+.runSelectChevron {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #718096;
+    pointer-events: none;
+}
+
+.runInputWrap {
+    position: relative;
+}
+
+.runSpinner {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #3182CE;
+    animation: runSpin 0.8s linear infinite;
+}
+
+@keyframes runSpin {
+    to { transform: translateY(-50%) rotate(360deg); }
+}
+
+.runGroupLabel {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    color: #A0AEC0;
+    margin-top: 4px;
+}
+
+.runSwitchRow {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #1A202C;
+    cursor: pointer;
+    width: fit-content;
+    align-self: flex-end;
+}
+
+.runSwitch {
+    position: relative;
+    display: inline-flex;
+    width: 38px;
+    height: 22px;
+    border-radius: 11px;
+    background-color: #CBD5E0;
+    transition: background-color 0.15s ease;
+}
+
+.runSwitch.on {
+    background-color: #3182CE;
+}
+
+.runSwitch.disabled {
+    opacity: 0.6;
+}
+
+.runSwitch input {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+.runSwitchKnob {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    transition: transform 0.15s ease;
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.3);
+}
+
+.runSwitch.on .runSwitchKnob {
+    transform: translateX(16px);
+}
+
+.runSubmit {
+    align-self: flex-end;
+    margin-top: auto;
+    background-color: #2B6CB0;
+    color: #FFFFFF;
+    border: none;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 12px 26px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.runSubmit:hover:not(:disabled) {
+    background-color: #2C5282;
+}
+
+.runSubmit:disabled {
+    background-color: #E2E8F0;
+    color: #A0AEC0;
+    cursor: not-allowed;
+}
+
+/* ---- Result view ---- */
+
+.resultView {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.resultBackRow {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: none;
+    border: none;
+    color: #2B6CB0;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 0;
+    width: fit-content;
+    padding-right: 40px;
+}
+
+.resultCard {
+    background-color: #F7FAFC;
+    border-radius: 12px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.resultHeading {
+    font-size: 24px;
+    font-weight: 800;
+    color: #1A365D;
+}
+
+.resultDate {
+    font-size: 15px;
+    color: #1A202C;
+    margin-top: 4px;
+}
+
+.resultTime {
+    font-size: 13px;
+    color: #718096;
+}
+
+.resultBanner {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #FED7D7;
+    color: #742A2A;
+    font-weight: 600;
+    padding: 12px 22px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.resultBanner svg {
+    color: #E53E3E;
+}
+
+.resultButtonRow {
+    display: flex;
+    gap: 14px;
+    margin-top: 8px;
+}
+
+.resultBtn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    border-radius: 8px;
+    border: 1px solid #CBD5E0;
+    background-color: #FFFFFF;
+    color: #4A5568;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.resultBtn.primary {
+    border-color: #2B6CB0;
+    color: #2B6CB0;
+}
+
+.resultRefTitle {
+    font-weight: 800;
+    font-size: 16px;
+    color: #1A202C;
+}
+
+.resultStatRow {
+    display: flex;
+    gap: 40px;
+    margin-top: 10px;
+}
+
+.resultStat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.resultStatLabel {
+    font-size: 13px;
+    color: #4A5568;
+}
+
+.resultStatValue {
+    font-weight: 700;
+    font-size: 16px;
+    color: #1A202C;
+}
+
+/* ---- History view ---- */
+
+.historyView {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    height: 100%;
+}
+
+.historyHeader {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding-right: 40px;
+    flex-wrap: wrap;
+}
+
+.historyCollapse {
+    background: none;
+    border: 1px solid #E2E8F0;
+    border-radius: 6px;
+    padding: 6px;
+    color: #2B6CB0;
+    cursor: pointer;
+    display: flex;
+}
+
+.historyTitle {
+    font-size: 24px;
+    font-weight: 800;
+    color: #1A365D;
+    margin: 0;
+}
+
+.historySub {
+    font-weight: 700;
+    font-size: 14px;
+    color: #1A202C;
+}
+
+.historyFullBtn {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: none;
+    border: 1px solid #2B6CB0;
+    color: #2B6CB0;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.historyTable {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow-y: auto;
+    border-radius: 8px;
+}
+
+.historyRow {
+    display: grid;
+    grid-template-columns: 110px 90px 130px 1fr 150px;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 16px;
+    border-bottom: 1px solid #EDF2F7;
+    font-size: 14px;
+    color: #1A202C;
+}
+
+.historyRowHead {
+    background-color: #EDF2F7;
+    font-weight: 700;
+    color: #4A5568;
+    border-radius: 8px 8px 0 0;
+}
+
+.historyByChip {
+    background-color: #EDF2F7;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 13px;
+}
+
+.histRec {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+}
+
+.histRec.ok {
+    color: #1A202C;
+}
+
+.histRec.ok svg {
+    color: #38A169;
+}
+
+.histRec.fail svg {
+    color: #E53E3E;
+}
+
+.historyActions {
+    display: flex;
+    gap: 8px;
+}
+
+.histActionBtn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    border: 1px solid #90CDF4;
+    color: #2B6CB0;
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    padding: 6px 10px;
+    font-weight: 700;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.histActionBtn.icon {
+    padding: 6px;
+    color: #CBD5E0;
+    border-color: #E2E8F0;
+}
+
+.histActionBtn.icon.ok {
+    color: #2B6CB0;
+    border-color: #90CDF4;
+}
+
+@media screen and (max-width: 900px) {
+    .ausPanel,
+    .ausPanel.wide {
+        width: 100%;
+    }
+
+    .runBody {
+        flex-direction: column;
+    }
+
+    .runLeftCol {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .runColDivider {
+        display: none;
+    }
+}
